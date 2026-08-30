@@ -48,6 +48,15 @@ Fülle die Felder für eine kurze Szene aus — wird automatisch lokal gespeiche
 Remplis les champs pour une courte scène — enregistré automatiquement en local.
 :::
 
+:::konzept titel_de="Beispiel" titel_fr="Exemple"
+:::de
+**Arbeitstitel:** «Pausenplatz-Talk». **Ort:** Pausenhof der Berufsschule, Mittagspause. **Handlung:** Zwei Lernende sitzen auf einer Bank, eine Person zeigt der anderen etwas auf dem Handy, beide lachen. **Dialog:** «Schau mal, was ich gerade fürs Portfolio gemacht habe!» – «Krass, wie hast du das gemacht?». **Bildidee:** Halbnah, Augenhöhe — wirkt nah und authentisch.
+:::
+:::fr
+**Titre de travail :** « Discussion dans la cour ». **Lieu :** cour de l'école professionnelle, pause de midi. **Action :** deux apprenti·es assis·es sur un banc, l'un·e montre quelque chose sur son téléphone à l'autre, les deux rient. **Dialogue :** « Regarde ce que je viens de faire pour mon portfolio ! » – « Waouh, comment as-tu fait ça ? ». **Idée visuelle :** plan rapproché-taille, hauteur des yeux — effet proche et authentique.
+:::
+:::
+
 :::widget vorlage
 {
   "storageKey": "lh_drehbuch",
@@ -68,6 +77,15 @@ Plane echte Einstellungen für deine Mini-Produktion: mindestens 5 Shots, mindes
 :::
 :::fr
 Planifie de vrais plans pour ta mini-production : au moins 5 plans, au moins 3 cadrages différents, au moins 2 perspectives différentes.
+:::
+
+:::konzept titel_de="Beispiel: erster Shot" titel_fr="Exemple : premier plan"
+:::de
+**Shot 1 – Totale, Vogelperspektive:** «Establishing Shot des Pausenhofs, um den Ort einzuführen.» So sieht eine vollständige Zeile in der Shot-List aus — für die restlichen Shots einfach das Muster fortsetzen.
+:::
+:::fr
+**Plan 1 – plan d'ensemble, plongée :** « Plan d'établissement de la cour, pour présenter le lieu. » Voici à quoi ressemble une ligne complète dans la liste de plans — pour les plans suivants, continue simplement selon ce modèle.
+:::
 :::
 
 :::widget shotlist
