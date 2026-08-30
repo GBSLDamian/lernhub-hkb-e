@@ -1,0 +1,33 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagramm des De-Essers: Frequenzspektrum von 20 Hz bis 20 kHz, mit hervorgehobenem Zischlaut-Bereich zwischen 4 und 10 kHz, in dem dynamisch die Lautstärke abgesenkt wird, während der Rest des Spektrums unverändert bleibt.">
+  <style>
+    .ax { stroke: var(--color-text-muted, #888); stroke-width: 1.5; }
+    .lbl { font-family: system-ui, sans-serif; font-size: 12px; fill: var(--color-text, #1a1a1a); }
+    .sub { font-family: system-ui, sans-serif; font-size: 11px; fill: var(--color-text-muted, #666); }
+    .band { fill: var(--color-danger-bg, #fbe7e6); }
+    .rest { fill: var(--color-surface-alt, #eef1f6); }
+    .curve { fill: none; stroke: var(--color-primary, #2a6ebb); stroke-width: 2.5; }
+    .gr { fill: none; stroke: var(--color-danger, #b3261e); stroke-width: 2.5; stroke-dasharray: 5 3; }
+  </style>
+
+  <!-- Hintergrund: Spektrum-Zonen -->
+  <rect x="50" y="30" width="180" height="180" class="rest"/>
+  <rect x="230" y="30" width="90" height="180" class="band"/>
+  <rect x="320" y="30" width="50" height="180" class="rest"/>
+
+  <text x="140" y="225" text-anchor="middle" class="sub">Rest des Klangs (unverändert)</text>
+  <text x="275" y="225" text-anchor="middle" class="sub" fill="var(--color-danger, #b3261e)">Zischlaut-Zone 4–10 kHz</text>
+  <text x="345" y="225" text-anchor="middle" class="sub">Höhen</text>
+
+  <!-- Achsen -->
+  <line x1="50" y1="210" x2="370" y2="210" class="ax"/>
+  <text x="30" y="30" class="sub">Pegel</text>
+  <text x="345" y="242" class="sub">20 kHz</text>
+  <text x="45" y="242" class="sub">20 Hz</text>
+
+  <!-- Signalkurve (Beispiel mit Peak in der Sibilanz-Zone) -->
+  <path class="curve" d="M50,150 C90,140 130,120 160,110 C185,102 200,60 230,50 C255,44 280,70 300,120 C320,150 340,160 370,158"/>
+
+  <!-- Gain-Reduction-Kurve nur in der Zone -->
+  <path class="gr" d="M230,50 C255,80 280,110 300,120"/>
+  <text x="232" y="45" class="sub" fill="var(--color-danger, #b3261e)">dynamische Absenkung</text>
+</svg>

@@ -64,24 +64,15 @@ Déplace les curseurs et observe comment la même valeur de couleur se comporte 
 
 :::widget rgb-cmyk-mischer:::
 
-:::h2 de="Bonus: Farbkontrast prüfen" fr="Bonus : vérifier le contraste des couleurs":::
-
-:::de
-RGB-Werte bestimmen nicht nur, wie eine Farbe aussieht — sie bestimmen auch, ob Text auf einem Hintergrund gut lesbar ist. Prüfe zwei Farben auf ihren Kontrast (WCAG-Richtwert für Fliesstext: mindestens 4.5:1).
-:::
-:::fr
-Les valeurs RVB ne déterminent pas seulement l'apparence d'une couleur — elles déterminent aussi si un texte reste lisible sur un fond donné. Teste deux couleurs pour leur contraste (valeur de référence WCAG pour le texte courant : au moins 4.5:1).
-:::
-
-:::widget kontrast-checker:::
-
 :::h2 de="Ressourcen" fr="Ressources":::
 
 :::ressourcen
 :::de
 - [Farbmanagement einfach erklärt (PDF-Leitfaden, extern)](https://www.google.com/search?q=farbmanagement+rgb+cmyk+leitfaden)
+- Kontrast von Vordergrund-/Hintergrundfarbe für lesbaren Text? Siehe {{glossar:rgb}} in Gestaltungsgrundlagen → Typografie & Barrierefreiheit.
 :::
 :::fr
 - [Gestion des couleurs expliquée simplement (guide PDF, externe)](https://www.google.com/search?q=gestion+des+couleurs+rvb+cmjn+guide)
+- Contraste entre couleur de texte et d'arrière-plan pour un texte lisible ? Voir {{glossar:rgb}} dans Bases de la conception → Typographie & accessibilité.
 :::
 :::

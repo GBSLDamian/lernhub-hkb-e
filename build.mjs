@@ -355,8 +355,10 @@ async function copyStaticAssets() {
   await cp(path.join(SRC_DIR, 'scripts'), path.join(DIST_DIR, 'assets', 'scripts'), { recursive: true });
   await cp(path.join(SRC_DIR, 'widgets'), path.join(DIST_DIR, 'assets', 'widgets'), { recursive: true });
   await cp(path.join(ASSETS_DIR, 'fonts'), path.join(DIST_DIR, 'assets', 'fonts'), { recursive: true });
-  if (existsSync(path.join(ASSETS_DIR, 'icons'))) {
-    await cp(path.join(ASSETS_DIR, 'icons'), path.join(DIST_DIR, 'assets', 'icons'), { recursive: true });
+  for (const dir of ['icons', 'audio', 'svg', 'img', 'fonts-demo']) {
+    if (existsSync(path.join(ASSETS_DIR, dir))) {
+      await cp(path.join(ASSETS_DIR, dir), path.join(DIST_DIR, 'assets', dir), { recursive: true });
+    }
   }
 }
 

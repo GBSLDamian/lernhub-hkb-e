@@ -24,6 +24,7 @@ const WIDGET_MODULES = {
   'shotlist': '/assets/widgets/shotlist.js',
   'format-matcher': '/assets/widgets/format-matcher.js',
   'quiz': '/assets/widgets/quiz.js',
+  'entscheidungsbaum': '/assets/widgets/entscheidungsbaum.js',
 };
 
 function safeGet(key) {
@@ -365,6 +366,22 @@ function mountGlossaryTerms(root = document) {
         popup.hidden = !willShow;
         btn.setAttribute('aria-expanded', String(willShow));
       });
+    });
+  });
+}
+
+// ---------- Video facade (click-to-load, no tracking until clicked) ----------
+function mountVideoFacades(root = document) {
+  root.querySelectorAll('.video-facade[data-video-id]:not([data-initialized])').forEach((wrap) => {
+    wrap.dataset.initialized = 'true';
+    const videoId = wrap.dataset.videoId;
+    if (!videoId) return;
+    wrap.innerHTML = `
+      <img class="video-facade__thumb" src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" alt="" loading="lazy">
+      <button type="button" class="video-facade__play" aria-label="Video laden und abspielen / charger et lire la vidéo"></button>
+    `;
+    wrap.querySelector('.video-facade__play').addEventListener('click', () => {
+      wrap.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="Video" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     });
   });
 }
