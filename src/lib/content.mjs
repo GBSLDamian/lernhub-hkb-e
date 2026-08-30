@@ -168,7 +168,12 @@ function inline(text, ctx) {
   const lang = ctx?.lang || 'de';
   return text
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" loading="lazy">')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_m, label, href) => {
+      const external = /^https?:\/\//.test(href);
+      return external
+        ? `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
+        : `<a href="${href}">${label}</a>`;
+    })
     .replace(/\{\{glossar:([a-z0-9-]+)(?:\|([^}]+))?\}\}/g, (_m, id, label) => {
       const entry = GLOSSARY.get(id);
       if (!entry) return label || id;
