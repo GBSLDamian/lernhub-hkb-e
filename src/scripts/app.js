@@ -511,8 +511,14 @@ async function navigate(pathAndSearch, push = true, hash = '') {
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
     const apply = () => swapMainContent(doc, hash);
-    if (document.startViewTransition) document.startViewTransition(apply);
-    else apply();
+    if (document.startViewTransition) {
+      const transition = document.startViewTransition(apply);
+      transition.ready.catch(() => {});
+      transition.updateCallbackDone.catch(() => {});
+      transition.finished.catch(() => {});
+    } else {
+      apply();
+    }
     const fullUrl = pathAndSearch + hash;
     if (push) history.pushState({ url: fullUrl }, '', fullUrl);
   } catch (err) {
