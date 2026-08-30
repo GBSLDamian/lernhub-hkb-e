@@ -7,7 +7,7 @@ reihenfolge: 3
 lernfeld: LF3
 lehrjahr: 1
 typ: uebung
-kstufe: K3
+kstufe: K2
 lernziele_de:
   - Ich erkläre den Unterschied zwischen Drehbuch und Storyboard.
   - Ich erarbeite ein Mini-Drehbuch und einen Drehplan für eine eigene Produktion.
