@@ -1,0 +1,17 @@
+[
+  {
+    "begriff": "RGB",
+    "de": "Additives Farbmodell aus Rot, Grün und Blau, verwendet für Bildschirme und Licht.",
+    "fr": "Modèle de couleur additif composé de rouge, vert et bleu, utilisé pour les écrans et la lumière."
+  },
+  {
+    "begriff": "CMYK",
+    "de": "Subtraktives Farbmodell aus Cyan, Magenta, Gelb und Schwarz, verwendet im Druck.",
+    "fr": "Modèle de couleur soustractif composé de cyan, magenta, jaune et noir, utilisé pour l'impression."
+  },
+  {
+    "begriff": "Quellenkritik",
+    "de": "Systematische Prüfung einer Informationsquelle auf Urheberschaft, Aktualität, Bestätigung und Sprache.",
+    "fr": "Vérification systématique d'une source d'information quant à son auteur, son actualité, sa confirmation et son langage."
+  }
+]

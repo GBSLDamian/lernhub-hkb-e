@@ -1,0 +1,134 @@
+{
+  "clusters": [
+    {
+      "id": "c1",
+      "titel": { "de": "Grundlagen & Recherche", "fr": "Bases & recherche" },
+      "farbe": { "light": "#1b49d6", "dark": "#7f9bff" }
+    },
+    {
+      "id": "c2",
+      "titel": { "de": "Medienproduktion", "fr": "Production médiatique" },
+      "farbe": { "light": "#0e8f7e", "dark": "#4fd6c2" }
+    },
+    {
+      "id": "c3",
+      "titel": { "de": "Wirkung & Marketing", "fr": "Impact & marketing" },
+      "farbe": { "light": "#bd6a12", "dark": "#f5a94e" }
+    },
+    {
+      "id": "c4",
+      "titel": { "de": "Recht & Ethik", "fr": "Droit & éthique" },
+      "farbe": { "light": "#7a44c6", "dark": "#c39bf2" }
+    }
+  ],
+  "areas": [
+    {
+      "id": "recherche-digitale-arbeitswelt",
+      "nr": "01",
+      "cluster": "c1",
+      "icon": "search",
+      "reihenfolge": 1,
+      "titel": { "de": "Recherche & digitale Arbeitswelt", "fr": "Recherche & monde du travail numérique" },
+      "kurz": {
+        "de": "Informationen gezielt finden, bewerten und die digitale Arbeitswelt verstehen.",
+        "fr": "Trouver et évaluer l'information de manière ciblée, comprendre le monde du travail numérique."
+      }
+    },
+    {
+      "id": "gestaltungsgrundlagen",
+      "nr": "02",
+      "cluster": "c1",
+      "icon": "grid",
+      "reihenfolge": 2,
+      "titel": { "de": "Gestaltungsgrundlagen", "fr": "Bases de la conception" },
+      "kurz": {
+        "de": "Layout, Typografie, Farbe und Bildaufbau als Grundhandwerk.",
+        "fr": "Mise en page, typographie, couleur et composition comme savoir-faire de base."
+      }
+    },
+    {
+      "id": "bild-bildbearbeitung",
+      "nr": "03",
+      "cluster": "c2",
+      "icon": "image",
+      "reihenfolge": 3,
+      "titel": { "de": "Bild & Bildbearbeitung", "fr": "Image & retouche d'image" },
+      "kurz": {
+        "de": "Bildformate, Farbmodelle und einfache Bearbeitungsschritte.",
+        "fr": "Formats d'image, modèles de couleur et retouches simples."
+      }
+    },
+    {
+      "id": "audio",
+      "nr": "04",
+      "cluster": "c2",
+      "icon": "audio",
+      "reihenfolge": 4,
+      "titel": { "de": "Audio", "fr": "Audio" },
+      "kurz": {
+        "de": "Ton aufnehmen, schneiden und für unterschiedliche Kanäle aufbereiten.",
+        "fr": "Enregistrer, monter et adapter le son pour différents canaux."
+      }
+    },
+    {
+      "id": "video-film",
+      "nr": "05",
+      "cluster": "c2",
+      "icon": "video",
+      "reihenfolge": 5,
+      "titel": { "de": "Video & Film", "fr": "Vidéo & film" },
+      "kurz": {
+        "de": "Von der Idee zum fertigen Video: Konzept, Dreh, Schnitt.",
+        "fr": "De l'idée à la vidéo finale : concept, tournage, montage."
+      }
+    },
+    {
+      "id": "marketing-werbung",
+      "nr": "06",
+      "cluster": "c3",
+      "icon": "megaphone",
+      "reihenfolge": 6,
+      "titel": { "de": "Marketing & Werbung", "fr": "Marketing & publicité" },
+      "kurz": {
+        "de": "Zielgruppen, Kanäle und Kampagnen wirkungsvoll planen.",
+        "fr": "Planifier efficacement les publics cibles, les canaux et les campagnes."
+      }
+    },
+    {
+      "id": "corporate-identity",
+      "nr": "07",
+      "cluster": "c3",
+      "icon": "badge",
+      "reihenfolge": 7,
+      "titel": { "de": "Corporate Identity", "fr": "Identité d'entreprise" },
+      "kurz": {
+        "de": "Wie Marken auftreten: Design, Sprache und Verhalten im Einklang.",
+        "fr": "Comment les marques se présentent : design, langage et comportement en harmonie."
+      }
+    },
+    {
+      "id": "wirtschaftspsychologie",
+      "nr": "08",
+      "cluster": "c3",
+      "icon": "brain",
+      "reihenfolge": 8,
+      "titel": { "de": "Wirtschaftspsychologie", "fr": "Psychologie économique" },
+      "kurz": {
+        "de": "Warum Menschen so entscheiden, wie sie entscheiden.",
+        "fr": "Pourquoi les gens décident comme ils décident."
+      }
+    },
+    {
+      "id": "recht-ethik-sicherheit",
+      "nr": "09",
+      "cluster": "c4",
+      "icon": "shield",
+      "reihenfolge": 9,
+      "titel": { "de": "Recht, Ethik & Sicherheit", "fr": "Droit, éthique & sécurité" },
+      "kurz": {
+        "de": "Urheberrecht, Datenschutz und verantwortungsvoller Umgang mit Medien.",
+        "fr": "Droit d'auteur, protection des données et usage responsable des médias."
+      }
+    }
+  ]
+}

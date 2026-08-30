@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lernhub",
+      "runtimeExecutable": "/Users/damian/.local/node/bin/node",
+      "runtimeArgs": ["build.mjs", "--serve"],
+      "port": 8080
+    }
+  ]
+}

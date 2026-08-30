@@ -1,0 +1,77 @@
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img, svg { max-width: 100%; display: block; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; color: inherit; }
+button { background: none; border: none; cursor: pointer; }
+
+/* ---------- Language visibility: exactly ONE language rendered ---------- */
+html[data-lang="de"] [data-lang="fr"] { display: none !important; }
+html[data-lang="fr"] [data-lang="de"] { display: none !important; }
+
+/* ---------- Base ---------- */
+html {
+  color-scheme: light dark;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 var(--space-3);
+}
+h1 { font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.5rem); font-weight: 700; }
+h2 { font-size: 1.375rem; margin-top: var(--space-6); }
+h3 { font-size: 1.125rem; }
+p { margin: 0 0 var(--space-4); }
+code, kbd { font-family: var(--font-mono); font-size: 0.875em; }
+code { background: var(--color-surface-raised); border: 1px solid var(--color-border); border-radius: 4px; padding: 0.1em 0.4em; }
+
+a[href] {
+  color: var(--color-accent);
+}
+.lesson-body a[href],
+.merksatz-box a[href],
+.konzept-box a[href],
+.ressourcen-box a[href] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.icon { flex-shrink: 0; }
+
+/* ---------- Skip link ---------- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  padding: var(--space-3) var(--space-4);
+  z-index: 200;
+}
+.skip-link:focus { left: var(--space-3); top: var(--space-3); }
+
+/* ---------- Print ---------- */
+@media print {
+  .app-header, .sidebar, .sidebar-scrim, .toc, .prev-next, .app-footer,
+  .fr-check-banner, .search-dialog, .home-filters { display: none !important; }
+  .app-shell { display: block; }
+  .main-content { max-width: none; padding: 0; }
+  body { background: #fff; color: #000; }
+}

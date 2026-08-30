@@ -1,0 +1,16 @@
+{
+  "name": "lernhub-hkb-e",
+  "version": "0.1.0",
+  "description": "LernHub – interaktives, zweisprachiges Lern- und Nachschlagewerk zum Handlungskompetenzbereich HKB E für Kaufleute",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node build.mjs --serve",
+    "icons": "node scripts/generate-icons.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
