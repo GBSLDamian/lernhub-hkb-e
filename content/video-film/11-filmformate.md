@@ -3,7 +3,7 @@ id: filmformate
 area: video-film
 titel_de: Filmformate
 titel_fr: Formats vidéo
-reihenfolge: 6
+reihenfolge: 11
 lernfeld: LF3
 lehrjahr: 2
 typ: uebung

@@ -3,7 +3,7 @@ id: kameratechnik
 area: video-film
 titel_de: Kameratechnik
 titel_fr: Technique de la caméra
-reihenfolge: 1
+reihenfolge: 4
 lernfeld: LF3
 lehrjahr: 2
 typ: theorie

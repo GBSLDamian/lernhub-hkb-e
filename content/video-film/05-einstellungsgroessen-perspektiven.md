@@ -3,7 +3,7 @@ id: einstellungsgroessen-perspektiven
 area: video-film
 titel_de: Einstellungsgrössen & Perspektiven
 titel_fr: Cadrages & perspectives
-reihenfolge: 3
+reihenfolge: 5
 lernfeld: LF3
 lehrjahr: 2
 typ: theorie
@@ -14,17 +14,24 @@ lernziele_de:
 lernziele_fr:
   - Je nomme les cadrages courants et leur effet.
   - Je choisis une perspective de caméra adaptée à l'effet recherché.
-tags: [einstellungsgroessen, perspektiven, "vertiefung-ausstehend"]
+tags: [einstellungsgroessen, perspektiven]
 ---
 
 :::de
-Dieselbe Person, derselbe Ort — nur die Kamera zoomt immer weiter rein. Diese Lektion zeigt die Basis; eine vertiefte Behandlung folgt in einer späteren Ausbaustufe.
+Dieselbe Person, derselbe Ort — nur die Kamera zoomt immer weiter rein. Eine Einstellungsgrösse bestimmt, wie viel von einer Person oder Umgebung im Bild zu sehen ist, und wird eingesetzt, um bestimmte Emotionen und Reaktionen beim Publikum hervorzurufen.
 :::
 :::fr
-La même personne, le même endroit — seule la caméra zoome de plus en plus près. Cette leçon présente les bases ; un traitement approfondi suivra dans une étape ultérieure.
+La même personne, le même endroit — seule la caméra zoome de plus en plus près. Un cadrage détermine la part visible d'une personne ou d'un environnement à l'image, et sert à susciter certaines émotions et réactions chez le public.
 :::
 
-:::h2 de="Von der Totalen bis ins Detail" fr="De l'ensemble au détail":::
+:::h2 de="Von der Supertotalen bis ins Detail" fr="Du plan très large au très gros plan":::
+
+:::de
+**Supertotale:** noch weiter entfernt als die Totale — zeigt Objekt oder Szene in einem sehr breiten Blickfeld und betont die Grösse des Ortes. Wird oft am Anfang oder Ende einer Szene verwendet, um eine Verbindung zur vorherigen oder nächsten Szene herzustellen.
+:::
+:::fr
+**Plan très large (supertotale) :** encore plus éloigné que le plan d'ensemble — montre le sujet ou la scène dans un très large champ de vision et souligne l'ampleur du lieu. Souvent utilisé au début ou à la fin d'une scène pour créer un lien avec la scène précédente ou suivante.
+:::
 
 ![Totale](/assets/svg/einstellungsgroessen/totale.svg)
 
@@ -42,6 +49,13 @@ La même personne, le même endroit — seule la caméra zoome de plus en plus p
 :::
 :::fr
 **Plan demi-ensemble :** la personne entière, de la tête aux pieds.
+:::
+
+:::de
+**Amerikanische Einstellung:** zeigt das Objekt von den Knien bis zur Brust — betont meistens Waffen oder Werkzeuge, die die Figur in der Szene verwendet (klassisch aus dem Westernfilm).
+:::
+:::fr
+**Plan américain :** montre le sujet des genoux à la poitrine — met généralement en valeur des armes ou outils utilisés par le personnage dans la scène (classique dans le western).
 :::
 
 ![Halbnah](/assets/svg/einstellungsgroessen/halbnah.svg)
@@ -91,31 +105,45 @@ Au montage, ne jamais « sauter » plus d'un cadrage — sinon la coupe paraît 
 
 :::h2 de="Der Blickwinkel der Kamera" fr="L'angle de vue de la caméra":::
 
-![Vogelperspektive](/assets/svg/perspektiven/vogelperspektive.svg)
-
-:::de
-**Vogelperspektive:** Kamera über dem Motiv — wirkt klein, überblickbar.
-:::
-:::fr
-**Plongée (vue d'oiseau) :** caméra au-dessus du sujet — paraît petit, facile à embrasser du regard.
-:::
-
 ![Augenhöhe](/assets/svg/perspektiven/augenhoehe.svg)
 
 :::de
-**Augenhöhe:** Kamera auf Höhe des Motivs — neutral, «ehrliche» Wirkung.
+**Normalsicht/Augenhöhe:** Kamera auf Höhe des Motivs, entspricht der natürlichen menschlichen Sicht — neutral, «ehrliche» Wirkung, stellt Vertrautheit mit den Charakteren her.
 :::
 :::fr
-**Hauteur des yeux :** caméra au niveau du sujet — effet neutre, « honnête ».
+**Vue normale/hauteur des yeux :** caméra au niveau du sujet, correspond à la vision humaine naturelle — effet neutre, « honnête », crée une familiarité avec les personnages.
+:::
+
+:::de
+**Aufsicht:** eine leicht erhöhte Position über dem Objekt — der Charakter kann kleiner oder verletzlicher wirken, oft in ungewohnten oder beängstigenden Situationen eingesetzt.
+:::
+:::fr
+**Plongée légère :** une position légèrement surélevée par rapport au sujet — le personnage peut paraître plus petit ou vulnérable, souvent utilisée dans des situations inhabituelles ou inquiétantes.
+:::
+
+![Vogelperspektive](/assets/svg/perspektiven/vogelperspektive.svg)
+
+:::de
+**Vogelperspektive:** eine sehr hohe Position, als würde man von oben aufs Geschehen hinabschauen — wirkt klein, überblickbar, erzeugt Distanz. Oft mit Drohnen aufgenommen.
+:::
+:::fr
+**Plongée totale (vue d'oiseau) :** une position très élevée, comme si on regardait la scène d'en haut — paraît petit, facile à embrasser du regard, crée de la distance. Souvent filmée par drone.
+:::
+
+:::de
+**Untersicht:** eine leicht niedrige Position unterhalb des Objekts — betont Grösse oder Wichtigkeit, da die Figur von unten grösser und imposanter erscheint. Häufig in actionreichen Szenen.
+:::
+:::fr
+**Contre-plongée légère :** une position légèrement basse par rapport au sujet — souligne la grandeur ou l'importance, le personnage paraissant plus grand et imposant vu d'en bas. Fréquente dans les scènes d'action.
 :::
 
 ![Froschperspektive](/assets/svg/perspektiven/froschperspektive.svg)
 
 :::de
-**Froschperspektive:** Kamera unter dem Motiv — «von unten = Held».
+**Froschperspektive:** eine sehr niedrige Position, als würde man von ganz unten aufschauen — «von unten = Held». Lässt Charaktere mächtig oder bedrohlich erscheinen, oft für übermächtige Figuren wie Superheld:innen oder Bösewichte.
 :::
 :::fr
-**Contre-plongée :** caméra sous le sujet — « vu d'en bas = héros ».
+**Contre-plongée totale :** une position très basse, comme si on regardait tout en bas vers le haut — « vu d'en bas = héros ». Rend les personnages puissants ou menaçants, souvent pour des figures surpuissantes comme les super-héros ou les méchants.
 :::
 
 :::merksatz

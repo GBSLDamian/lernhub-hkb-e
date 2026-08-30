@@ -3,7 +3,7 @@ id: fake-news-erkennen
 area: recherche-digitale-arbeitswelt
 titel_de: Fake News erkennen
 titel_fr: Reconnaître les fake news
-reihenfolge: 1
+reihenfolge: 3
 lernfeld: LF2
 lehrjahr: 1
 typ: uebung

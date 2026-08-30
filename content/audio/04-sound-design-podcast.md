@@ -14,22 +14,40 @@ lernziele_de:
 lernziele_fr:
   - J'explique le modèle des couches sonores (parole, musique, SFX, ambiance).
   - J'élabore un script/storyboard simple pour une production audio.
-tags: [sound-design, sfx, atmo, skript, podcast]
+tags: [sound-design, sfx, atmo, skript, podcast, foley]
 ---
+
+:::h2 de="Die Wichtigkeit von Ton" fr="L'importance du son":::
+
+:::de
+Der Ton transportiert Dialoge, Soundeffekte und Musik und vermittelt so Stimmung und Atmosphäre eines Films oder Podcasts. Ohne eine qualitativ hochwertige Tonspur bleibt das Erlebnis unvollständig. Interessant dabei: **Fehler im Bild werden vom Publikum oft toleriert** — ein kurz unscharfes Gesicht oder ein leichtes Wackeln stört selten gross. Fehlt aber über eine gewisse Zeit der Ton oder ist ein Rascheln hörbar, empfinden wir das sofort als störend. Im Tonbereich lohnt es sich darum, besonders sorgfältig zu arbeiten.
+:::
+:::fr
+Le son transporte les dialogues, les effets sonores et la musique, transmettant ainsi l'ambiance d'un film ou d'un podcast. Sans piste audio de qualité, l'expérience reste incomplète. Fait intéressant : **le public tolère souvent les défauts d'image** — un visage brièvement flou ou un léger tremblement dérange rarement beaucoup. Mais si le son manque un moment ou qu'un bruissement est audible, on le perçoit immédiatement comme gênant. Il vaut donc la peine de travailler le son avec un soin particulier.
+:::
 
 :::h2 de="Das Sound-Ebenen-Modell" fr="Le modèle des couches sonores":::
 
-:::konzept titel_de="Vier Ebenen, ein Ganzes" titel_fr="Quatre couches, un tout"
+:::konzept titel_de="Fünf Ebenen, ein Ganzes" titel_fr="Cinq couches, un tout"
 :::de
-Professioneller Ton besteht praktisch nie aus einer einzigen Spur, sondern aus mehreren übereinandergelegten Ebenen: **Sprache/Dialog** ist der inhaltliche Kern. **Musik** steuert die emotionale Grundstimmung. **{{glossar:sfx}}** sind gezielte Akzente. **{{glossar:atmo}}** ist die «Hintergrundluft», die eine Aufnahme glaubwürdig macht.
+Professioneller Ton besteht praktisch nie aus einer einzigen Spur, sondern aus mehreren übereinandergelegten Ebenen: **Dialoge** transportieren Informationen über Handlung, Charaktere und ihre Beziehungen. **Musik** steuert die emotionale Grundstimmung. **{{glossar:sfx}}** sind gezielte Akzente. **{{glossar:atmo}}** ist die «Hintergrundluft», die eine Aufnahme glaubwürdig macht. **Sprecherstimme/Off-Text** liefert — gerade in Dokumentarfilmen oder Reportagen — zusätzliche Informationen zur Handlung und kann komplexe Zusammenhänge verständlich erklären.
 
 **Metapher:** Wie bei einer Lasagne — jede Schicht für sich wäre unspektakulär, aber zusammen ergeben sie etwas Vollständiges.
 :::
 :::fr
-Un son professionnel se compose presque toujours de plusieurs couches superposées : la **parole/dialogue** est le cœur du contenu. La **musique** dirige l'ambiance émotionnelle générale. Les **{{glossar:sfx}}** sont des accents ciblés. L'**{{glossar:atmo}}** est «l'air de fond» qui rend un enregistrement crédible.
+Un son professionnel se compose presque toujours de plusieurs couches superposées : les **dialogues** transportent des informations sur l'action, les personnages et leurs relations. La **musique** dirige l'ambiance émotionnelle générale. Les **{{glossar:sfx}}** sont des accents ciblés. L'**{{glossar:atmo}}** est «l'air de fond» qui rend un enregistrement crédible. La **voix off** apporte — surtout dans les documentaires ou reportages — des informations supplémentaires sur l'action et peut expliquer clairement des contextes complexes.
 
 **Métaphore :** comme une lasagne — chaque couche seule serait quelconque, mais ensemble elles forment un tout.
 :::
+:::
+
+:::h2 de="Foley-Geräusche" fr="Bruitages Foley":::
+
+:::de
+Manchmal können nicht alle Geräusche während des Drehs sauber aufgenommen werden. Dann kommen {{glossar:foley}} ins Spiel: nachträglich mit Hilfsmitteln erzeugte Nachahmungen von alltäglichen Geräuschen (Schritte, Türen, Stoffrascheln), die die Atmosphäre und Authentizität einer Szene verstärken.
+:::
+:::fr
+Parfois, tous les sons ne peuvent pas être enregistrés proprement pendant le tournage. C'est là qu'interviennent les {{glossar:foley}} : des imitations de bruits du quotidien (pas, portes, froissement de tissu) recréées après coup avec des accessoires, qui renforcent l'atmosphère et l'authenticité d'une scène.
 :::
 
 :::h2 de="Sound-Rezept bauen" fr="Compose une recette sonore":::
@@ -78,6 +96,15 @@ Choisis un ingrédient dans chacune des trois couches — musique, SFX et ambian
 | YouTube Audio Library | direkt in YouTube Studio integriert |
 | [Mixkit](https://mixkit.co) | kuratierte Auswahl, hohe Qualität |
 | [Zapsplat](https://zapsplat.com) | sehr grosse SFX-Bibliothek |
+| [Artlist](https://artlist.io) | kuratierte Musik & SFX im Abo, häufig in der Werbebranche genutzt |
+| [Soundstripe](https://soundstripe.com) | Abo-Bibliothek mit einfacher Lizenzierung für Unternehmen |
+
+:::de
+Wichtig: Auch bei kostenlosen Datenbanken immer die Lizenzbedingungen prüfen — manche Werke sind komplett frei, andere erfordern eine Namensnennung oder dürfen nur nicht-kommerziell verwendet werden.
+:::
+:::fr
+Important : même avec des bases de données gratuites, toujours vérifier les conditions de licence — certaines œuvres sont entièrement libres, d'autres exigent une mention d'auteur ou ne peuvent être utilisées qu'à des fins non commerciales.
+:::
 
 :::h2 de="Warum ein Skript wichtig ist" fr="Pourquoi un script est important":::
 

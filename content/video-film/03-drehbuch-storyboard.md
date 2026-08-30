@@ -3,7 +3,7 @@ id: drehbuch-storyboard
 area: video-film
 titel_de: Drehbuch & Storyboard
 titel_fr: Scénario & storyboard
-reihenfolge: 5
+reihenfolge: 3
 lernfeld: LF3
 lehrjahr: 2
 typ: uebung

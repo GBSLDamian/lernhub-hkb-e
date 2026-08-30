@@ -1,5 +1,131 @@
 [
   {
+    "id": "framerate",
+    "begriff_de": "Framerate",
+    "begriff_fr": "Fréquence d'image",
+    "kurz_de": "Die Anzahl der Frames (Einzelbilder) pro Sekunde (fps), die ein Video aufnimmt oder abspielt.",
+    "kurz_fr": "Le nombre d'images (frames) par seconde (fps) qu'une vidéo enregistre ou lit.",
+    "metapher_de": "Wie ein Daumenkino: mehr Einzelbilder pro Sekunde ergeben eine flüssigere Bewegung.",
+    "metapher_fr": "Comme un folioscope : plus d'images par seconde donnent un mouvement plus fluide."
+  },
+  {
+    "id": "frame",
+    "begriff_de": "Frame",
+    "begriff_fr": "Frame (image)",
+    "kurz_de": "Ein einzelnes Bild in einer Videosequenz.",
+    "kurz_fr": "Une image individuelle dans une séquence vidéo.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "seitenverhaeltnis",
+    "begriff_de": "Seitenverhältnis",
+    "begriff_fr": "Format d'image",
+    "kurz_de": "Das Verhältnis der Pixelmenge in Breite und Höhe, z. B. 16:9 (Querformat) oder 9:16 (Hochformat für Social Media).",
+    "kurz_fr": "Le rapport entre le nombre de pixels en largeur et en hauteur, p. ex. 16:9 (paysage) ou 9:16 (portrait pour réseaux sociaux).",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "weissabgleich",
+    "begriff_de": "Weissabgleich",
+    "begriff_fr": "Balance des blancs",
+    "kurz_de": "Anpassung der Farbeinstellungen der Kamera an die Umgebung, damit Weiss auch wirklich weiss aussieht.",
+    "kurz_fr": "Ajustement des réglages de couleur de la caméra à l'environnement, pour que le blanc paraisse vraiment blanc.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "pan",
+    "begriff_de": "Pan (Schwenk)",
+    "begriff_fr": "Panoramique (pan)",
+    "kurz_de": "Eine horizontale Bewegung der Kamera von einem festen Punkt aus, von links nach rechts oder umgekehrt.",
+    "kurz_fr": "Un mouvement horizontal de la caméra depuis un point fixe, de gauche à droite ou inversement.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "tilt",
+    "begriff_de": "Tilt",
+    "begriff_fr": "Tilt (inclinaison)",
+    "kurz_de": "Eine vertikale Bewegung der Kamera von einem festen Punkt aus, nach oben oder unten.",
+    "kurz_fr": "Un mouvement vertical de la caméra depuis un point fixe, vers le haut ou le bas.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "fokus",
+    "begriff_de": "Fokus",
+    "begriff_fr": "Mise au point",
+    "kurz_de": "Der Teil des Bildes, der scharf dargestellt wird, während der Rest unscharf bleibt.",
+    "kurz_fr": "La partie de l'image représentée nette, tandis que le reste reste flou.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "goldener-schnitt",
+    "begriff_de": "Goldener Schnitt",
+    "begriff_fr": "Nombre d'or",
+    "kurz_de": "Eine Strecke wird so geteilt, dass sich der grössere Teil zum kleineren verhält wie die ganze Strecke zum grösseren Teil (Verhältnis ca. 1.618). Vereinfacht als Drittel-Regel bekannt.",
+    "kurz_fr": "Un segment est divisé de sorte que la grande partie soit à la petite partie ce que le segment entier est à la grande partie (rapport env. 1.618). Simplifié en règle des tiers.",
+    "metapher_de": "Wie ein Schneckenhaus oder ein Farnblatt — die Natur wächst oft nach diesem Verhältnis, weil es besonders harmonisch wirkt.",
+    "metapher_fr": "Comme une coquille d'escargot ou une feuille de fougère — la nature croît souvent selon ce rapport, car il paraît particulièrement harmonieux."
+  },
+  {
+    "id": "foley",
+    "begriff_de": "Foley-Geräusche",
+    "begriff_fr": "Bruitages Foley",
+    "kurz_de": "Nachträglich mit Hilfsmitteln erzeugte Nachahmungen von alltäglichen Geräuschen (Schritte, Türen, Stoffrascheln), die während des Drehs nicht sauber aufgenommen werden konnten.",
+    "kurz_fr": "Imitations de bruits du quotidien (pas, portes, froissement de tissu) recréées après coup avec des accessoires, lorsqu'elles n'ont pas pu être enregistrées proprement pendant le tournage.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "raster-grafik",
+    "begriff_de": "Rastergrafik",
+    "begriff_fr": "Image matricielle",
+    "kurz_de": "Ein Bild aus einzelnen Bildpunkten (Pixel), angeordnet in einem Raster — wie ein Mosaik. Beim Vergrössern werden nur die vorhandenen Pixel grösser, nie mehr.",
+    "kurz_fr": "Une image composée de points individuels (pixels) disposés dans une grille — comme une mosaïque. En l'agrandissant, seuls les pixels existants grossissent, il n'y en a jamais plus.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "vektor-grafik",
+    "begriff_de": "Vektorgrafik",
+    "begriff_fr": "Image vectorielle",
+    "kurz_de": "Ein Bild aus mathematisch berechneten Formen (Linien, Kurven, Flächen) statt aus Pixeln — dadurch verlustfrei skalierbar.",
+    "kurz_fr": "Une image composée de formes calculées mathématiquement (lignes, courbes, surfaces) plutôt que de pixels — donc redimensionnable sans perte.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "farbtiefe",
+    "begriff_de": "Farbtiefe",
+    "begriff_fr": "Profondeur de couleur",
+    "kurz_de": "Die Anzahl Bits pro Pixel zur Speicherung der Farbinformation — bestimmt, wie viele unterschiedliche Farben ein Pixel annehmen kann.",
+    "kurz_fr": "Le nombre de bits par pixel pour stocker l'information de couleur — détermine combien de couleurs différentes un pixel peut prendre.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "alphakanal",
+    "begriff_de": "Alphakanal",
+    "begriff_fr": "Canal alpha",
+    "kurz_de": "Ein vierter Bildkanal (neben Rot, Grün, Blau), der die Transparenz (Deckkraft) jedes Pixels festlegt.",
+    "kurz_fr": "Un quatrième canal d'image (en plus du rouge, vert, bleu) qui définit la transparence (opacité) de chaque pixel.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
+    "id": "exif",
+    "begriff_de": "EXIF-Metadaten",
+    "begriff_fr": "Métadonnées EXIF",
+    "kurz_de": "Automatisch von der Kamera gespeicherte Zusatzinformationen zu einem Foto: Auflösung, Kameramodell, oft Datum, Uhrzeit und Geodaten.",
+    "kurz_fr": "Informations complémentaires enregistrées automatiquement par l'appareil photo : résolution, modèle d'appareil, souvent date, heure et données de géolocalisation.",
+    "metapher_de": "",
+    "metapher_fr": ""
+  },
+  {
     "id": "rgb",
     "begriff_de": "RGB",
     "begriff_fr": "RVB",

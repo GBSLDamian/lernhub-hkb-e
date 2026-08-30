@@ -16,7 +16,7 @@ lernziele_fr:
   - Je crée un persona pour un public cible.
   - Je réalise une analyse SWOT et esquisse un Business Model Canvas.
   - Je formule une phrase de positionnement.
-tags: [persona, swot, business-model-canvas, positionierung, vorlage, "vertiefung-ausstehend"]
+tags: [persona, swot, business-model-canvas, positionierung, vorlage]
 ---
 
 :::de
@@ -29,10 +29,10 @@ Les quatre outils de cette page t'aident à clarifier les questions essentielles
 :::h2 de="Zielgruppe & Persona" fr="Public cible & persona":::
 
 :::de
-Eine Persona ist eine fiktive, aber realistische Beispielperson deiner Zielgruppe — sie macht abstrakte Zielgruppen greifbar.
+Eine Persona ist eine fiktive, aber realistische Beispielperson deiner Zielgruppe — sie macht abstrakte Zielgruppen greifbar. Wie du eine Zielgruppe systematisch beschreibst (demografisch, psychografisch, verhaltensbezogen, Bedürfnisse), erfährst du unter Video & Film → Zielgruppe & Persona — dieselbe Systematik gilt für jede Art von Produktion.
 :::
 :::fr
-Un persona est une personne fictive mais réaliste représentant ton public cible — il rend les publics abstraits concrets.
+Un persona est une personne fictive mais réaliste représentant ton public cible — il rend les publics abstraits concrets. La façon de décrire systématiquement un public cible (démographique, psychographique, comportemental, besoins) est expliquée sous Vidéo & film → Public cible & persona — la même systématique vaut pour tout type de production.
 :::
 
 :::konzept titel_de="Beispiel: Sina, 24" titel_fr="Exemple : Sina, 24 ans"

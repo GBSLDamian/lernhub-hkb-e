@@ -3,7 +3,7 @@ id: komposition-kamerabewegung
 area: video-film
 titel_de: Komposition & Kamerabewegung
 titel_fr: Composition & mouvement de caméra
-reihenfolge: 4
+reihenfolge: 6
 lernfeld: LF3
 lehrjahr: 2
 typ: theorie

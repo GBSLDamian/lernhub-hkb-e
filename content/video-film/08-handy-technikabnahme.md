@@ -3,7 +3,7 @@ id: handy-technikabnahme
 area: video-film
 titel_de: Handy-Technikabnahme
 titel_fr: Prise en main technique du smartphone
-reihenfolge: 2
+reihenfolge: 8
 lernfeld: LF3
 lehrjahr: 2
 typ: uebung
@@ -20,6 +20,19 @@ Ein paar Handy-Einstellungen und Handgriffe machen den Unterschied zwischen «si
 :::
 :::fr
 Quelques réglages et gestes techniques font la différence entre « amateur » et « tourné professionnellement ». La manipulation diffère un peu entre iPhone et Android — chaque technique est donc expliquée pour les deux.
+:::
+
+:::h2 de="Vor- und Nachteile des Smartphones" fr="Avantages et inconvénients du smartphone":::
+
+:::de
+**Vorteile:** einfache, intuitive Handhabung ohne Spezialschulung; gute Bildqualität dank hochwertiger Sensoren, Bildstabilisierung und schneller Autofokussierung; hohe Flexibilität für spontane Aufnahmen unterwegs; deutlich kostengünstiger als professionelle Film-Ausrüstung.
+
+**Worauf achten:** Verwacklung (Gerät ruhig halten oder abstützen), Audio-Qualität (eingebaute Mikrofone nehmen oft Hintergrundgeräusche auf — externes Mikrofon erwägen), Beleuchtung (kleinere Sensoren reagieren empfindlicher auf schlechtes Licht) sowie Speicherplatz (Videos beanspruchen viel Speicher).
+:::
+:::fr
+**Avantages :** manipulation simple et intuitive, sans formation spéciale ; bonne qualité d'image grâce à des capteurs performants, une stabilisation d'image et une mise au point automatique rapide ; grande flexibilité pour des prises spontanées en déplacement ; nettement plus économique qu'un équipement de tournage professionnel.
+
+**Points de vigilance :** tremblements (tenir l'appareil stable ou le poser), qualité audio (les micros intégrés captent souvent les bruits de fond — envisager un micro externe), éclairage (les capteurs plus petits sont plus sensibles à une lumière insuffisante) et espace de stockage (les vidéos occupent beaucoup de mémoire).
 :::
 
 :::widget technik-karten

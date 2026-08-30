@@ -21,10 +21,22 @@ tags: [mikrofon, richtcharakteristik, aufnahme, gain-staging]
 
 | Typ | Funktionsweise | Typischer Einsatz |
 |---|---|---|
-| 🎙️ Lavalier/Ansteckmikrofon | klein, an der Kleidung befestigt | Interviews, Vlogs, Präsentationen |
-| 🔫 Shotgun/Richtmikrofon | stark gerichtet | Video-Dreh mit Distanz zur Person |
-| 🎤 USB-Kondensatormikrofon | direkt an den Computer, empfindlich | Podcast am festen Arbeitsplatz |
-| 📱 Eingebautes Handy-/Laptop-Mikrofon | ungerichtet | Notlösung |
+| 🎙️ Lavalier/Ansteckmikrofon | klein, an der Kleidung befestigt, unsichtbar im Bild | Interviews, Vlogs, Präsentationen |
+| 🔫 Richtmikrofon (Shotgun) | stark gerichtet, oft auf der Kamera befestigt | Video-Dreh mit Distanz zur Person |
+| 🎤 Reporter-Mikrofon | robust, liegt in der Hand, kann hingehalten werden | Strassenumfragen, spontane Interviews |
+| 🎤 Kondensator-/Studio-Mikrofon | sehr empfindlich, detailreich, aber anfällig für Umgebungsgeräusche | Podcast am festen Arbeitsplatz, Tonstudio |
+| 🎒 Aufnahmegerät/Field Recorder | klein, tragbar, nimmt Umgebungsgeräusche auf | Journalistische Interviews, Atmo-Aufnahmen |
+| 🎧 Kopfhörer-Mikrofon/Headset | budgetfreundlich, aber geringere Klangqualität | Sprecherstimme bei knappem Budget |
+| 📱 Eingebautes Handy-/Laptop-Mikrofon | ungerichtet, wird laufend besser | Notlösung; Bild und Ton gleich beisammen |
+
+:::h2 de="Stereo und Mono" fr="Stéréo et mono":::
+
+:::de
+{{glossar:mono}} bedeutet, dass der Ton auf einem einzigen Kanal aufgenommen und wiedergegeben wird — auf allen Lautsprechern gleichzeitig, ohne räumlichen Eindruck. Bei {{glossar:stereo}} wird der Ton auf zwei getrennten Kanälen aufgenommen; der Unterschied zwischen den Kanälen erzeugt einen räumlichen Eindruck. Fährt im Bild ein Auto von links nach rechts, unterstützt eine Stereo-Aufnahme diese Bewegung hörbar — die Handlung wirkt authentischer. Überlege dir vor der Aufnahme, ob Mono oder Stereo sinnvoll ist: Das beeinflusst auch die Mikrofon-Wahl.
+:::
+:::fr
+Le {{glossar:mono}} signifie que le son est enregistré et restitué sur un seul canal — sur tous les haut-parleurs en même temps, sans impression spatiale. En {{glossar:stereo}}, le son est enregistré sur deux canaux séparés ; la différence entre les canaux crée une impression spatiale. Si une voiture traverse l'image de gauche à droite, un enregistrement stéréo rend ce mouvement audible — l'action paraît plus authentique. Réfléchis avant l'enregistrement si le mono ou le stéréo est judicieux : cela influence aussi le choix du microphone.
+:::
 
 :::h2 de="Richtcharakteristik" fr="Directivité":::
 
