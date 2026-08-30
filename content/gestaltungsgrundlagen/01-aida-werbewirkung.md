@@ -5,7 +5,7 @@ titel_de: AIDA & Werbewirkung
 titel_fr: AIDA & efficacité publicitaire
 reihenfolge: 1
 lernfeld: LF3
-lehrjahr: 1
+lehrjahr: 2
 typ: theorie
 kstufe: K3
 lernziele_de:

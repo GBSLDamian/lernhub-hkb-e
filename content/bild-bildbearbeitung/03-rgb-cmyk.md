@@ -5,7 +5,7 @@ titel_de: Farbe verstehen: Physik, RGB & CMYK
 titel_fr: Comprendre la couleur : physique, RVB & CMJN
 reihenfolge: 3
 lernfeld: LF3
-lehrjahr: 1
+lehrjahr: 2
 typ: theorie
 kstufe: K2
 lernziele_de:

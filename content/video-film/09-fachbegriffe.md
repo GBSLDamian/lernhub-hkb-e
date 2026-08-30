@@ -5,7 +5,7 @@ titel_de: Fachbegriffe im Überblick
 titel_fr: Glossaire des termes techniques
 reihenfolge: 9
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: referenz
 kstufe: K2
 lernziele_de:

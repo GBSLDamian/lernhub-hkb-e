@@ -5,7 +5,7 @@ titel_de: Typografie & Barrierefreiheit
 titel_fr: Typographie & accessibilité
 reihenfolge: 3
 lernfeld: LF3
-lehrjahr: 1
+lehrjahr: 2
 typ: theorie
 kstufe: K3
 lernziele_de:

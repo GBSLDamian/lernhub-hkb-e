@@ -5,7 +5,7 @@ titel_de: Das Filmkonzept
 titel_fr: Le concept de film
 reihenfolge: 1
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

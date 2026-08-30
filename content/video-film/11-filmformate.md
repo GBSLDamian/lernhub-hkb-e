@@ -5,7 +5,7 @@ titel_de: Filmformate
 titel_fr: Formats vidéo
 reihenfolge: 11
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: uebung
 kstufe: K3
 lernziele_de:

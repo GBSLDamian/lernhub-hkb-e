@@ -5,7 +5,7 @@ titel_de: Nachbearbeitung
 titel_fr: Postproduction
 reihenfolge: 12
 lernfeld: LF3
-lehrjahr: 3
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

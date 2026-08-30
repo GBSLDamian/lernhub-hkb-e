@@ -5,7 +5,7 @@ titel_de: Strategie-Vorlagen (Persona, SWOT, BMC, Positionierung)
 titel_fr: Modèles stratégiques (persona, SWOT, BMC, positionnement)
 reihenfolge: 1
 lernfeld: LF2
-lehrjahr: 3
+lehrjahr: 2
 typ: tool
 kstufe: K3
 lernziele_de:

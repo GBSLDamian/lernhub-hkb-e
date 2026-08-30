@@ -5,7 +5,7 @@ titel_de: Zielgruppe & Persona
 titel_fr: Public cible & persona
 reihenfolge: 2
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

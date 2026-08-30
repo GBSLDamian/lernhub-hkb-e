@@ -5,7 +5,7 @@ titel_de: Newsletter, Social Media & Blog
 titel_fr: Newsletter, réseaux sociaux & blog
 reihenfolge: 2
 lernfeld: LF2
-lehrjahr: 3
+lehrjahr: 2
 typ: uebung
 kstufe: K3
 lernziele_de:

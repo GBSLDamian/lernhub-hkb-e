@@ -5,7 +5,7 @@ titel_de: Lichtsetzung & Drei-Punkt-Beleuchtung
 titel_fr: Éclairage & lumière à trois points
 reihenfolge: 7
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

@@ -5,7 +5,7 @@ titel_de: Handy-Technikabnahme
 titel_fr: Prise en main technique du smartphone
 reihenfolge: 8
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: uebung
 kstufe: K3
 lernziele_de:

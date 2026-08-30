@@ -5,7 +5,7 @@ titel_de: Kameratechnik
 titel_fr: Technique de la caméra
 reihenfolge: 4
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

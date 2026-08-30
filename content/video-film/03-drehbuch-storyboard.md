@@ -5,7 +5,7 @@ titel_de: Drehbuch & Storyboard
 titel_fr: Scénario & storyboard
 reihenfolge: 3
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: uebung
 kstufe: K3
 lernziele_de:

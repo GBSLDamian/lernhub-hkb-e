@@ -5,7 +5,7 @@ titel_de: Einstellungsgrössen & Perspektiven
 titel_fr: Cadrages & perspectives
 reihenfolge: 5
 lernfeld: LF3
-lehrjahr: 2
+lehrjahr: 1
 typ: theorie
 kstufe: K3
 lernziele_de:

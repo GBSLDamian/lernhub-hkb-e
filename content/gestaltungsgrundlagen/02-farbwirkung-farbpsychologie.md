@@ -5,7 +5,7 @@ titel_de: Farbwirkung & Farbpsychologie
 titel_fr: Effet des couleurs & psychologie des couleurs
 reihenfolge: 2
 lernfeld: LF3
-lehrjahr: 1
+lehrjahr: 2
 typ: theorie
 kstufe: K3
 lernziele_de:
