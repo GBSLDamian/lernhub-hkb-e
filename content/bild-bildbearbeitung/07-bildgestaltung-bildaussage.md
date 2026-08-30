@@ -65,6 +65,16 @@ La règle des tiers est une simplification du **{{glossar:goldener-schnitt}}**, 
 :::
 :::
 
+:::widget drittel-schnitt-overlay
+{
+  "image": "/assets/img/film/komposition-drittelregel.jpg",
+  "altDe": "Landschaftsfoto mit einem einzelnen Baum, der links auf der Drittellinie steht, und einem Weg, der ins Bild hineinführt.",
+  "altFr": "Photo de paysage avec un arbre isolé sur la ligne de tiers gauche et un chemin qui mène dans l'image.",
+  "creditDe": "Schalte das Raster um und beobachte, wie genau Baum und Horizont auf den Linien und Schnittpunkten liegen. (Foto: Kreuzschnabel / Wikimedia Commons, CC BY-SA 3.0)",
+  "creditFr": "Change de grille et observe à quel point l'arbre et l'horizon se situent sur les lignes et points d'intersection. (Photo : Kreuzschnabel / Wikimedia Commons, CC BY-SA 3.0)"
+}
+:::
+
 :::h2 de="Weitere Gestaltungseffekte" fr="Autres effets de composition":::
 
 :::de

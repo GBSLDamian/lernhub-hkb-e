@@ -63,6 +63,19 @@ L'**ouverture**, l'**ISO** et le **temps d'obturation** déterminent ensemble la
 :::
 :::
 
+:::h2 de="Selbst ausprobieren" fr="Essayer soi-même":::
+
+:::de
+Verändere Blende, Verschlusszeit und ISO und beobachte live, wie sich Helligkeit, Tiefenschärfe, Bewegungsunschärfe und Bildrauschen gegenseitig beeinflussen. Im zweiten Tab siehst du den Unterschied zwischen den Bildraten am eigenen Auge.
+:::
+:::fr
+Modifie l'ouverture, le temps d'obturation et l'ISO, et observe en direct comment luminosité, profondeur de champ, flou de mouvement et bruit numérique s'influencent mutuellement. Le deuxième onglet te montre la différence entre les fréquences d'image, à l'œil nu.
+:::
+
+:::widget belichtung-framerate
+{}
+:::
+
 :::h2 de="Auflösung & Weissabgleich" fr="Résolution & balance des blancs":::
 
 :::de

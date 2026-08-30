@@ -175,6 +175,21 @@ Au montage, ne jamais « sauter » plus d'un cadrage — sinon la coupe paraît 
 **Contre-plongée.** Photographiés d'en bas, même les bâtiments paraissent écrasants. *(Photo : CC0)*
 :::
 
+:::h2 de="Bild und Wirkung zuordnen" fr="Associer image et effet":::
+
+:::widget einstellung-matcher
+{
+  "items": [
+    { "id": "totale", "img": "/assets/svg/einstellungsgroessen/totale.svg", "nameDe": "Totale", "nameFr": "Plan d'ensemble", "effektDe": "Zeigt die gesamte Szenerie, Person klein darin — gute Orientierung, guter Einstieg.", "effektFr": "Montre toute la scène, la personne y paraît petite — bonne orientation, bonne entrée en matière." },
+    { "id": "halbtotale", "img": "/assets/svg/einstellungsgroessen/halbtotale.svg", "nameDe": "Halbtotale", "nameFr": "Plan demi-ensemble", "effektDe": "Person komplett von Kopf bis Fuss sichtbar.", "effektFr": "La personne entière, de la tête aux pieds, est visible." },
+    { "id": "halbnah", "img": "/assets/svg/einstellungsgroessen/halbnah.svg", "nameDe": "Halbnah", "nameFr": "Plan rapproché-taille", "effektDe": "Person von Kopf bis Hüfte sichtbar.", "effektFr": "La personne, de la tête à la hanche, est visible." },
+    { "id": "nah", "img": "/assets/svg/einstellungsgroessen/nah.svg", "nameDe": "Nah", "nameFr": "Plan rapproché-poitrine", "effektDe": "Person von Kopf bis Brust — klassische Interview-Einstellung.", "effektFr": "La personne, de la tête à la poitrine — cadrage classique d'interview." },
+    { "id": "gross", "img": "/assets/svg/einstellungsgroessen/gross.svg", "nameDe": "Grossaufnahme", "nameFr": "Gros plan", "effektDe": "Nur Kopf/Gesicht sichtbar — starke emotionale Wirkung.", "effektFr": "Seuls la tête/le visage sont visibles — fort effet émotionnel." },
+    { "id": "detail", "img": "/assets/svg/einstellungsgroessen/detail.svg", "nameDe": "Detail", "nameFr": "Très gros plan", "effektDe": "Nur ein Ausschnitt sichtbar (Auge, Hand, Objekt).", "effektFr": "Seul un détail est visible (œil, main, objet)." }
+  ]
+}
+:::
+
 :::h2 de="Kurz angewendet" fr="Application rapide":::
 
 :::widget quiz

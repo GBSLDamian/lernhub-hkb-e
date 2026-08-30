@@ -61,6 +61,25 @@ Une photo prise directement avec le téléphone n'est rarement utilisable telle 
 :::
 :::
 
+:::h2 de="Kompression live ausprobieren" fr="Essayer la compression en direct":::
+
+:::de
+Der Regler verändert die JPEG-Qualität eines echten Fotos in Echtzeit — keine Simulation, sondern eine echte Neukodierung im Browser. Bei niedriger Qualität werden die 8×8-Blöcke sichtbar, die JPG zur Kompression verwendet.
+:::
+:::fr
+Le curseur modifie en temps réel la qualité JPEG d'une vraie photo — ce n'est pas une simulation, mais un réel réencodage dans le navigateur. À faible qualité, les blocs de 8×8 pixels utilisés par le JPG pour compresser deviennent visibles.
+:::
+
+:::widget kompression-demo
+{
+  "image": "/assets/img/film/perspektive-vogel.jpg",
+  "altDe": "Luftaufnahme einer Küstenstadt",
+  "altFr": "Vue aérienne d'une ville côtière",
+  "creditDe": "Demofoto (Foto: John D Fielding, CC BY 2.0)",
+  "creditFr": "Photo de démonstration (Photo : John D Fielding, CC BY 2.0)"
+}
+:::
+
 :::h2 de="Format der Situation zuordnen" fr="Associer le format à la situation":::
 
 :::de

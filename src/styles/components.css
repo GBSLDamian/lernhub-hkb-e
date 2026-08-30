@@ -480,6 +480,81 @@ body.print-vorlage-only .prev-next { display: none !important; }
 .tech-card__options { display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-2) 0; }
 .tech-card.is-done { border-color: var(--cluster-c2); }
 
+/* ================= Widget: Fakt oder Fake? ================= */
+.fakt-fake__statement { font-size: 1.0625rem; font-weight: 600; margin: var(--space-4) 0; }
+.fakt-fake__buttons { display: flex; gap: var(--space-3); }
+.fakt-fake__btn {
+  flex: 1;
+  padding: var(--space-4);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+.fakt-fake__btn:hover:not(:disabled) { border-color: var(--color-accent); }
+.fakt-fake__btn:disabled { opacity: 0.6; }
+.fakt-fake__btn.is-correct { border-color: var(--cluster-c2); background: color-mix(in srgb, var(--cluster-c2) 15%, var(--color-surface)); }
+.fakt-fake__btn.is-incorrect { border-color: var(--color-danger); background: color-mix(in srgb, var(--color-danger) 12%, var(--color-surface)); }
+@media (max-width: 480px) { .fakt-fake__buttons { flex-direction: column; } }
+
+/* ================= Widget: Einstellung-Matcher ================= */
+.einstellung-matcher__img { display: block; width: 100%; max-width: 8rem; height: auto; margin-bottom: var(--space-2); border-radius: var(--radius-sm); background: var(--color-surface-raised); }
+
+/* ================= Widget: Drittel/Goldener-Schnitt-Overlay ================= */
+.drittel-overlay__frame { position: relative; margin-top: var(--space-4); border-radius: var(--radius-md); overflow: hidden; line-height: 0; }
+.drittel-overlay__frame img { display: block; width: 100%; height: auto; }
+.drittel-overlay__grid { position: absolute; inset: 0; pointer-events: none; }
+.drittel-overlay__svg { width: 100%; height: 100%; }
+.drittel-overlay__svg line { stroke: #fff; stroke-width: 0.4; opacity: 0.9; }
+.drittel-overlay__svg circle { fill: color-mix(in srgb, var(--color-accent) 85%, white); stroke: #fff; stroke-width: 0.3; }
+.drittel-overlay__credit { margin-top: var(--space-2); font-size: 0.75rem; }
+
+/* ================= Widget: Kompressions-Demo ================= */
+.kompression-demo__preview { border-radius: var(--radius-md); overflow: hidden; margin-bottom: var(--space-4); background: var(--color-surface-raised); }
+.kompression-demo__preview img { display: block; width: 100%; height: auto; }
+.kompression-demo__slider-row { display: grid; grid-template-columns: 8rem 1fr 3.5rem; align-items: center; gap: var(--space-3); font-size: 0.8125rem; color: var(--color-text-muted); }
+.kompression-demo__slider-row input[type="range"] { width: 100%; }
+.kompression-demo__size { margin-top: var(--space-3); margin-bottom: 0; font-size: 0.875rem; }
+.kompression-demo__credit { margin-top: var(--space-2); font-size: 0.75rem; }
+
+/* ================= Widget: Belichtungsdreieck & Bildrate ================= */
+.belichtung-framerate .chip-group { margin-bottom: var(--space-4); }
+.belichtung__preview {
+  position: relative;
+  height: 6rem;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  background: linear-gradient(135deg, var(--cluster-c1), var(--cluster-c3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: filter var(--motion-fast) var(--motion-ease);
+}
+.belichtung__preview-label { color: #fff; font-weight: 700; text-shadow: 0 1px 3px rgba(0,0,0,0.4); z-index: 1; }
+.belichtung__noise {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, #fff 1px, transparent 1px);
+  background-size: 4px 4px;
+  opacity: 0;
+  mix-blend-mode: overlay;
+}
+.belichtung__controls { display: grid; gap: var(--space-3); margin-bottom: var(--space-4); }
+.belichtung__control { display: grid; grid-template-columns: 8rem 1fr 4.5rem; align-items: center; gap: var(--space-3); font-size: 0.8125rem; color: var(--color-text-muted); }
+.belichtung__control input[type="range"] { width: 100%; }
+.belichtung__meters { display: grid; gap: var(--space-3); }
+.belichtung__meter { display: grid; gap: var(--space-1); font-size: 0.75rem; color: var(--color-text-muted); }
+.belichtung__meter-track { height: 6px; border-radius: 3px; background: var(--color-border); overflow: hidden; }
+.belichtung__meter-fill { height: 100%; background: var(--color-accent); border-radius: 3px; transition: width var(--motion-fast) var(--motion-ease); }
+.framerate__track { position: relative; height: 2.5rem; border-radius: var(--radius-md); background: var(--color-surface-raised); border: 1px solid var(--color-border); margin-bottom: var(--space-3); overflow: hidden; }
+.framerate__dot { position: absolute; top: 50%; left: 0; width: 1.5rem; height: 1.5rem; margin-top: -0.75rem; border-radius: 50%; background: var(--color-accent); }
+.framerate__use { margin: 0; }
+@media (max-width: 480px) {
+  .kompression-demo__slider-row, .belichtung__control { grid-template-columns: 1fr; }
+}
+
 /* ================= TOC ================= */
 .toc { position: sticky; top: calc(var(--header-height) + var(--space-4)); font-size: 0.8125rem; }
 .toc__label { font-family: var(--font-mono); text-transform: uppercase; font-size: 0.7rem; color: var(--color-text-muted); margin-bottom: var(--space-2); }

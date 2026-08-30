@@ -54,6 +54,23 @@ Les fausses informations se propagent souvent plus vite en ligne que leurs recti
 :::
 :::
 
+:::h2 de="Fakt oder Fake?" fr="Vrai ou faux ?":::
+
+:::widget fakt-oder-fake
+{
+  "items": [
+    { "id": "altes-datum", "aussageDe": "Ein alter Artikel wird oft als «aktuell» neu geteilt, ohne dass sich das Datum geändert hat.", "aussageFr": "Un vieil article est souvent repartagé comme « actuel » sans que la date ait changé.", "istFakt": true, "begruendungDe": "Genau deshalb gehört die Datumsprüfung zu den 4 Schnell-Checks.", "begruendungFr": "C'est exactement pour cela que la vérification de la date fait partie des 4 vérifications rapides." },
+    { "id": "viral-wahr", "aussageDe": "Wenn eine Nachricht von sehr vielen Leuten geteilt wird, muss sie wahr sein.", "aussageFr": "Si une information est partagée par énormément de monde, elle doit être vraie.", "istFakt": false, "begruendungDe": "Reichweite sagt nichts über Wahrheitsgehalt — Algorithmen bevorzugen oft, was Aufmerksamkeit erzeugt, nicht was korrekt ist.", "begruendungFr": "La portée ne dit rien sur la véracité — les algorithmes favorisent souvent ce qui capte l'attention, pas ce qui est correct." },
+    { "id": "third-person", "aussageDe": "Die meisten Menschen unterschätzen, wie stark Fake News sie selbst beeinflussen können.", "aussageFr": "La plupart des gens sous-estiment à quel point les fake news peuvent les influencer eux-mêmes.", "istFakt": true, "begruendungDe": "Das beschreibt der Third-Person-Effekt: «Mich überzeugt das nicht, aber die anderen schon».", "begruendungFr": "C'est l'effet de tierce personne : « Moi, ça ne me convainc pas, mais les autres oui »." },
+    { "id": "seriös-immun", "aussageDe": "Seriöse, etablierte Nachrichtenportale können keine Falschmeldungen verbreiten.", "aussageFr": "Les portails d'information sérieux et établis ne peuvent pas diffuser de fausses informations.", "istFakt": false, "begruendungDe": "Fake News tauchen heute fast überall auf, selbst bei seriösen Portalen — Quellenkritik gilt immer.", "begruendungFr": "Les fake news apparaissent aujourd'hui presque partout, même sur des portails sérieux — l'esprit critique reste toujours de mise." },
+    { "id": "beide-seiten", "aussageDe": "Beim Hostile-Media-Effekt hält jede Streitpartei denselben neutralen Bericht für gegen sich voreingenommen.", "aussageFr": "Dans l'effet des médias hostiles, chaque camp perçoit le même reportage neutre comme biaisé contre lui.", "istFakt": true, "begruendungDe": "Beide Seiten eines Streitthemas empfinden dieselbe ausgewogene Berichterstattung gleichzeitig als parteiisch.", "begruendungFr": "Les deux camps d'un débat perçoivent simultanément le même reportage équilibré comme partial." },
+    { "id": "sprache-egal", "aussageDe": "Übertriebene, emotionale Sprache ist ein typisches Warnsignal für Falschmeldungen.", "aussageFr": "Un langage exagéré et émotionnel est un signal d'alerte typique pour les fausses informations.", "istFakt": true, "begruendungDe": "Reisserische Sprache gehört zu den 4 Schnell-Checks — seriöse Quellen berichten meist sachlicher.", "begruendungFr": "Un ton sensationnaliste fait partie des 4 vérifications rapides — les sources sérieuses rapportent généralement de façon plus factuelle." },
+    { "id": "impressum-aufwand", "aussageDe": "Ein Impressum oder das Datum zu prüfen, dauert zu lange, um sich im Alltag zu lohnen.", "aussageFr": "Vérifier les mentions légales ou la date prend trop de temps pour être utile au quotidien.", "istFakt": false, "begruendungDe": "Ein Klick auf «Impressum» und «Datum» dauert nur Sekunden — schnell und trotzdem wirksam.", "begruendungFr": "Un clic sur « mentions légales » et « date » ne prend que quelques secondes — rapide mais efficace." },
+    { "id": "filterblase", "aussageDe": "Algorithmen sozialer Netzwerke zeigen bevorzugt Inhalte, die bereits vorhandene Meinungen bestätigen.", "aussageFr": "Les algorithmes des réseaux sociaux affichent en priorité des contenus qui confirment des opinions déjà existantes.", "istFakt": true, "begruendungDe": "Das führt zu Filterblasen und Echokammern — man sieht seltener widersprechende Informationen.", "begruendungFr": "Cela crée des bulles de filtre et des chambres d'écho — on voit moins d'informations contradictoires." }
+  ]
+}
+:::
+
 :::h2 de="Übung" fr="Exercice":::
 
 :::de

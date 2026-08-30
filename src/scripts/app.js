@@ -25,6 +25,11 @@ const WIDGET_MODULES = {
   'format-matcher': '/assets/widgets/format-matcher.js',
   'quiz': '/assets/widgets/quiz.js',
   'entscheidungsbaum': '/assets/widgets/entscheidungsbaum.js',
+  'fakt-oder-fake': '/assets/widgets/fakt-oder-fake.js',
+  'einstellung-matcher': '/assets/widgets/einstellung-matcher.js',
+  'drittel-schnitt-overlay': '/assets/widgets/drittel-schnitt-overlay.js',
+  'kompression-demo': '/assets/widgets/kompression-demo.js',
+  'belichtung-framerate': '/assets/widgets/belichtung-framerate.js',
 };
 
 function safeGet(key) {
