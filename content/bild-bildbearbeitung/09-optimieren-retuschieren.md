@@ -3,7 +3,7 @@ id: optimieren-retuschieren
 area: bild-bildbearbeitung
 titel_de: Optimieren & Retuschieren
 titel_fr: Optimiser & retoucher
-reihenfolge: 4
+reihenfolge: 9
 lernfeld: LF3
 lehrjahr: 2
 typ: referenz

@@ -3,7 +3,7 @@ id: plattformen-formate
 area: bild-bildbearbeitung
 titel_de: Für Plattformen aufbereiten
 titel_fr: Préparer pour les plateformes
-reihenfolge: 5
+reihenfolge: 10
 lernfeld: LF3
 lehrjahr: 2
 typ: referenz
