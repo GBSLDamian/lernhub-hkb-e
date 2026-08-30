@@ -220,22 +220,65 @@ function buildHomePage(ctx) {
 
 function buildGlossaryPage(glossary, ctx) {
   const sorted = [...glossary].sort((a, b) => a.begriff_de.localeCompare(b.begriff_de, 'de'));
-  const items = sorted
+  const areaById = new Map(ctx.areas.map((a) => [a.id, a]));
+
+  const usedAreaIds = [...new Set(sorted.flatMap((g) => g.bereiche || []))];
+  const bereichChips = ctx.areas
+    .filter((a) => usedAreaIds.includes(a.id))
     .map(
-      (g) => `<div class="glossary-list__entry" id="glossar-${g.id}">
+      (a) => `<button type="button" class="chip chip--filter" data-filter-bereich="${a.id}"><span data-lang="de">${a.titel.de}</span><span data-lang="fr">${a.titel.fr}</span></button>`
+    )
+    .join('');
+
+  const groups = new Map();
+  for (const g of sorted) {
+    const letter = g.begriff_de[0].toUpperCase();
+    if (!groups.has(letter)) groups.set(letter, []);
+    groups.get(letter).push(g);
+  }
+
+  const alphaNav = [...groups.keys()].map((l) => `<a href="#glossar-buchstabe-${l}">${l}</a>`).join('');
+
+  const groupSections = [...groups.entries()]
+    .map(([letter, entries]) => {
+      const items = entries
+        .map((g) => {
+          const bereicheIds = g.bereiche || [];
+          const labelsDe = bereicheIds.map((id) => areaById.get(id)?.titel?.de).filter(Boolean).join(', ');
+          const labelsFr = bereicheIds.map((id) => areaById.get(id)?.titel?.fr).filter(Boolean).join(', ');
+          return `<div class="glossary-list__entry" id="glossar-${g.id}" data-bereiche="${bereicheIds.join(' ')}">
   <dt data-lang="de">${g.begriff_de}</dt><dt data-lang="fr">${g.begriff_fr}</dt>
   <dd data-lang="de">${g.kurz_de}${g.metapher_de ? `<br><em>Metapher: ${g.metapher_de}</em>` : ''}</dd>
   <dd data-lang="fr">${g.kurz_fr}${g.metapher_fr ? `<br><em>Métaphore : ${g.metapher_fr}</em>` : ''}</dd>
-</div>`
-    )
+  ${labelsDe ? `<span class="glossary-list__bereiche"><span data-lang="de">${labelsDe}</span><span data-lang="fr">${labelsFr}</span></span>` : ''}
+</div>`;
+        })
+        .join('\n');
+      return `<section class="glossary-list__group" id="glossar-buchstabe-${letter}" data-letter="${letter}">
+  <h2 class="glossary-list__letter">${letter}</h2>
+  <dl class="glossary-list">${items}</dl>
+</section>`;
+    })
     .join('\n');
+
   const bodyHtml = `<header class="area-header">
   <div>
     <h1 data-lang="de">Glossar</h1>
     <h1 data-lang="fr">Glossaire</h1>
+    <p class="text-muted" data-lang="de">${sorted.length} Fachbegriffe — durchsuchbar und nach Bereich filterbar.</p>
+    <p class="text-muted" data-lang="fr">${sorted.length} termes techniques — cherchables et filtrables par domaine.</p>
   </div>
 </header>
-<dl class="glossary-list">${items}</dl>`;
+<div class="glossary-controls">
+  <input type="search" id="glossary-search" class="glossary-controls__input" data-lang="de" placeholder="Begriff oder Beschreibung suchen…" aria-label="Glossar durchsuchen">
+  <input type="search" id="glossary-search-fr" class="glossary-controls__input" data-lang="fr" placeholder="Rechercher un terme ou une description…" aria-label="Rechercher dans le glossaire">
+  <div class="chip-group" id="glossary-bereich-filters">${bereichChips}</div>
+  <nav class="glossary-alpha-nav" aria-label="Alphabetische Navigation">${alphaNav}</nav>
+</div>
+<p class="glossary-list__empty text-muted" id="glossary-empty" hidden>
+  <span data-lang="de">Keine Treffer.</span><span data-lang="fr">Aucun résultat.</span>
+</p>
+${groupSections}`;
   return pageShell({
     title: 'Glossar / Glossaire',
     bodyHtml,
@@ -244,8 +287,23 @@ function buildGlossaryPage(glossary, ctx) {
   });
 }
 
-function buildSearchIndex(lessons, areas) {
+function buildSearchIndex(lessons, areas, glossary) {
   const entries = [];
+  const areaById = new Map(areas.map((a) => [a.id, a]));
+  for (const g of glossary || []) {
+    const bereicheDe = (g.bereiche || []).map((id) => areaById.get(id)?.titel?.de).filter(Boolean).join(', ');
+    const bereicheFr = (g.bereiche || []).map((id) => areaById.get(id)?.titel?.fr).filter(Boolean).join(', ');
+    entries.push({
+      lang: 'de', id: g.id, typ: 'glossar', href: `/glossar/#glossar-${g.id}`,
+      titel: g.begriff_de, areaTitel: bereicheDe || 'Glossar', tags: g.bereiche || [],
+      text: [g.kurz_de, g.metapher_de].filter(Boolean).join(' '),
+    });
+    entries.push({
+      lang: 'fr', id: g.id, typ: 'glossar', href: `/glossar/#glossar-${g.id}`,
+      titel: g.begriff_fr, areaTitel: bereicheFr || 'Glossaire', tags: g.bereiche || [],
+      text: [g.kurz_fr, g.metapher_fr].filter(Boolean).join(' '),
+    });
+  }
   for (const l of lessons) {
     const area = areas.find((a) => a.id === l.areaId);
     entries.push({
@@ -392,7 +450,7 @@ async function build() {
   await writePage('', buildHomePage(ctx));
   await writePage('glossar', buildGlossaryPage(glossary, ctx));
 
-  const searchIndex = buildSearchIndex(lessons, areas);
+  const searchIndex = buildSearchIndex(lessons, areas, glossary);
   await writeFile(path.join(DIST_DIR, 'search-index.json'), JSON.stringify(searchIndex), 'utf8');
   await writeFile(path.join(DIST_DIR, 'glossary.json'), JSON.stringify(glossary), 'utf8');
 

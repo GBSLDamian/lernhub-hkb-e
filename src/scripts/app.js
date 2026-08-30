@@ -144,13 +144,18 @@ function fuzzyScore(query, entry) {
 }
 function renderResults(list, entries) {
   const empty = document.getElementById('search-empty');
+  const lang = document.documentElement.dataset.lang === 'fr' ? 'fr' : 'de';
   list.innerHTML = entries
-    .map(
-      (e) => `<li><a href="${e.href}">
+    .map((e) => {
+      const meta =
+        e.typ === 'glossar'
+          ? `${lang === 'fr' ? 'Glossaire' : 'Glossar'} · ${e.areaTitel}`
+          : `${e.areaTitel} · ${e.lernfeld} · ${e.lehrjahr}. LJ`;
+      return `<li><a href="${e.href}">
         <span class="search-dialog__result-title">${e.titel}</span>
-        <span class="search-dialog__result-meta">${e.areaTitel} · ${e.lernfeld} · ${e.lehrjahr}. LJ</span>
-      </a></li>`
-    )
+        <span class="search-dialog__result-meta">${meta}</span>
+      </a></li>`;
+    })
     .join('');
   empty.hidden = entries.length !== 0;
 }
@@ -219,6 +224,56 @@ function initHomeFilters() {
       chip.classList.toggle('is-active');
       if (active[group].has(value)) active[group].delete(value);
       else active[group].add(value);
+      apply();
+    });
+  });
+}
+
+// ---------- Glossary page: live search + Bereich filter ----------
+function initGlossaryPage(root = document) {
+  const searchDe = root.querySelector('#glossary-search');
+  const searchFr = root.querySelector('#glossary-search-fr');
+  const chips = [...root.querySelectorAll('#glossary-bereich-filters .chip--filter')];
+  const groups = [...root.querySelectorAll('.glossary-list__group')];
+  if (!searchDe && !chips.length) return;
+
+  const activeBereiche = new Set();
+
+  const apply = () => {
+    const query = normalize((searchDe?.value || searchFr?.value || '').trim());
+    let anyGroupVisible = false;
+    groups.forEach((group) => {
+      let anyEntryVisible = false;
+      group.querySelectorAll('.glossary-list__entry').forEach((entry) => {
+        const bereiche = (entry.dataset.bereiche || '').split(' ').filter(Boolean);
+        const matchesBereich = activeBereiche.size === 0 || bereiche.some((b) => activeBereiche.has(b));
+        const matchesQuery = !query || normalize(entry.textContent).includes(query);
+        const visible = matchesBereich && matchesQuery;
+        entry.classList.toggle('is-hidden', !visible);
+        if (visible) anyEntryVisible = true;
+      });
+      group.classList.toggle('is-hidden', !anyEntryVisible);
+      if (anyEntryVisible) anyGroupVisible = true;
+    });
+    const emptyEl = root.querySelector('#glossary-empty');
+    if (emptyEl) emptyEl.hidden = anyGroupVisible;
+  };
+
+  [searchDe, searchFr].forEach((input) => {
+    if (!input) return;
+    input.addEventListener('input', () => {
+      if (searchDe && input !== searchDe) searchDe.value = input.value;
+      if (searchFr && input !== searchFr) searchFr.value = input.value;
+      apply();
+    });
+  });
+
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const id = chip.dataset.filterBereich;
+      chip.classList.toggle('is-active');
+      if (activeBereiche.has(id)) activeBereiche.delete(id);
+      else activeBereiche.add(id);
       apply();
     });
   });
@@ -392,7 +447,7 @@ function mountVideoFacades(root = document) {
 }
 
 // ---------- Client-side navigation ----------
-function swapMainContent(doc) {
+function swapMainContent(doc, hash = '') {
   const newMain = doc.getElementById('main-content');
   const oldMain = document.getElementById('main-content');
   if (!newMain || !oldMain) return false;
@@ -406,22 +461,25 @@ function swapMainContent(doc) {
   recordVisit();
   initProgressTracking();
   paintProgressBars();
-  window.scrollTo(0, 0);
+  initGlossaryPage(oldMain);
+  if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
+  else window.scrollTo(0, 0);
   return true;
 }
 
-async function navigate(url, push = true) {
+async function navigate(pathAndSearch, push = true, hash = '') {
   try {
-    const res = await fetch(url, { headers: { 'X-LernHub-Nav': '1' } });
+    const res = await fetch(pathAndSearch, { headers: { 'X-LernHub-Nav': '1' } });
     if (!res.ok) throw new Error('http ' + res.status);
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
-    const apply = () => swapMainContent(doc);
+    const apply = () => swapMainContent(doc, hash);
     if (document.startViewTransition) document.startViewTransition(apply);
     else apply();
-    if (push) history.pushState({ url }, '', url);
+    const fullUrl = pathAndSearch + hash;
+    if (push) history.pushState({ url: fullUrl }, '', fullUrl);
   } catch (err) {
-    window.location.href = url;
+    window.location.href = pathAndSearch + hash;
   }
 }
 
@@ -435,9 +493,9 @@ function initClientNav() {
     if (url.origin !== location.origin) return;
     if (url.pathname === location.pathname) return; // in-page anchors (TOC)
     e.preventDefault();
-    navigate(url.pathname);
+    navigate(url.pathname + url.search, true, url.hash);
   });
-  window.addEventListener('popstate', () => navigate(location.pathname, false));
+  window.addEventListener('popstate', () => navigate(location.pathname + location.search, false, location.hash));
 }
 
 // ---------- Service worker ----------
@@ -464,6 +522,7 @@ function boot() {
   initClientNav();
   mountWidgets();
   mountGlossaryTerms();
+  initGlossaryPage();
   initServiceWorker();
 
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {

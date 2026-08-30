@@ -658,10 +658,40 @@ body.print-vorlage-only .prev-next { display: none !important; }
 .area-header__cluster { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--color-text-muted); margin: 0; }
 
 /* ================= Glossary ================= */
+.glossary-controls { display: grid; gap: var(--space-3); margin-bottom: var(--space-6); }
+.glossary-controls__input {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+.glossary-alpha-nav { display: flex; flex-wrap: wrap; gap: var(--space-1); font-family: var(--font-mono); font-size: 0.8125rem; }
+.glossary-alpha-nav a {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.75rem; height: 1.75rem;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+}
+.glossary-alpha-nav a:hover { background: var(--color-surface-raised); color: var(--color-accent); }
+.glossary-list__group { margin-bottom: var(--space-5); }
+.glossary-list__group.is-hidden { display: none; }
+.glossary-list__letter {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-3);
+}
 .glossary-list__entry { border-top: 1px solid var(--color-border); padding-top: var(--space-3); margin-top: var(--space-3); }
+.glossary-list__entry.is-hidden { display: none; }
+.glossary-list__entry:first-child { border-top: none; margin-top: 0; }
 .glossary-list dt { font-weight: 700; }
 .glossary-list dd { margin: 0 0 var(--space-2); color: var(--color-text-muted); }
 .glossary-list dd em { color: var(--color-text-muted); }
+.glossary-list__bereiche { display: inline-block; font-size: 0.7rem; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.03em; color: var(--color-text-muted); background: var(--color-surface-raised); border-radius: 999px; padding: 0.15em 0.6em; }
 
 .glossary-term {
   display: inline;

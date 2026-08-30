@@ -6,7 +6,10 @@
     "kurz_de": "Die Anzahl der Frames (Einzelbilder) pro Sekunde (fps), die ein Video aufnimmt oder abspielt.",
     "kurz_fr": "Le nombre d'images (frames) par seconde (fps) qu'une vidéo enregistre ou lit.",
     "metapher_de": "Wie ein Daumenkino: mehr Einzelbilder pro Sekunde ergeben eine flüssigere Bewegung.",
-    "metapher_fr": "Comme un folioscope : plus d'images par seconde donnent un mouvement plus fluide."
+    "metapher_fr": "Comme un folioscope : plus d'images par seconde donnent un mouvement plus fluide.",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "frame",
@@ -15,7 +18,10 @@
     "kurz_de": "Ein einzelnes Bild in einer Videosequenz.",
     "kurz_fr": "Une image individuelle dans une séquence vidéo.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "seitenverhaeltnis",
@@ -24,7 +30,10 @@
     "kurz_de": "Das Verhältnis der Pixelmenge in Breite und Höhe, z. B. 16:9 (Querformat) oder 9:16 (Hochformat für Social Media).",
     "kurz_fr": "Le rapport entre le nombre de pixels en largeur et en hauteur, p. ex. 16:9 (paysage) ou 9:16 (portrait pour réseaux sociaux).",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "weissabgleich",
@@ -33,7 +42,10 @@
     "kurz_de": "Anpassung der Farbeinstellungen der Kamera an die Umgebung, damit Weiss auch wirklich weiss aussieht.",
     "kurz_fr": "Ajustement des réglages de couleur de la caméra à l'environnement, pour que le blanc paraisse vraiment blanc.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "pan",
@@ -42,7 +54,10 @@
     "kurz_de": "Eine horizontale Bewegung der Kamera von einem festen Punkt aus, von links nach rechts oder umgekehrt.",
     "kurz_fr": "Un mouvement horizontal de la caméra depuis un point fixe, de gauche à droite ou inversement.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "tilt",
@@ -51,7 +66,10 @@
     "kurz_de": "Eine vertikale Bewegung der Kamera von einem festen Punkt aus, nach oben oder unten.",
     "kurz_fr": "Un mouvement vertical de la caméra depuis un point fixe, vers le haut ou le bas.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "fokus",
@@ -60,7 +78,10 @@
     "kurz_de": "Der Teil des Bildes, der scharf dargestellt wird, während der Rest unscharf bleibt.",
     "kurz_fr": "La partie de l'image représentée nette, tandis que le reste reste flou.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "video-film"
+    ]
   },
   {
     "id": "goldener-schnitt",
@@ -69,7 +90,10 @@
     "kurz_de": "Eine Strecke wird so geteilt, dass sich der grössere Teil zum kleineren verhält wie die ganze Strecke zum grösseren Teil (Verhältnis ca. 1.618). Vereinfacht als Drittel-Regel bekannt.",
     "kurz_fr": "Un segment est divisé de sorte que la grande partie soit à la petite partie ce que le segment entier est à la grande partie (rapport env. 1.618). Simplifié en règle des tiers.",
     "metapher_de": "Wie ein Schneckenhaus oder ein Farnblatt — die Natur wächst oft nach diesem Verhältnis, weil es besonders harmonisch wirkt.",
-    "metapher_fr": "Comme une coquille d'escargot ou une feuille de fougère — la nature croît souvent selon ce rapport, car il paraît particulièrement harmonieux."
+    "metapher_fr": "Comme une coquille d'escargot ou une feuille de fougère — la nature croît souvent selon ce rapport, car il paraît particulièrement harmonieux.",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "foley",
@@ -78,7 +102,10 @@
     "kurz_de": "Nachträglich mit Hilfsmitteln erzeugte Nachahmungen von alltäglichen Geräuschen (Schritte, Türen, Stoffrascheln), die während des Drehs nicht sauber aufgenommen werden konnten.",
     "kurz_fr": "Imitations de bruits du quotidien (pas, portes, froissement de tissu) recréées après coup avec des accessoires, lorsqu'elles n'ont pas pu être enregistrées proprement pendant le tournage.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "raster-grafik",
@@ -87,7 +114,10 @@
     "kurz_de": "Ein Bild aus einzelnen Bildpunkten (Pixel), angeordnet in einem Raster — wie ein Mosaik. Beim Vergrössern werden nur die vorhandenen Pixel grösser, nie mehr.",
     "kurz_fr": "Une image composée de points individuels (pixels) disposés dans une grille — comme une mosaïque. En l'agrandissant, seuls les pixels existants grossissent, il n'y en a jamais plus.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "vektor-grafik",
@@ -96,7 +126,10 @@
     "kurz_de": "Ein Bild aus mathematisch berechneten Formen (Linien, Kurven, Flächen) statt aus Pixeln — dadurch verlustfrei skalierbar.",
     "kurz_fr": "Une image composée de formes calculées mathématiquement (lignes, courbes, surfaces) plutôt que de pixels — donc redimensionnable sans perte.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "farbtiefe",
@@ -105,7 +138,10 @@
     "kurz_de": "Die Anzahl Bits pro Pixel zur Speicherung der Farbinformation — bestimmt, wie viele unterschiedliche Farben ein Pixel annehmen kann.",
     "kurz_fr": "Le nombre de bits par pixel pour stocker l'information de couleur — détermine combien de couleurs différentes un pixel peut prendre.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "alphakanal",
@@ -114,7 +150,10 @@
     "kurz_de": "Ein vierter Bildkanal (neben Rot, Grün, Blau), der die Transparenz (Deckkraft) jedes Pixels festlegt.",
     "kurz_fr": "Un quatrième canal d'image (en plus du rouge, vert, bleu) qui définit la transparence (opacité) de chaque pixel.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "exif",
@@ -123,7 +162,11 @@
     "kurz_de": "Automatisch von der Kamera gespeicherte Zusatzinformationen zu einem Foto: Auflösung, Kameramodell, oft Datum, Uhrzeit und Geodaten.",
     "kurz_fr": "Informations complémentaires enregistrées automatiquement par l'appareil photo : résolution, modèle d'appareil, souvent date, heure et données de géolocalisation.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung",
+      "recherche-digitale-arbeitswelt"
+    ]
   },
   {
     "id": "rgb",
@@ -132,7 +175,10 @@
     "kurz_de": "Additives Farbmodell aus Rot, Grün und Blau, verwendet für Bildschirme und Licht.",
     "kurz_fr": "Modèle de couleur additif composé de rouge, vert et bleu, utilisé pour les écrans et la lumière.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "cmyk",
@@ -141,7 +187,10 @@
     "kurz_de": "Subtraktives Farbmodell aus Cyan, Magenta, Gelb und Schwarz, verwendet im Druck.",
     "kurz_fr": "Modèle de couleur soustractif composé de cyan, magenta, jaune et noir, utilisé pour l'impression.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "quellenkritik",
@@ -150,7 +199,10 @@
     "kurz_de": "Systematische Prüfung einer Informationsquelle auf Urheberschaft, Aktualität, Bestätigung und Sprache.",
     "kurz_fr": "Vérification systématique d'une source d'information quant à son auteur, son actualité, sa confirmation et son langage.",
     "metapher_de": "",
-    "metapher_fr": ""
+    "metapher_fr": "",
+    "bereiche": [
+      "recherche-digitale-arbeitswelt"
+    ]
   },
   {
     "id": "frequenz",
@@ -159,7 +211,10 @@
     "kurz_de": "Wie schnell die Luft schwingt, gemessen in Hertz (Hz) – bestimmt die Tonhöhe.",
     "kurz_fr": "La vitesse à laquelle l'air vibre, mesurée en hertz (Hz) – détermine la hauteur du son.",
     "metapher_de": "Wie Wellen am Ufer: viele kleine Wellen schnell hintereinander = hoher Ton, wenige grosse Wellen langsam = tiefer Ton.",
-    "metapher_fr": "Comme les vagues sur le rivage : beaucoup de petites vagues rapprochées = son aigu, quelques grandes vagues lentes = son grave."
+    "metapher_fr": "Comme les vagues sur le rivage : beaucoup de petites vagues rapprochées = son aigu, quelques grandes vagues lentes = son grave.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "hz",
@@ -168,7 +223,10 @@
     "kurz_de": "Masseinheit für Frequenz – Anzahl Schwingungen pro Sekunde.",
     "kurz_fr": "Unité de mesure de la fréquence – nombre d'oscillations par seconde.",
     "metapher_de": "Wie die Anzahl Wellen, die pro Sekunde ans Ufer rollen.",
-    "metapher_fr": "Comme le nombre de vagues qui arrivent sur le rivage chaque seconde."
+    "metapher_fr": "Comme le nombre de vagues qui arrivent sur le rivage chaque seconde.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "db",
@@ -177,7 +235,10 @@
     "kurz_de": "Kein festes Mass, sondern ein logarithmisches Verhältnis zwischen zwei Werten.",
     "kurz_fr": "Pas une mesure fixe, mais un rapport logarithmique entre deux valeurs.",
     "metapher_de": "Wie die Richterskala bei Erdbeben: ein kleiner Zahlensprung bedeutet einen viel grösseren tatsächlichen Unterschied.",
-    "metapher_fr": "Comme l'échelle de Richter pour les séismes : un petit saut de chiffre représente une différence réelle bien plus grande."
+    "metapher_fr": "Comme l'échelle de Richter pour les séismes : un petit saut de chiffre représente une différence réelle bien plus grande.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "dbfs",
@@ -186,7 +247,10 @@
     "kurz_de": "Misst den Spitzenpegel relativ zum digitalen Maximum – 0 dBFS ist die absolute Obergrenze.",
     "kurz_fr": "Mesure le niveau de crête par rapport au maximum numérique – 0 dBFS est la limite absolue.",
     "metapher_de": "Wie ein Glas, das du befüllst: 0 dBFS ist der Rand – darüber läuft es hässlich über (Clipping).",
-    "metapher_fr": "Comme un verre que tu remplis : 0 dBFS est le bord – au-delà, ça déborde de façon disgracieuse (écrêtage)."
+    "metapher_fr": "Comme un verre que tu remplis : 0 dBFS est le bord – au-delà, ça déborde de façon disgracieuse (écrêtage).",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "lufs",
@@ -195,7 +259,10 @@
     "kurz_de": "Misst die wahrgenommene Lautheit über die ganze Aufnahme hinweg, nicht nur die Spitze.",
     "kurz_fr": "Mesure le volume perçu sur l'ensemble de l'enregistrement, pas seulement le pic.",
     "metapher_de": "Wie die Durchschnittsnote über ein ganzes Konzert statt nur die höchste Note eines einzigen Lieds.",
-    "metapher_fr": "Comme la note moyenne sur tout un concert plutôt que la note la plus haute d'une seule chanson."
+    "metapher_fr": "Comme la note moyenne sur tout un concert plutôt que la note la plus haute d'une seule chanson.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "samplerate",
@@ -204,7 +271,10 @@
     "kurz_de": "Wie oft pro Sekunde ein Messwert des Signals genommen wird (z. B. 44,1/48 kHz).",
     "kurz_fr": "À quelle fréquence par seconde une mesure du signal est prise (p. ex. 44,1/48 kHz).",
     "metapher_de": "Wie ein Regenmesser, der öfter abliest – häufigere Messungen zeichnen den tatsächlichen Verlauf genauer nach, sonst rutschen kurze Spitzen durch.",
-    "metapher_fr": "Comme un pluviomètre qui relève plus souvent – des mesures plus fréquentes reproduisent plus fidèlement la réalité, sinon de courts pics passent inaperçus."
+    "metapher_fr": "Comme un pluviomètre qui relève plus souvent – des mesures plus fréquentes reproduisent plus fidèlement la réalité, sinon de courts pics passent inaperçus.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "bittiefe",
@@ -213,7 +283,10 @@
     "kurz_de": "Wie fein jede Messung die Lautstärke abstuft (z. B. 16-, 24-, 32-Bit-Float).",
     "kurz_fr": "La finesse avec laquelle chaque mesure nuance le volume (p. ex. 16, 24, 32 bits flottant).",
     "metapher_de": "Wie die Anzahl Graustufen in einem Foto – mehr Stufen wirken feiner und natürlicher statt blockig.",
-    "metapher_fr": "Comme le nombre de nuances de gris dans une photo – plus de nuances paraissent plus fines et naturelles, moins pixellisées."
+    "metapher_fr": "Comme le nombre de nuances de gris dans une photo – plus de nuances paraissent plus fines et naturelles, moins pixellisées.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "clipping",
@@ -222,7 +295,10 @@
     "kurz_de": "Entsteht, wenn ein Signal lauter sein will als 0 dBFS – die Spitzen werden hart abgeschnitten.",
     "kurz_fr": "Se produit quand un signal veut être plus fort que 0 dBFS – les pics sont brutalement coupés.",
     "metapher_de": "Das randvolle Glas läuft über: Was über den Rand läuft, ist unwiederbringlich weg – zurück ins Glas giessen geht nicht.",
-    "metapher_fr": "Le verre plein déborde : ce qui coule par-dessus le bord est perdu pour de bon – impossible de le reverser dans le verre."
+    "metapher_fr": "Le verre plein déborde : ce qui coule par-dessus le bord est perdu pour de bon – impossible de le reverser dans le verre.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "rauschabstand",
@@ -231,7 +307,10 @@
     "kurz_de": "Verhältnis zwischen dem gewünschten Nutzsignal und dem ungewollten Grundrauschen.",
     "kurz_fr": "Rapport entre le signal utile souhaité et le bruit de fond indésirable.",
     "metapher_de": "Wie ein Gespräch in einer lauten Beiz – deine Stimme muss deutlich über dem Hintergrundgemurmel liegen.",
-    "metapher_fr": "Comme une conversation dans un bar bruyant – ta voix doit nettement dominer le brouhaha ambiant."
+    "metapher_fr": "Comme une conversation dans un bar bruyant – ta voix doit nettement dominer le brouhaha ambiant.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "mono",
@@ -240,7 +319,10 @@
     "kurz_de": "Ein einzelner Audiokanal, kein Raumeindruck.",
     "kurz_fr": "Un seul canal audio, aucune impression spatiale.",
     "metapher_de": "Wie mit einem Auge sehen – kein räumlicher Eindruck.",
-    "metapher_fr": "Comme voir avec un seul œil – aucune impression de profondeur."
+    "metapher_fr": "Comme voir avec un seul œil – aucune impression de profondeur.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "stereo",
@@ -249,7 +331,10 @@
     "kurz_de": "Zwei getrennte Kanäle (links/rechts), die zusammen Raumklang erzeugen.",
     "kurz_fr": "Deux canaux séparés (gauche/droite) qui créent ensemble un son spatial.",
     "metapher_de": "Wie mit zwei Augen sehen – es entsteht Tiefe/Räumlichkeit.",
-    "metapher_fr": "Comme voir avec deux yeux – une impression de profondeur apparaît."
+    "metapher_fr": "Comme voir avec deux yeux – une impression de profondeur apparaît.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "wav",
@@ -258,7 +343,10 @@
     "kurz_de": "Unkomprimiertes, verlustfreies Audioformat – grosse Dateien, ideal zum Bearbeiten.",
     "kurz_fr": "Format audio non compressé et sans perte – fichiers volumineux, idéal pour le montage.",
     "metapher_de": "Wie ein RAW-Foto: das Rohmaterial für die Bearbeitung.",
-    "metapher_fr": "Comme une photo RAW : la matière première pour le montage."
+    "metapher_fr": "Comme une photo RAW : la matière première pour le montage.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "mp3",
@@ -267,7 +355,10 @@
     "kurz_de": "Komprimiertes, verlustbehaftetes Format – kleine Dateien für die Weitergabe.",
     "kurz_fr": "Format compressé avec perte – petits fichiers pour la diffusion.",
     "metapher_de": "Wie ein JPEG: klein und praktisch fürs Versenden/Veröffentlichen.",
-    "metapher_fr": "Comme un JPEG : petit et pratique pour l'envoi ou la publication."
+    "metapher_fr": "Comme un JPEG : petit et pratique pour l'envoi ou la publication.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "richtcharakteristik",
@@ -276,7 +367,10 @@
     "kurz_de": "Aus welcher Richtung ein Mikrofon Schall bevorzugt aufnimmt (Kugel, Niere, Acht, …).",
     "kurz_fr": "La direction depuis laquelle un micro capte le son en priorité (omnidirectionnel, cardioïde, bidirectionnel, …).",
     "metapher_de": "Wie der Lichtkegel einer Taschenlampe – manche leuchten rundum, manche nur eng nach vorne wie ein Spot.",
-    "metapher_fr": "Comme le faisceau d'une lampe de poche – certaines éclairent tout autour, d'autres seulement droit devant, comme un spot."
+    "metapher_fr": "Comme le faisceau d'une lampe de poche – certaines éclairent tout autour, d'autres seulement droit devant, comme un spot.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "gain",
@@ -285,7 +379,10 @@
     "kurz_de": "Die Eingangsverstärkung eines Mikrofonsignals, bevor es aufgezeichnet wird.",
     "kurz_fr": "L'amplification d'entrée d'un signal de microphone avant son enregistrement.",
     "metapher_de": "Wie der Lautstärkeregler am Mikrofoneingang, nicht am Lautsprecher.",
-    "metapher_fr": "Comme le réglage de volume à l'entrée du micro, pas sur le haut-parleur."
+    "metapher_fr": "Comme le réglage de volume à l'entrée du micro, pas sur le haut-parleur.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "phantomspeisung",
@@ -294,7 +391,10 @@
     "kurz_de": "Stromversorgung, die Kondensatormikrofone über das Audiokabel benötigen.",
     "kurz_fr": "Alimentation électrique dont les microphones à condensateur ont besoin via le câble audio.",
     "metapher_de": "Wie ein Ladekabel, das gleichzeitig als Datenkabel dient.",
-    "metapher_fr": "Comme un câble de charge qui sert en même temps de câble de données."
+    "metapher_fr": "Comme un câble de charge qui sert en même temps de câble de données.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "threshold",
@@ -303,7 +403,10 @@
     "kurz_de": "Der Pegel, ab dem ein Kompressor überhaupt eingreift.",
     "kurz_fr": "Le niveau à partir duquel un compresseur commence à intervenir.",
     "metapher_de": "Wie eine Türschwelle: erst wer sie überschreitet, wird gebremst.",
-    "metapher_fr": "Comme le seuil d'une porte : seul celui qui le franchit est ralenti."
+    "metapher_fr": "Comme le seuil d'une porte : seul celui qui le franchit est ralenti.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "ratio",
@@ -312,7 +415,10 @@
     "kurz_de": "Wie stark ein Kompressor oberhalb des Thresholds reduziert (z. B. 4:1).",
     "kurz_fr": "Dans quelle mesure un compresseur réduit le signal au-dessus du seuil (p. ex. 4:1).",
     "metapher_de": "Wie eine Übersetzung am Fahrrad: 4:1 heisst, du musst 4-mal so stark treten, um 1-mal so schnell schneller zu werden.",
-    "metapher_fr": "Comme un rapport de vitesse sur un vélo : 4:1 signifie qu'il faut pédaler 4 fois plus fort pour aller seulement 1 fois plus vite."
+    "metapher_fr": "Comme un rapport de vitesse sur un vélo : 4:1 signifie qu'il faut pédaler 4 fois plus fort pour aller seulement 1 fois plus vite.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "attackrelease",
@@ -321,7 +427,10 @@
     "kurz_de": "Attack: wie schnell ein Effekt eingreift. Release: wie schnell er wieder loslässt.",
     "kurz_fr": "Attack : la vitesse à laquelle un effet intervient. Release : la vitesse à laquelle il relâche.",
     "metapher_de": "Wie eine Bremse im Auto: Attack ist, wie schnell sie greift, Release, wie schnell sie wieder löst.",
-    "metapher_fr": "Comme le frein d'une voiture : l'attack, c'est la vitesse à laquelle il mord, le release, la vitesse à laquelle il relâche."
+    "metapher_fr": "Comme le frein d'une voiture : l'attack, c'est la vitesse à laquelle il mord, le release, la vitesse à laquelle il relâche.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "kompressor",
@@ -330,7 +439,10 @@
     "kurz_de": "Verringert den Dynamikumfang – laute Stellen werden automatisch leiser.",
     "kurz_fr": "Réduit la plage dynamique – les passages forts sont automatiquement atténués.",
     "metapher_de": "Wie ein unsichtbarer DJ, der ständig leise den Lautstärkeregler nachjustiert.",
-    "metapher_fr": "Comme un DJ invisible qui ajuste sans cesse et discrètement le réglage de volume."
+    "metapher_fr": "Comme un DJ invisible qui ajuste sans cesse et discrètement le réglage de volume.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "eq",
@@ -339,7 +451,10 @@
     "kurz_de": "Hebt oder senkt gezielt einzelne Frequenzbereiche an.",
     "kurz_fr": "Augmente ou réduit de manière ciblée certaines plages de fréquences.",
     "metapher_de": "Wie ein Küchen-Sieb mit verstellbaren Maschen für bestimmte Tonhöhen statt Zutaten.",
-    "metapher_fr": "Comme une passoire de cuisine à mailles réglables, mais pour des hauteurs de son plutôt que des ingrédients."
+    "metapher_fr": "Comme une passoire de cuisine à mailles réglables, mais pour des hauteurs de son plutôt que des ingrédients.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "deesser",
@@ -348,7 +463,10 @@
     "kurz_de": "Ein spezialisierter Kompressor, der nur im Zischlaut-Bereich (4–10 kHz) eingreift.",
     "kurz_fr": "Un compresseur spécialisé qui n'intervient que dans la zone des sifflantes (4–10 kHz).",
     "metapher_de": "Wie ein Türsteher, der nur bei einer ganz bestimmten Personengruppe genauer hinschaut.",
-    "metapher_fr": "Comme un videur qui ne surveille de près qu'un groupe de personnes bien précis."
+    "metapher_fr": "Comme un videur qui ne surveille de près qu'un groupe de personnes bien précis.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "acx",
@@ -357,7 +475,10 @@
     "kurz_de": "Verbreitete Pegel-Richtwerte für Sprachaufnahmen: Noise Floor max. −60 dB, RMS −23 bis −18 dB, Peaks max. −3 dB.",
     "kurz_fr": "Valeurs de référence courantes pour les enregistrements vocaux : bruit de fond max. −60 dB, RMS −23 à −18 dB, pics max. −3 dB.",
     "metapher_de": "Wie eine Ampel-Checkliste vor dem Start: erst wenn alles im grünen Bereich ist, geht's los.",
-    "metapher_fr": "Comme une checklist à feux tricolores avant le départ : on ne démarre que si tout est au vert."
+    "metapher_fr": "Comme une checklist à feux tricolores avant le départ : on ne démarre que si tout est au vert.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "atmo",
@@ -366,7 +487,10 @@
     "kurz_de": "Die Hintergrund-Klangkulisse einer Szene, die eine Aufnahme glaubwürdig macht.",
     "kurz_fr": "La toile de fond sonore d'une scène, qui rend un enregistrement crédible.",
     "metapher_de": "Wie die Luft in einem Raum – unsichtbar, aber sofort spürbar, wenn sie fehlt.",
-    "metapher_fr": "Comme l'air dans une pièce – invisible, mais immédiatement remarqué s'il manque."
+    "metapher_fr": "Comme l'air dans une pièce – invisible, mais immédiatement remarqué s'il manque.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "sfx",
@@ -375,7 +499,10 @@
     "kurz_de": "Gezielte, einzelne Klang-Akzente – ein Türknarren, ein Klick, ein Whoosh.",
     "kurz_fr": "Des accents sonores ponctuels et ciblés – un grincement de porte, un clic, un whoosh.",
     "metapher_de": "Wie Satzzeichen in einem Text: kurz, aber sie geben Struktur und Betonung.",
-    "metapher_fr": "Comme la ponctuation dans un texte : brève, mais elle donne structure et emphase."
+    "metapher_fr": "Comme la ponctuation dans un texte : brève, mais elle donne structure et emphase.",
+    "bereiche": [
+      "audio"
+    ]
   },
   {
     "id": "lichtbildschutz",
@@ -384,7 +511,10 @@
     "kurz_de": "Seit der URG-Revision 2020 ist jedes Foto automatisch geschützt, auch ohne künstlerischen Anspruch (Art. 2 Abs. 3bis URG).",
     "kurz_fr": "Depuis la révision de la LDA de 2020, toute photo est automatiquement protégée, même sans caractère artistique (art. 2 al. 3bis LDA).",
     "metapher_de": "Wie ein Sicherheitsgurt, der sich beim Einsteigen von selbst anlegt – der Schutz gilt automatisch, ohne dass du etwas dafür tun musst.",
-    "metapher_fr": "Comme une ceinture de sécurité qui s'attache toute seule en montant en voiture – la protection s'applique automatiquement, sans rien faire."
+    "metapher_fr": "Comme une ceinture de sécurité qui s'attache toute seule en montant en voiture – la protection s'applique automatiquement, sans rien faire.",
+    "bereiche": [
+      "recht-ethik-sicherheit"
+    ]
   },
   {
     "id": "panoramafreiheit",
@@ -393,7 +523,10 @@
     "kurz_de": "Werke an dauerhaft öffentlich zugänglichen Orten dürfen fotografiert und die Fotos verbreitet werden (Art. 27 URG).",
     "kurz_fr": "Les œuvres situées en permanence dans des lieux publics peuvent être photographiées et les photos diffusées (art. 27 LDA).",
     "metapher_de": "Wie ein Museum mit Fotografiererlaubnis: Was permanent im öffentlichen Raum ausgestellt ist, darfst du ablichten und zeigen.",
-    "metapher_fr": "Comme un musée qui autorise la photo : ce qui est exposé en permanence dans l'espace public peut être photographié et montré."
+    "metapher_fr": "Comme un musée qui autorise la photo : ce qui est exposé en permanence dans l'espace public peut être photographié et montré.",
+    "bereiche": [
+      "recht-ethik-sicherheit"
+    ]
   },
   {
     "id": "art28zgb",
@@ -402,7 +535,10 @@
     "kurz_de": "Eine Persönlichkeitsverletzung ist widerrechtlich, ausser sie ist durch Einwilligung, überwiegendes Interesse oder Gesetz gerechtfertigt.",
     "kurz_fr": "Une atteinte à la personnalité est illicite, sauf si elle est justifiée par un consentement, un intérêt prépondérant ou la loi.",
     "metapher_de": "Wie ein Zaun um dein Grundstück: Grundsätzlich darf niemand rein, ausser du lässt jemanden bewusst herein oder es gibt einen triftigen Grund.",
-    "metapher_fr": "Comme une clôture autour de ta propriété : en principe, personne n'entre, sauf si tu le permets sciemment ou qu'il y a un motif valable."
+    "metapher_fr": "Comme une clôture autour de ta propriété : en principe, personne n'entre, sauf si tu le permets sciemment ou qu'il y a un motif valable.",
+    "bereiche": [
+      "recht-ethik-sicherheit"
+    ]
   },
   {
     "id": "revdsg",
@@ -411,7 +547,10 @@
     "kurz_de": "Das revidierte Schweizer Datenschutzgesetz (seit 1.9.2023), das auch Foto-/Videoaufnahmen als Personendaten erfasst.",
     "kurz_fr": "La loi suisse révisée sur la protection des données (depuis le 1.9.2023), qui considère aussi les photos/vidéos comme des données personnelles.",
     "metapher_de": "Wie ein Beipackzettel, den du VOR der Einnahme lesen musst: Betroffene müssen vorab wissen, wofür ihre Daten verwendet werden.",
-    "metapher_fr": "Comme une notice qu'il faut lire AVANT de prendre le médicament : les personnes concernées doivent savoir à l'avance à quoi serviront leurs données."
+    "metapher_fr": "Comme une notice qu'il faut lire AVANT de prendre le médicament : les personnes concernées doivent savoir à l'avance à quoi serviront leurs données.",
+    "bereiche": [
+      "recht-ethik-sicherheit"
+    ]
   },
   {
     "id": "pixel",
@@ -420,7 +559,10 @@
     "kurz_de": "Der kleinste Bildpunkt eines digitalen Bilds – aus vielen davon setzt sich das ganze Bild zusammen.",
     "kurz_fr": "Le plus petit point d'une image numérique – l'image entière se compose d'une multitude de pixels.",
     "metapher_de": "Wie ein Steinchen in einem Mosaik: einzeln unscheinbar, aber zusammen mit vielen anderen ergeben sie ein Bild.",
-    "metapher_fr": "Comme un petit carreau de mosaïque : discret seul, mais avec beaucoup d'autres, il forme une image."
+    "metapher_fr": "Comme un petit carreau de mosaïque : discret seul, mais avec beaucoup d'autres, il forme une image.",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "aufloesung",
@@ -429,7 +571,11 @@
     "kurz_de": "Wie viele Pixel ein Bild insgesamt hat (z. B. 1920×1080) – mehr Pixel bedeuten mehr Detail.",
     "kurz_fr": "Le nombre total de pixels d'une image (p. ex. 1920×1080) – plus de pixels signifie plus de détails.",
     "metapher_de": "Wie die Anzahl Mosaiksteinchen auf derselben Fläche: mehr, kleinere Steinchen ergeben ein feineres, detailreicheres Bild.",
-    "metapher_fr": "Comme le nombre de carreaux de mosaïque sur la même surface : plus de carreaux, plus petits, donnent une image plus fine et détaillée."
+    "metapher_fr": "Comme le nombre de carreaux de mosaïque sur la même surface : plus de carreaux, plus petits, donnent une image plus fine et détaillée.",
+    "bereiche": [
+      "bild-bildbearbeitung",
+      "video-film"
+    ]
   },
   {
     "id": "ebenen",
@@ -438,7 +584,10 @@
     "kurz_de": "Erlauben es, Bildelemente unabhängig voneinander zu bearbeiten – wie transparente Folien übereinander.",
     "kurz_fr": "Permettent de modifier des éléments d'image indépendamment les uns des autres – comme des feuilles transparentes superposées.",
     "metapher_de": "Wie ein Stapel durchsichtiger Folien auf einem Overhead-Projektor: jede Folie lässt sich einzeln verschieben oder verändern.",
-    "metapher_fr": "Comme une pile de transparents sur un rétroprojecteur : chaque feuille peut être déplacée ou modifiée séparément."
+    "metapher_fr": "Comme une pile de transparents sur un rétroprojecteur : chaque feuille peut être déplacée ou modifiée séparément.",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   },
   {
     "id": "maske",
@@ -447,6 +596,9 @@
     "kurz_de": "Blendet Teile einer Ebene aus, ohne sie zu löschen – jederzeit rückgängig machbar.",
     "kurz_fr": "Masque une partie d'un calque sans la supprimer – réversible à tout moment.",
     "metapher_de": "Wie ein Stück Klebeband auf einer Folie: verdeckt einen Teil, ohne die Folie zu zerschneiden – Klebeband ab, und alles ist wieder da.",
-    "metapher_fr": "Comme un morceau de ruban adhésif sur un transparent : cache une partie sans découper la feuille – on l'enlève, et tout réapparaît."
+    "metapher_fr": "Comme un morceau de ruban adhésif sur un transparent : cache une partie sans découper la feuille – on l'enlève, et tout réapparaît.",
+    "bereiche": [
+      "bild-bildbearbeitung"
+    ]
   }
 ]
