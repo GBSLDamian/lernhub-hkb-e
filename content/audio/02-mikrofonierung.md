@@ -55,33 +55,39 @@ La {{glossar:richtcharakteristik}} décrit la direction depuis laquelle un micro
 :::
 :::
 
+![Grossmembran-Kondensatormikrofon in einer Mikrofonspinne](/assets/img/mikrofone/kondensatormikrofon.jpg)
+
 :::konzept titel_de="Dynamisch vs. Kondensator" titel_fr="Dynamique vs. condensateur"
 :::de
 **Dynamische Mikrofone** sind robust, brauchen keine Stromversorgung, verzeihen unbehandelte Räume. **Kondensatormikrofone** sind empfindlicher, detailreicher, brauchen meist {{glossar:phantomspeisung}}.
 
 **Metapher:** Dynamisch ist wie ein robuster Arbeitshandschuh. Kondensator ist wie ein hauchdünner OP-Handschuh — spürt jedes Detail, muss aber vorsichtig behandelt werden.
-:::
 
-![Grossmembran-Kondensatormikrofon in einer Mikrofonspinne](/assets/img/mikrofone/kondensatormikrofon.jpg)
-*Foto: StockSnap, CC0*
+*(Foto: StockSnap, CC0)*
+:::
 :::fr
 Les **microphones dynamiques** sont robustes, ne nécessitent pas d'alimentation, tolèrent les pièces non traitées. Les **microphones à condensateur** sont plus sensibles, plus détaillés, nécessitent généralement une {{glossar:phantomspeisung}}.
 
 **Métaphore :** le dynamique est comme un gant de travail robuste. Le condensateur est comme un gant de chirurgie très fin — il perçoit chaque détail, mais doit être manié avec précaution.
+
+*(Photo : StockSnap, CC0)*
 :::
 :::
 
 :::h2 de="Aufnahme-Best-Practices" fr="Bonnes pratiques d'enregistrement":::
 
+![Person mit Kopfhörern spricht in ein Mikrofon mit Popschutz](/assets/img/mikrofone/popschutz.jpg)
+
 :::de
 **Positionierung:** Lavalier-Mikrofon ca. 15–20 cm vom Mund entfernt befestigen. Ein Windschutz/Popschutz reduziert Wind- und Plosivlaute (P, B) — hilft aber **nicht** gegen Zischlaute. **Raumakustik:** harte, parallele Flächen erzeugen Nachhall — Abhilfe schaffen Vorhänge, Teppiche, Kissen, kleine textilreiche Räume.
+
+*(Foto: StockSnap, CC0)*
 :::
 :::fr
 **Positionnement :** fixer le micro-cravate à env. 15–20 cm de la bouche. Une bonnette réduit les bruits de vent et les plosives (P, B) — mais **pas** les sifflantes. **Acoustique de la pièce :** les surfaces dures et parallèles créent de la réverbération — rideaux, tapis, coussins et petites pièces textiles y remédient.
-:::
 
-![Person mit Kopfhörern spricht in ein Mikrofon mit Popschutz](/assets/img/mikrofone/popschutz.jpg)
-*Foto: StockSnap, CC0*
+*(Photo : StockSnap, CC0)*
+:::
 
 :::konzept titel_de="Aussteuerung / Gain Staging" titel_fr="Réglage des niveaux (gain staging)"
 :::de
