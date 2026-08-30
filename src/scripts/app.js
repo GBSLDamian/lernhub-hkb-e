@@ -12,6 +12,18 @@ const LS = {
 const WIDGET_MODULES = {
   'kontrast-checker': '/assets/widgets/kontrast-checker.js',
   'rgb-cmyk-mischer': '/assets/widgets/rgb-cmyk-mischer.js',
+  'font-switcher': '/assets/widgets/font-switcher.js',
+  'vorlage': '/assets/widgets/vorlage.js',
+  'decision-widget': '/assets/widgets/decision-widget.js',
+  'reihenfolge-spiel': '/assets/widgets/reihenfolge-spiel.js',
+  'zone-sort': '/assets/widgets/zone-sort.js',
+  'checkliste': '/assets/widgets/checkliste.js',
+  'technik-karten': '/assets/widgets/technik-karten.js',
+  'ab-player': '/assets/widgets/ab-player.js',
+  'sound-rezept': '/assets/widgets/sound-rezept.js',
+  'shotlist': '/assets/widgets/shotlist.js',
+  'format-matcher': '/assets/widgets/format-matcher.js',
+  'quiz': '/assets/widgets/quiz.js',
 };
 
 function safeGet(key) {
@@ -287,20 +299,74 @@ function initReset() {
 }
 
 // ---------- Widgets ----------
+// Contract: each widget module exports mount(container, config). `config` is
+// parsed from the mount element's data-widget-config JSON (or null).
 async function mountWidgets(root = document) {
-  const slugs = new Set(
-    [...root.querySelectorAll('[data-widget-mount]')].map((el) => el.dataset.widgetMount)
-  );
-  for (const slug of slugs) {
+  const elements = [...root.querySelectorAll('[data-widget-mount]:not([data-initialized])')];
+  const bySlug = new Map();
+  elements.forEach((el) => {
+    const slug = el.dataset.widgetMount;
+    if (!bySlug.has(slug)) bySlug.set(slug, []);
+    bySlug.get(slug).push(el);
+  });
+  for (const [slug, els] of bySlug) {
     const src = WIDGET_MODULES[slug];
-    if (!src) continue;
+    if (!src) {
+      console.warn('Unbekanntes Widget:', slug);
+      continue;
+    }
     try {
       const mod = await import(src);
-      mod.initAll?.();
+      for (const el of els) {
+        el.dataset.initialized = 'true';
+        let config = null;
+        if (el.dataset.widgetConfig) {
+          try { config = JSON.parse(el.dataset.widgetConfig); } catch (e) {
+            console.error('Ungültige Widget-Konfiguration:', slug, e);
+          }
+        }
+        mod.mount?.(el, config);
+      }
     } catch (err) {
       console.error('Widget konnte nicht geladen werden:', slug, err);
     }
   }
+}
+
+// ---------- Glossary term popups ----------
+let glossaryPromise = null;
+function loadGlossary() {
+  if (!glossaryPromise) glossaryPromise = fetch('/glossary.json').then((r) => r.json()).catch(() => []);
+  return glossaryPromise;
+}
+function mountGlossaryTerms(root = document) {
+  const buttons = [...root.querySelectorAll('.glossary-term:not([data-initialized])')];
+  if (!buttons.length) return;
+  loadGlossary().then((entries) => {
+    const map = new Map(entries.map((e) => [e.id, e]));
+    buttons.forEach((btn) => {
+      btn.dataset.initialized = 'true';
+      const entry = map.get(btn.dataset.term);
+      if (!entry) return;
+      const popup = document.createElement('span');
+      popup.className = 'glossary-term__popup';
+      popup.hidden = true;
+      popup.innerHTML = `
+        <strong data-lang="de">${entry.begriff_de}</strong><strong data-lang="fr">${entry.begriff_fr}</strong><br>
+        <span data-lang="de">${entry.kurz_de}</span><span data-lang="fr">${entry.kurz_fr}</span>
+        ${entry.metapher_de ? `<br><em data-lang="de">Metapher: ${entry.metapher_de}</em><em data-lang="fr">Métaphore : ${entry.metapher_fr || ''}</em>` : ''}
+      `;
+      btn.insertAdjacentElement('afterend', popup);
+      btn.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', () => {
+        const willShow = popup.hidden;
+        root.querySelectorAll('.glossary-term__popup').forEach((p) => { p.hidden = true; });
+        root.querySelectorAll('.glossary-term').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+        popup.hidden = !willShow;
+        btn.setAttribute('aria-expanded', String(willShow));
+      });
+    });
+  });
 }
 
 // ---------- Client-side navigation ----------
@@ -314,6 +380,7 @@ function swapMainContent(doc) {
   document.body.dataset.lesson = doc.body.dataset.lesson || '';
   updateActiveNav();
   mountWidgets(oldMain);
+  mountGlossaryTerms(oldMain);
   recordVisit();
   initProgressTracking();
   paintProgressBars();
@@ -374,6 +441,7 @@ function boot() {
   paintContinueLearning();
   initClientNav();
   mountWidgets();
+  mountGlossaryTerms();
   initServiceWorker();
 
   matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {

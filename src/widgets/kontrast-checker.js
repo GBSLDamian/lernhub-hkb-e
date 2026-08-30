@@ -67,11 +67,6 @@ function render(mount) {
   update();
 }
 
-export function initAll() {
-  document.querySelectorAll('[data-widget-mount="kontrast-checker"]:not([data-initialized])').forEach((mount) => {
-    mount.dataset.initialized = 'true';
-    render(mount);
-  });
+export function mount(container) {
+  render(container);
 }
-
-initAll();

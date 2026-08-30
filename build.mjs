@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import http from 'node:http';
 
-import { parseFrontmatter, parseBody, renderBody, extractText, collectWidgets } from './src/lib/content.mjs';
+import { parseFrontmatter, parseBody, renderBody, extractText, collectWidgets, setGlossary } from './src/lib/content.mjs';
 import { pageShell, dualLabel, metaChips, TYP_LABEL } from './src/lib/templates.mjs';
 import { icon, iconNames } from './src/lib/icons.mjs';
 
@@ -33,15 +33,15 @@ async function loadLessons(areas) {
       const raw = await readFile(path.join(dir, file), 'utf8');
       const { data, body } = parseFrontmatter(raw);
       const ast = parseBody(body);
-      const headings = [];
-      const bodyHtml = renderBody(ast, headings);
+      const renderCtx = { headings: [], lang: null, widgetIndex: 0 };
+      const bodyHtml = renderBody(ast, renderCtx);
       const widgets = [...collectWidgets(ast)];
       lessons.push({
         ...data,
         areaId: area.id,
         href: `/${area.id}/${data.id}/`,
         bodyHtml,
-        headings,
+        headings: renderCtx.headings,
         widgets,
         textDe: extractText(ast, 'de'),
         textFr: extractText(ast, 'fr'),
@@ -102,7 +102,6 @@ function buildLessonPage(lesson, area, cluster, prev, next, ctx) {
     areas: ctx.areas,
     trail: lessonTrail(area, lesson),
     headings: lesson.headings,
-    widgets: lesson.widgets,
     prev: prev && { href: prev.href, titel_de: prev.titel_de, titel_fr: prev.titel_fr },
     next: next && { href: next.href, titel_de: next.titel_de, titel_fr: next.titel_fr },
   });
@@ -221,9 +220,14 @@ function buildHomePage(ctx) {
 }
 
 function buildGlossaryPage(glossary, ctx) {
-  const items = glossary
+  const sorted = [...glossary].sort((a, b) => a.begriff_de.localeCompare(b.begriff_de, 'de'));
+  const items = sorted
     .map(
-      (g) => `<dt data-lang="de">${g.begriff}</dt><dd data-lang="de">${g.de}</dd><dt data-lang="fr">${g.begriff}</dt><dd data-lang="fr">${g.fr}</dd>`
+      (g) => `<div class="glossary-list__entry" id="glossar-${g.id}">
+  <dt data-lang="de">${g.begriff_de}</dt><dt data-lang="fr">${g.begriff_fr}</dt>
+  <dd data-lang="de">${g.kurz_de}${g.metapher_de ? `<br><em>Metapher: ${g.metapher_de}</em>` : ''}</dd>
+  <dd data-lang="fr">${g.kurz_fr}${g.metapher_fr ? `<br><em>Métaphore : ${g.metapher_fr}</em>` : ''}</dd>
+</div>`
     )
     .join('\n');
   const bodyHtml = `<header class="area-header">
@@ -364,6 +368,7 @@ async function build() {
   const { clusters, areas } = await readJson(path.join(CONTENT_DIR, 'areas.json'));
   const glossaryPath = path.join(CONTENT_DIR, 'glossar.json');
   const glossary = existsSync(glossaryPath) ? await readJson(glossaryPath) : [];
+  setGlossary(glossary);
   const lessons = await loadLessons(areas);
   const ctx = { clusters, areas, lessons };
 

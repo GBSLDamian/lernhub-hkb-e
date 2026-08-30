@@ -17,7 +17,7 @@ lernziele_fr:
 tags: [farbe, druck, bildschirm, grundlagen]
 ---
 
-## Zwei Wege, Farbe zu machen
+:::h2 de="Zwei Wege, Farbe zu machen" fr="Deux façons de faire de la couleur":::
 
 :::de
 Auf dem Bildschirm entsteht Farbe aus **Licht**. Im Druck entsteht Farbe aus **Farbpigmenten** auf Papier. Weil Licht und Pigment sich völlig unterschiedlich verhalten, braucht es zwei verschiedene Farbmodelle: RGB für Bildschirme, CMYK für den Druck.
@@ -53,7 +53,7 @@ Sur un écran, la couleur naît de la **lumière**. À l'impression, la couleur 
 :::
 :::
 
-## Ausprobieren
+:::h2 de="Ausprobieren" fr="À essayer":::
 
 :::de
 Bewege die Regler und beobachte, wie sich derselbe Farbwert je nach Modell verhält.
@@ -64,7 +64,7 @@ Déplace les curseurs et observe comment la même valeur de couleur se comporte 
 
 :::widget rgb-cmyk-mischer:::
 
-## Bonus: Farbkontrast prüfen
+:::h2 de="Bonus: Farbkontrast prüfen" fr="Bonus : vérifier le contraste des couleurs":::
 
 :::de
 RGB-Werte bestimmen nicht nur, wie eine Farbe aussieht — sie bestimmen auch, ob Text auf einem Hintergrund gut lesbar ist. Prüfe zwei Farben auf ihren Kontrast (WCAG-Richtwert für Fliesstext: mindestens 4.5:1).
@@ -75,7 +75,7 @@ Les valeurs RVB ne déterminent pas seulement l'apparence d'une couleur — elle
 
 :::widget kontrast-checker:::
 
-## Ressourcen
+:::h2 de="Ressourcen" fr="Ressources":::
 
 :::ressourcen
 :::de

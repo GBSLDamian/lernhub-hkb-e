@@ -87,11 +87,6 @@ function render(mount) {
   setFromRgb(27, 73, 214);
 }
 
-export function initAll() {
-  document.querySelectorAll('[data-widget-mount="rgb-cmyk-mischer"]:not([data-initialized])').forEach((mount) => {
-    mount.dataset.initialized = 'true';
-    render(mount);
-  });
+export function mount(container) {
+  render(container);
 }
-
-initAll();

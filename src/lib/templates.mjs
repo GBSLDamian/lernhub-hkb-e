@@ -140,7 +140,7 @@ function toc(headings) {
   if (!headings || !headings.length) return '';
   const items = headings
     .filter((h) => h.level === 2)
-    .map((h) => `<li><a href="#${h.id}">${h.text}</a></li>`)
+    .map((h) => `<li><a href="#${h.id}">${dualLabel(h.text, h.textFr)}</a></li>`)
     .join('');
   return `<nav class="toc" aria-label="Auf dieser Seite">
   <p class="toc__label"><span data-lang="de">Auf dieser Seite</span><span data-lang="fr">Sur cette page</span></p>
@@ -169,10 +169,7 @@ function footer() {
 </footer>`;
 }
 
-export function pageShell({ title, description, bodyHtml, activeAreaId, activeLessonId, clusters, areas, trail, headings, prev, next, widgets = [], extraScripts = [] }) {
-  const widgetScripts = widgets
-    .map((w) => `<script type="module" src="/assets/widgets/${w}.js" defer></script>`)
-    .join('\n');
+export function pageShell({ title, description, bodyHtml, activeAreaId, activeLessonId, clusters, areas, trail, headings, prev, next }) {
   return `<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -201,8 +198,6 @@ ${searchDialog()}
 </div>
 ${footer()}
 <script type="module" src="/assets/scripts/app.js"></script>
-${widgetScripts}
-${extraScripts.join('\n')}
 </body>
 </html>`;
 }

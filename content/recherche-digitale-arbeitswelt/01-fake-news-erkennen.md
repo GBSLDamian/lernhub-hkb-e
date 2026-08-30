@@ -17,7 +17,7 @@ lernziele_fr:
 tags: [recherche, quellenkritik, medienkompetenz]
 ---
 
-## Warum das wichtig ist
+:::h2 de="Warum das wichtig ist" fr="Pourquoi c'est important":::
 
 :::de
 Falschmeldungen verbreiten sich online oft schneller als Richtigstellungen. Für Kaufleute, die Inhalte für Social Media, Newsletter oder Websites produzieren, ist Quellenkritik keine Kür, sondern Berufspflicht: Wer eine Falschmeldung weiterverbreitet, schadet dem Unternehmen, für das er oder sie arbeitet.
@@ -54,7 +54,7 @@ Les fausses informations se propagent souvent plus vite en ligne que leurs recti
 :::
 :::
 
-## Übung
+:::h2 de="Übung" fr="Exercice":::
 
 :::de
 Suche online eine aktuelle Schlagzeile, die dir zweifelhaft vorkommt. Wende die 4 Schnell-Checks an und halte in 3–4 Sätzen fest, ob du sie für glaubwürdig hältst und warum.
@@ -63,7 +63,7 @@ Suche online eine aktuelle Schlagzeile, die dir zweifelhaft vorkommt. Wende die 
 Cherche en ligne un titre d'actualité récent qui te semble douteux. Applique les 4 vérifications rapides et note en 3-4 phrases si tu le juges crédible, et pourquoi.
 :::
 
-## Ressourcen
+:::h2 de="Ressourcen" fr="Ressources":::
 
 :::ressourcen
 :::de
