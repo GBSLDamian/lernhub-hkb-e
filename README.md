@@ -5,10 +5,11 @@ Nachschlagewerk für Kaufleute (1.–3. Lehrjahr) zum Handlungskompetenzbereich
 HKB E. Rein statisch, kein Backend, kein Framework — ein kleiner Node-Build
 erzeugt echte HTML-Seiten aus Markdown-Content.
 
-Dies ist **Fundament 1 von 4**: Architektur, App-Shell, Design-System,
-Zweisprachigkeit, PWA und Suche stehen; die Inhalte der 9 Bereiche werden in
-den Folge-Prompts ergänzt. Zwei Beispiel-Lektionen (mit zwei Widgets) belegen,
-dass die ganze Kette funktioniert.
+Prompt 1 lieferte das Fundament (Architektur, App-Shell, Design-System,
+Zweisprachigkeit, PWA, Suche). Prompt 2 hat die bestehenden Inhalte aus der
+Medienwerkstatt-Referenz in 8 der 9 Bereiche migriert (31 Lektionen, 13
+Widgets). Der Bereich `recherche-digitale-arbeitswelt` bleibt bewusst mit nur
+einer Proof-Lektion, bis Prompt 3 ihn aus der offiziellen PDF-Quelle befüllt.
 
 ## Architektur: Content-as-Data
 
@@ -68,14 +69,18 @@ automatisch.
 Alles zwischen `:::` ist eine Direktive. Bausteine:
 
 ```markdown
-## Eine Überschrift
+:::h2 de="Eine Überschrift" fr="Un titre":::
 
 :::de
-Deutscher Fliesstext. **Fett**, *kursiv*, `code`, [Link](url).
+Deutscher Fliesstext. **Fett**, *kursiv*, `code`, [Link](url), {{glossar:pixel}}.
 :::
 :::fr
 Texte français équivalent.
 :::
+
+| Spalte A | Spalte B |
+|---|---|
+| Ganz normale GFM-Pipe-Tabellen | funktionieren auch |
 
 :::konzept titel_de="Konzept-Titel" titel_fr="Titre du concept"
 :::de
@@ -105,7 +110,26 @@ Explication + métaphore en français.
 :::
 
 :::widget kontrast-checker:::
+
+:::widget quiz
+{
+  "fragen": [
+    { "id": "q1", "fragenDe": "...", "fragenFr": "...", "optionenDe": ["A","B"], "optionenFr": ["A","B"], "loesung": 0, "erklaerungDe": "...", "erklaerungFr": "..." }
+  ]
+}
+:::
 ```
+
+- `:::h2 de="…" fr="…":::` / `:::h3 …:::` — bilinguale Überschrift (auch für
+  «Auf dieser Seite»-TOC). Plain-Markdown-`##` wird **nicht** mehr unterstützt,
+  weil es nicht zweisprachig wäre.
+- `{{glossar:<id>}}` bzw. `{{glossar:<id>|Anzeigetext}}` — klickbarer
+  Glossarbegriff mit Tooltip, gespeist aus `content/glossar.json`.
+- `:::widget <slug>:::` ohne Konfiguration (z. B. `kontrast-checker`) oder mit
+  JSON-Block danach (z. B. `quiz`, `zone-sort`, `vorlage`, …) — siehe
+  «Ein Widget hinzufügen».
+- Normale GFM-Pipe-Tabellen (`| … | … |`) werden automatisch in eine
+  scrollbare `<table>` gerendert.
 
 **Regel:** Genau eine Sprache wird je gerendert — auf Elemente mit
 `data-lang="de"` bzw. `data-lang="fr"` greift die globale CSS-Regel in
@@ -125,15 +149,24 @@ in FR (`#fr-check-banner`), solange er nicht geschlossen wurde.
 
 ## Ein Widget hinzufügen
 
-1. `src/widgets/<slug>.js` — exportiert `initAll()`, das alle
-   `[data-widget-mount="<slug>"]`-Elemente (noch nicht initialisierte)
-   mountet, und ruft sich beim Laden selbst auf (`initAll()` am Dateiende).
+1. `src/widgets/<slug>.js` — exportiert `mount(container, config)`. `config`
+   ist entweder `null` (bei `:::widget slug:::` ohne Konfiguration) oder das
+   per JSON übergebene Objekt (bei `:::widget slug\n{ ... }\n:::`).
 2. In `src/scripts/app.js` in `WIDGET_MODULES` eintragen:
    `'<slug>': '/assets/widgets/<slug>.js'`.
-3. Im Lektionstext `:::widget <slug>:::` verwenden.
+3. Im Lektionstext `:::widget <slug>:::` bzw. mit Konfiguration verwenden.
 
-Vorhandene Widgets: `kontrast-checker` (WCAG-Kontrastprüfung),
-`rgb-cmyk-mischer` (bidirektionaler RGB↔CMYK-Regler).
+`app.js` mountet automatisch beim Seitenaufbau und nach jeder clientseitigen
+Navigation — dynamisch per Element, dedupliziert und idempotent
+(`data-initialized`).
+
+Vorhandene Widgets: `kontrast-checker`, `rgb-cmyk-mischer`, `font-switcher`,
+`vorlage` (ausfüllbare Vorlage, z. B. Persona/SWOT/BMC/Steckbrief),
+`decision-widget` (Auswahl → Ergebnis), `entscheidungsbaum` (verschachtelte
+Ja/Nein-Fragen), `reihenfolge-spiel`, `zone-sort` (Drag&Drop-Zuordnung),
+`checkliste`, `technik-karten`, `ab-player` (Vorher/Nachher-Audio),
+`sound-rezept`, `shotlist` (Drehplan-Tool), `format-matcher`
+(Memory-Zuordnung), `quiz` (Mehrfachauswahl mit Musterlösung).
 
 ## Design-System
 
@@ -205,10 +238,11 @@ abhängigkeitsfreien PNG-Encoder erzeugt (kein Bild-Tool nötig).
    (Build-Command + Publish-Verzeichnis `dist`) — nichts weiter nötig.
 4. Site-Name `lernhub-hkb-e` setzen (Site settings → Change site name).
 
-## Ausblick Prompt 2–4
+## Ausblick Prompt 3–4
 
-Prompt 1 liefert das Fundament: Architektur, App-Shell, Design-System,
-Zweisprachigkeit, PWA, Suche — nachgewiesen an 2 Lektionen + 2 Widgets. Die
-Prompts 2–4 migrieren/ergänzen die eigentlichen Inhalte der 9 Bereiche
-(weitere Lektionen, Übungen, Widgets, Glossarbegriffe) — rein als neue
-Content-Dateien, ohne dass dieser Fundament-Code angefasst werden muss.
+Prompt 3 vertieft aus der offiziellen HKB-E-PDF-Quelle: `recherche-digitale-
+arbeitswelt` (bisher nur 1 Proof-Lektion) sowie die bewusst schlank
+gehaltenen, mit `tags: ["vertiefung-ausstehend"]` markierten Themen — Farbe
+RGB/CMYK, Bildformate, Einstellungsgrössen/Perspektiven, Ton (Audio-
+Grundlagen), Persona/Komposition. Diese Themen haben bereits einen
+kanonischen Ort; Prompt 3 ergänzt dort, statt neue Dubletten anzulegen.

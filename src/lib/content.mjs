@@ -118,6 +118,9 @@ export function mdLite(raw, ctx) {
   return blocks
     .map((block) => {
       const lines = block.split('\n');
+      if (isTableBlock(lines)) {
+        return renderTable(lines, ctx);
+      }
       if (lines.every((l) => /^\s*-\s+/.test(l))) {
         const items = lines.map((l) => `<li>${inline(l.replace(/^\s*-\s+/, ''), ctx)}</li>`).join('');
         return `<ul>${items}</ul>`;
@@ -133,6 +136,27 @@ export function mdLite(raw, ctx) {
       return `<p>${inline(lines.join(' '), ctx)}</p>`;
     })
     .join('\n');
+}
+
+function isTableBlock(lines) {
+  if (lines.length < 2) return false;
+  if (!/^\s*\|.*\|\s*$/.test(lines[0])) return false;
+  return /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(lines[1]);
+}
+
+function parseTableRow(line) {
+  let trimmed = line.trim();
+  if (trimmed.startsWith('|')) trimmed = trimmed.slice(1);
+  if (trimmed.endsWith('|')) trimmed = trimmed.slice(0, -1);
+  return trimmed.split('|').map((c) => c.trim());
+}
+
+function renderTable(lines, ctx) {
+  const header = parseTableRow(lines[0]);
+  const rows = lines.slice(2).map(parseTableRow);
+  const thead = `<tr>${header.map((h) => `<th>${inline(h, ctx)}</th>`).join('')}</tr>`;
+  const tbody = rows.map((r) => `<tr>${r.map((c) => `<td>${inline(c, ctx)}</td>`).join('')}</tr>`).join('');
+  return `<div class="table-wrap"><table><thead>${thead}</thead><tbody>${tbody}</tbody></table></div>`;
 }
 
 let GLOSSARY = new Map();
