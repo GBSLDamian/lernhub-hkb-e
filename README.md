@@ -5,11 +5,11 @@ Nachschlagewerk für Kaufleute (1.–3. Lehrjahr) zum Handlungskompetenzbereich
 HKB E. Rein statisch, kein Backend, kein Framework — ein kleiner Node-Build
 erzeugt echte HTML-Seiten aus Markdown-Content.
 
-Prompt 1 lieferte das Fundament (Architektur, App-Shell, Design-System,
-Zweisprachigkeit, PWA, Suche). Prompt 2 hat die bestehenden Inhalte aus der
-Medienwerkstatt-Referenz in 8 der 9 Bereiche migriert (31 Lektionen, 13
-Widgets). Der Bereich `recherche-digitale-arbeitswelt` bleibt bewusst mit nur
-einer Proof-Lektion, bis Prompt 3 ihn aus der offiziellen PDF-Quelle befüllt.
+**Stand:** 9 Themenbereiche, 47 Lektionen, 20 interaktive Widgets, ein
+durchsuchbares/filterbares Glossar mit 59 Fachbegriffen — alles offline
+nutzbar nach dem ersten Besuch (PWA, installierbar). Lehrjahr- und
+K-Stufen-Angaben in den Lektionen sind mit der offiziellen kantonalen
+Lernziele-Datenbank abgeglichen.
 
 ## Architektur: Content-as-Data
 
@@ -160,13 +160,33 @@ in FR (`#fr-check-banner`), solange er nicht geschlossen wurde.
 Navigation — dynamisch per Element, dedupliziert und idempotent
 (`data-initialized`).
 
-Vorhandene Widgets: `kontrast-checker`, `rgb-cmyk-mischer`, `font-switcher`,
-`vorlage` (ausfüllbare Vorlage, z. B. Persona/SWOT/BMC/Steckbrief),
-`decision-widget` (Auswahl → Ergebnis), `entscheidungsbaum` (verschachtelte
-Ja/Nein-Fragen), `reihenfolge-spiel`, `zone-sort` (Drag&Drop-Zuordnung),
-`checkliste`, `technik-karten`, `ab-player` (Vorher/Nachher-Audio),
-`sound-rezept`, `shotlist` (Drehplan-Tool), `format-matcher`
-(Memory-Zuordnung), `quiz` (Mehrfachauswahl mit Musterlösung).
+Vorhandene Widgets (20): `kontrast-checker`, `rgb-cmyk-mischer`,
+`font-switcher`, `vorlage` (ausfüllbare Vorlage, z. B. Persona/SWOT/BMC/
+Steckbrief/Drehbuch), `decision-widget` (Auswahl → Ergebnis),
+`entscheidungsbaum` (verschachtelte Ja/Nein-Fragen), `reihenfolge-spiel`,
+`zone-sort` (Drag&Drop-Zuordnung), `checkliste`, `technik-karten`,
+`ab-player` (Vorher/Nachher-Audio), `sound-rezept`, `shotlist`
+(Drehplan-Tool), `format-matcher` (Memory-Zuordnung), `quiz`
+(Mehrfachauswahl mit Musterlösung), sowie fünf in Prompt 4 ergänzte
+Interaktionen:
+
+- `fakt-oder-fake` — Karten-Spiel zur Quellenkritik (Statement → Fakt/Fake
+  → Begründung), in `recherche-digitale-arbeitswelt → Fake News erkennen`.
+- `einstellung-matcher` — Bild↔Wirkung-Zuordnungsspiel mit den bestehenden
+  SVG-Illustrationen der Einstellungsgrössen, in `video-film`.
+- `drittel-schnitt-overlay` — schaltbares Raster (Drittel-Regel/Goldener
+  Schnitt) über einem echten Foto, in `bild-bildbearbeitung`.
+- `kompression-demo` — echte Canvas-JPEG-Neukodierung (kein Simulations-
+  Trick) mit Qualitäts-Regler und Live-Dateigrössenanzeige, in
+  `bild-bildbearbeitung`.
+- `belichtung-framerate` — Blende/Verschlusszeit/ISO-Regler mit
+  Live-Vorschau plus separater Bildraten-Vergleich, in `video-film`.
+
+Alle Widgets: reines Vanilla JS ohne Abhängigkeiten, per Tastatur bedienbar,
+DE/FR über den bestehenden `data-lang`-Mechanismus, kontraststabil in
+Hell/Dunkel über CSS-Variablen, offlinefähig (keine Laufzeit-Netzwerk-
+Abhängigkeit ausser bei `kompression-demo`s Ausgangsbild, das wie alle
+Assets vom Service Worker gecacht wird).
 
 ## Design-System
 
@@ -195,6 +215,62 @@ Ja/Nein-Fragen), `reihenfolge-spiel`, `zone-sort` (Drag&Drop-Zuordnung),
 - Clientseitige Navigation: Klicks auf interne Links werden per `fetch` +
   History-API abgefangen (View-Transitions-API wenn verfügbar); schlägt der
   Fetch fehl, greift ein normaler Reload als Fallback.
+
+## Glossar
+
+`content/glossar.json` ist die zentrale Datenquelle für alle Fachbegriffe
+(59 Einträge). Jeder Eintrag: `id`, `begriff_de/fr`, `kurz_de/fr`, optional
+`metapher_de/fr`, und `bereiche` (Array von `area`-IDs — bestimmt, unter
+welchen Filter-Chips der Begriff auf der Glossar-Seite erscheint).
+
+- **Inline-Tooltip:** `{{glossar:id}}` bzw. `{{glossar:id|Anzeigetext}}` im
+  Lektionstext macht den Begriff klickbar (Tooltip mit Kurzdefinition +
+  Metapher), siehe «Body-Direktiven» oben.
+- **Glossar-Seite** (`/glossar/`): alphabetisch gruppiert mit
+  Sprungnavigation, Live-Textsuche (durchsucht DE- und FR-Text unabhängig
+  von der aktuell aktiven Sprache) und Bereich-Filter-Chips — beides
+  clientseitig in `initGlossaryPage()` (`src/scripts/app.js`).
+- **Globale Suche:** Jeder Glossar-Begriff ist zusätzlich zweisprachig im
+  `search-index.json` enthalten (`typ: "glossar"`) und taucht damit auch im
+  ⌘K-Suchdialog auf, mit eigener Meta-Zeile («Glossar · Bereich») und Link
+  direkt zum Eintrag (`/glossar/#glossar-<id>`).
+
+**Einen Begriff hinzufügen:** neuen Eintrag in `glossar.json` anhängen (id,
+begriff_de/fr, kurz_de/fr, optional metapher_de/fr, bereiche), danach an
+mindestens einer Stelle im Lektionstext mit `{{glossar:id}}` referenzieren
+(sonst hat der Begriff zwar einen Glossar-Eintrag, aber keinen Tooltip-Link
+aus dem Fliesstext heraus).
+
+## Medien-Einbindung
+
+Videos werden nicht direkt eingebettet, sondern über eine Facade
+(`:::video youtube="<id>":::` im Content, `mountVideoFacades()` in
+`app.js`) geladen:
+
+1. **Offline-Erkennung:** ist `navigator.onLine === false`, erscheint sofort
+   ein Hinweis «Keine Internetverbindung» mit Direktlink zu YouTube, statt
+   eines kaputten Thumbnails — die restliche Seite bleibt ja offlinefähig,
+   das Video ist die einzige Online-Abhängigkeit auf dieser Lektion.
+2. **Einbettbarkeits-Check (playableInEmbed):** vor der Anzeige wird die
+   YouTube-oEmbed-API abgefragt. Hat der Kanal die Einbettung deaktiviert
+   (oder ist das Video nicht erreichbar), erscheint automatisch ein
+   Direktlink-Fallback statt eines defekten Players.
+3. Erst nach Klick auf den Play-Button wird der eigentliche
+   `youtube-nocookie.com`-iframe geladen (kein Tracking vor dem Klick).
+4. Ein «Online-Inhalt»-Badge markiert das Element visuell als Ausnahme in
+   einer sonst komplett offlinefähigen Seite.
+
+**Ressourcen-Attribution:** externe Quellen stehen in `:::ressourcen:::`-
+Blöcken je Lektion (zweisprachig, ein Eintrag pro Sprachblock) und öffnen
+seit Prompt 4 in einem neuen Tab (`target="_blank" rel="noopener
+noreferrer"`), damit ein Klick nicht aus der installierten PWA
+herausnavigiert. Echte Fotos tragen eine Quellenangabe direkt im
+Lektionstext (z. B. `*(Foto: Autor:in, CC-Lizenz)*`) — **innerhalb** des
+jeweiligen `:::de`/`:::fr`-Blocks, damit die Übersetzung («Foto:» /
+«Photo :») korrekt mitwechselt. Alle SVG-Diagramme (Einstellungsgrössen,
+Perspektiven, Polardiagramme, Kompressor-Kennlinien …) sind eigene,
+schematische Illustrationen für dieses Projekt — keine externen Quellen,
+daher ohne Attribution.
 
 ## Lokal starten
 
@@ -238,11 +314,39 @@ abhängigkeitsfreien PNG-Encoder erzeugt (kein Bild-Tool nötig).
    (Build-Command + Publish-Verzeichnis `dist`) — nichts weiter nötig.
 4. Site-Name `lernhub-hkb-e` setzen (Site settings → Change site name).
 
-## Ausblick Prompt 3–4
+## Neue Module ergänzen
 
-Prompt 3 vertieft aus der offiziellen HKB-E-PDF-Quelle: `recherche-digitale-
-arbeitswelt` (bisher nur 1 Proof-Lektion) sowie die bewusst schlank
-gehaltenen, mit `tags: ["vertiefung-ausstehend"]` markierten Themen — Farbe
-RGB/CMYK, Bildformate, Einstellungsgrössen/Perspektiven, Ton (Audio-
-Grundlagen), Persona/Komposition. Diese Themen haben bereits einen
-kanonischen Ort; Prompt 3 ergänzt dort, statt neue Dubletten anzulegen.
+Für ein zukünftiges Modul oder einen neuen Themenbereich:
+
+1. **Bereich anlegen** (nur falls wirklich neu): Eintrag in
+   `content/areas.json` (`id`, `nr`, `cluster`, `icon`, `reihenfolge`,
+   `titel.de/fr`, `kurz.de/fr`). Meistens reicht es, Lektionen in einen der
+   9 bestehenden Bereiche zu legen — vor dem Anlegen eines neuen Bereichs
+   prüfen, ob das Thema nicht besser in einen bestehenden passt (z. B.
+   gehört alles rund um Bildkomposition zu `bild-bildbearbeitung`, nicht zu
+   einem neuen Bereich).
+2. **Lektion anlegen**: neue `.md`-Datei in `content/<area-id>/`, siehe
+   «Eine Lektion hinzufügen» oben. `lehrjahr` und `kstufe` nach Möglichkeit
+   an der offiziellen kantonalen Lernziele-Datenbank ausrichten, falls für
+   das Fach/Themenfeld eine Zuordnung existiert (bei diesem Projekt war das
+   `~/Desktop/Lernziele/lernziele.json`, insbesondere das `lehrjahre`-Array
+   mit dem Semesterplan pro Fach/Themenbereich) — sonst nach didaktischem
+   Ermessen setzen und im Frontmatter-Kommentar oder Commit-Message
+   vermerken, dass keine offizielle Quelle vorlag.
+3. **Widgets wiederverwenden statt neu bauen**: Für Zuordnungsaufgaben
+   passen `zone-sort` oder `format-matcher`, für Wissens-Checks `quiz`, für
+   ausfüllbare Vorlagen `vorlage`, für Wahr/Falsch-Karten `fakt-oder-fake`.
+   Nur bei echtem Bedarf ein neues Widget bauen (siehe «Ein Widget
+   hinzufügen» oben) — jedes neue Widget muss vanilla JS, tastaturbedienbar,
+   dark-mode-sicher (CSS-Variablen, keine harten Farben) und zweisprachig
+   sein.
+4. **Glossar pflegen**: neue Fachbegriffe in `content/glossar.json`
+   aufnehmen und im Lektionstext mit `{{glossar:id}}` verlinken (siehe
+   «Glossar» oben) — sonst bleibt der Begriff für die Such- und
+   Filterfunktion unsichtbar mit ungenutztem `bereiche`-Feld.
+5. **Ressourcen/Medien**: externe Links in `:::ressourcen:::`, echte Fotos
+   mit Lizenzangabe im jeweiligen Sprachblock, YouTube-Videos nur über die
+   `:::video youtube="…":::`-Direktive (nie ein rohes `<iframe>`) — sonst
+   fehlen Offline-Fallback und Einbettbarkeits-Check.
+6. `npm run build` ausführen und im Browser gegenprüfen: DE/FR, hell/dunkel,
+   Mobile (≤375px, kein horizontales Scrollen), Konsole ohne neue Fehler.
