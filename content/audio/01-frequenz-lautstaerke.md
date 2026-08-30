@@ -14,7 +14,7 @@ lernziele_de:
 lernziele_fr:
   - J'explique les notions de fréquence, dB, dBFS et LUFS.
   - J'explique comment naît l'écrêtage (clipping) et comment l'éviter.
-tags: [frequenz, lautstaerke, dbfs, lufs, clipping, ton, "vertiefung-ausstehend"]
+tags: [frequenz, lautstaerke, dbfs, lufs, clipping, ton]
 ---
 
 :::de

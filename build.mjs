@@ -193,21 +193,20 @@ function buildHomePage(ctx) {
   </div>
 </section>
 
-<section class="home-filters" aria-label="Filter">
-  <div class="chip-group">${yearChips}</div>
-  <div class="chip-group">${typeChips}</div>
-</section>
-
-<section class="home-section">
-  <h2 data-lang="de">Alle Lektionen</h2>
-  <h2 data-lang="fr">Toutes les leçons</h2>
-  <ul class="lesson-list" id="home-lesson-list">${lessonItems}</ul>
-</section>
-
 <section class="home-section">
   <h2 data-lang="de">Bereiche</h2>
   <h2 data-lang="fr">Domaines</h2>
   <ul class="area-card-grid">${areaCards}</ul>
+</section>
+
+<section class="home-section" id="alle-lektionen">
+  <h2 data-lang="de">Alle Lektionen</h2>
+  <h2 data-lang="fr">Toutes les leçons</h2>
+  <section class="home-filters" aria-label="Filter">
+    <div class="chip-group">${yearChips}</div>
+    <div class="chip-group">${typeChips}</div>
+  </section>
+  <ul class="lesson-list" id="home-lesson-list">${lessonItems}</ul>
 </section>`;
 
   return pageShell({
