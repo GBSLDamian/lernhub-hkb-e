@@ -93,10 +93,10 @@ Titre parlant avec mot-clé, paragraphes courts, sous-titres pour la lecture en 
 :::h2 de="Werbemittel im Multimedia-Format" fr="Supports publicitaires multimédias":::
 
 :::de
-Ein Multimedia-Werbemittel (z. B. ein kurzes Video-Ad) kombiniert mehrere Bereiche: Bildgestaltung, Bildbearbeitung, Ton und Video fliessen zusammen. Der Aufbau folgt oft dem AIDA-Prinzip: erster Frame = Attention, dann Interest/Desire, letzter Frame = klare Action (z. B. «Jetzt bestellen»).
+Ein Multimedia-Werbemittel (z. B. ein kurzes Video-Ad) kombiniert mehrere Bereiche: Bildgestaltung, Bildbearbeitung, Ton und Video fliessen zusammen. Der Aufbau folgt oft dem {{glossar:aida|AIDA}}-Prinzip: erster Frame = Attention, dann Interest/Desire, letzter Frame = klare Action (z. B. «Jetzt bestellen»).
 :::
 :::fr
-Un support publicitaire multimédia (p. ex. une courte vidéo publicitaire) combine plusieurs domaines : conception visuelle, retouche d'image, son et vidéo se rejoignent. La structure suit souvent le principe AIDA : première image = Attention, puis Interest/Desire, dernière image = Action claire (p. ex. « Commander maintenant »).
+Un support publicitaire multimédia (p. ex. une courte vidéo publicitaire) combine plusieurs domaines : conception visuelle, retouche d'image, son et vidéo se rejoignent. La structure suit souvent le principe {{glossar:aida|AIDA}} : première image = Attention, puis Interest/Desire, dernière image = Action claire (p. ex. « Commander maintenant »).
 :::
 
 :::h2 de="Dein nächster Post – schnell skizziert" fr="Ta prochaine publication – esquissée rapidement":::

@@ -18,10 +18,10 @@ tags: [denkfehler, ankereffekt, framing, decoy-effekt, social-proof, verlustaver
 :::h2 de="Ankereffekt" fr="Effet d'ancrage":::
 
 :::de
-Wähle eine Preisdarstellung und sieh, wie sie wirkt.
+Wähle eine Preisdarstellung und beobachte den {{glossar:ankereffekt|Ankereffekt}}.
 :::
 :::fr
-Choisis une présentation de prix et observe son effet.
+Choisis une présentation de prix et observe l'{{glossar:ankereffekt|effet d'ancrage}}.
 :::
 
 :::widget decision-widget
@@ -36,10 +36,10 @@ Choisis une présentation de prix et observe son effet.
 :::h2 de="Framing" fr="Framing":::
 
 :::de
-Wähle eine Formulierung für dieselbe Information.
+Wähle eine Formulierung für dieselbe Information und beobachte den {{glossar:framing|Framing}}-Effekt.
 :::
 :::fr
-Choisis une formulation pour la même information.
+Choisis une formulation pour la même information et observe l'effet de {{glossar:framing|framing}}.
 :::
 
 :::widget decision-widget
@@ -54,10 +54,10 @@ Choisis une formulation pour la même information.
 :::h2 de="Decoy-Effekt (Köder-Effekt)" fr="Effet leurre":::
 
 :::de
-Vergleiche ein Angebot mit und ohne «Köder»-Option.
+Vergleiche ein Angebot mit und ohne «Köder»-Option — ein Beispiel für den {{glossar:decoy-effekt|Decoy-Effekt}}.
 :::
 :::fr
-Compare une offre avec et sans option « leurre ».
+Compare une offre avec et sans option « leurre » — un exemple d'{{glossar:decoy-effekt|effet leurre}}.
 :::
 
 :::widget decision-widget
@@ -72,10 +72,10 @@ Compare une offre avec et sans option « leurre ».
 :::h2 de="Social Proof & Verknappung" fr="Preuve sociale & rareté":::
 
 :::de
-Wähle, ob ein Hinweis auf Beliebtheit/Knappheit dabei ist.
+Wähle, ob ein Hinweis auf Beliebtheit ({{glossar:social-proof|Social Proof}}) oder Knappheit dabei ist.
 :::
 :::fr
-Choisis si une indication de popularité/rareté est présente.
+Choisis si une indication de popularité ({{glossar:social-proof|preuve sociale}}) ou de rareté est présente.
 :::
 
 :::widget decision-widget
@@ -90,10 +90,10 @@ Choisis si une indication de popularité/rareté est présente.
 :::h2 de="Erkenne den Denkfehler" fr="Reconnais le biais cognitif":::
 
 :::de
-Ordne jeden Werbetext dem passenden Denkfehler zu.
+Ordne jeden Werbetext dem passenden Denkfehler zu — darunter auch die {{glossar:verlustaversion|Verlustaversion}}: die Angst, etwas zu verpassen, wiegt psychologisch schwerer als ein gleich grosser Gewinn.
 :::
 :::fr
-Attribue chaque texte publicitaire au biais cognitif correspondant.
+Attribue chaque texte publicitaire au biais cognitif correspondant — y compris l'{{glossar:verlustaversion|aversion à la perte}} : la peur de manquer quelque chose pèse psychologiquement plus lourd qu'un gain équivalent.
 :::
 
 :::widget zone-sort

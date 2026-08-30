@@ -16,10 +16,10 @@ tags: [ethik, dark-patterns, ux]
 ---
 
 :::de
-Rechtlich erlaubt ist nicht automatisch ethisch vertretbar. Alle Überzeugungsprinzipien lassen sich **fair** einsetzen (echte Knappheit, echte Kundenbewertungen) oder **manipulativ** missbrauchen (erfundene Countdown-Timer, gefälschte Bewertungen). Mehr zu den rechtlichen Grenzen findest du unter Recht, Ethik & Sicherheit.
+Rechtlich erlaubt ist nicht automatisch ethisch vertretbar. Alle Überzeugungsprinzipien lassen sich **fair** einsetzen (echte Knappheit, echte Kundenbewertungen) oder als **{{glossar:dark-patterns|Dark Patterns}}** manipulativ missbrauchen (erfundene Countdown-Timer, gefälschte Bewertungen). Mehr zu den rechtlichen Grenzen findest du unter Recht, Ethik & Sicherheit.
 :::
 :::fr
-Ce qui est légal n'est pas automatiquement éthiquement défendable. Tous les principes de persuasion peuvent être utilisés de manière **loyale** (véritable rareté, vrais avis clients) ou détournés de façon **manipulatrice** (faux comptes à rebours, faux avis). Pour en savoir plus sur les limites légales, voir Droit, éthique & sécurité.
+Ce qui est légal n'est pas automatiquement éthiquement défendable. Tous les principes de persuasion peuvent être utilisés de manière **loyale** (véritable rareté, vrais avis clients) ou détournés en **{{glossar:dark-patterns|dark patterns}}** manipulateurs (faux comptes à rebours, faux avis). Pour en savoir plus sur les limites légales, voir Droit, éthique & sécurité.
 :::
 
 :::h2 de="Wo die Grenze verläuft" fr="Où se situe la limite":::

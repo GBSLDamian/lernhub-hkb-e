@@ -54,12 +54,12 @@ Les fake news peuvent …
 
 :::konzept titel_de="Framing" titel_fr="Framing"
 :::de
-Framing bedeutet, dass dieselbe Information je nach Wortwahl, Bildauswahl und Kontext ganz unterschiedlich wirkt — «Freiheitskämpfer» oder «Terrorist» für dieselbe Person, «Flüchtlingsstrom» oder «Menschen auf der Flucht». Der Rahmen (Frame), in den eine Nachricht gesetzt wird, lenkt, wie wir sie bewerten, oft ohne dass wir es merken. (Framing als Werkzeug der Werbewirkung siehe auch Wirtschaftspsychologie → Denkfehler in der Werbung.)
+{{glossar:framing|Framing}} bedeutet, dass dieselbe Information je nach Wortwahl, Bildauswahl und Kontext ganz unterschiedlich wirkt — «Freiheitskämpfer» oder «Terrorist» für dieselbe Person, «Flüchtlingsstrom» oder «Menschen auf der Flucht». Der Rahmen (Frame), in den eine Nachricht gesetzt wird, lenkt, wie wir sie bewerten, oft ohne dass wir es merken. (Framing als Werkzeug der Werbewirkung siehe auch Wirtschaftspsychologie → Denkfehler in der Werbung.)
 
 **Metapher:** Wie ein Bilderrahmen: Dasselbe Foto wirkt in einem goldenen Barockrahmen feierlich, in einem schlichten Alu-Rahmen nüchtern — das Bild selbst hat sich nicht verändert.
 :::
 :::fr
-Le framing signifie que la même information peut avoir un effet très différent selon le choix des mots, des images et le contexte — « combattant de la liberté » ou « terroriste » pour la même personne, « flux de réfugiés » ou « personnes en fuite ». Le cadre (frame) dans lequel une information est placée oriente la façon dont on la juge, souvent sans qu'on s'en rende compte. (Le framing comme outil publicitaire est aussi abordé sous Psychologie économique → Biais cognitifs dans la publicité.)
+Le {{glossar:framing|framing}} signifie que la même information peut avoir un effet très différent selon le choix des mots, des images et le contexte — « combattant de la liberté » ou « terroriste » pour la même personne, « flux de réfugiés » ou « personnes en fuite ». Le cadre (frame) dans lequel une information est placée oriente la façon dont on la juge, souvent sans qu'on s'en rende compte. (Le framing comme outil publicitaire est aussi abordé sous Psychologie économique → Biais cognitifs dans la publicité.)
 
 **Métaphore :** comme un cadre de tableau : la même photo paraît solennelle dans un cadre baroque doré, sobre dans un cadre en aluminium minimaliste — l'image elle-même n'a pas changé.
 :::

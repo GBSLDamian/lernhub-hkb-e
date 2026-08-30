@@ -26,14 +26,14 @@ tags: [system1-system2, kahneman, entscheidungspsychologie]
 
 :::konzept titel_de="Zwei Denksysteme" titel_fr="Deux systèmes de pensée"
 :::de
-Der Psychologe Daniel Kahneman unterscheidet zwei Denksysteme: **System 1** denkt schnell, automatisch, gefühlsgesteuert — die meisten Kaufentscheidungen laufen hier ab. **System 2** denkt langsam, bewusst, analytisch — wird nur aktiviert, wenn wir uns aktiv anstrengen (z. B. beim Vergleichen mehrerer Angebote).
+Der Psychologe Daniel Kahneman unterscheidet zwei Denksysteme: **{{glossar:system1-system2|System 1}}** denkt schnell, automatisch, gefühlsgesteuert — die meisten Kaufentscheidungen laufen hier ab. **System 2** denkt langsam, bewusst, analytisch — wird nur aktiviert, wenn wir uns aktiv anstrengen (z. B. beim Vergleichen mehrerer Angebote).
 
 Beispiel Alltag: Du erkennst sofort, dass 2+2=4 ist (System 1) — aber für 47×32 musst du bewusst rechnen (System 2). Werbung zielt meist auf System 1, weil die meisten Konsumentscheidungen dort getroffen werden.
 
 **Metapher:** System 1 ist wie ein erfahrener Autofahrer, der im Alltagsverkehr fährt, ohne über jeden Handgriff nachzudenken. System 2 ist wie derselbe Fahrer beim ersten Mal Einparken in eine enge Lücke — plötzlich braucht es volle Konzentration.
 :::
 :::fr
-Le psychologue Daniel Kahneman distingue deux systèmes de pensée : le **système 1** pense vite, automatiquement, guidé par l'émotion — la plupart des décisions d'achat s'y déroulent. Le **système 2** pense lentement, consciemment, analytiquement — il ne s'active que si nous faisons un effort actif (p. ex. en comparant plusieurs offres).
+Le psychologue Daniel Kahneman distingue deux systèmes de pensée : le **{{glossar:system1-system2|système 1}}** pense vite, automatiquement, guidé par l'émotion — la plupart des décisions d'achat s'y déroulent. Le **système 2** pense lentement, consciemment, analytiquement — il ne s'active que si nous faisons un effort actif (p. ex. en comparant plusieurs offres).
 
 Exemple du quotidien : tu reconnais immédiatement que 2+2=4 (système 1) — mais pour 47×32, tu dois calculer consciemment (système 2). La publicité vise généralement le système 1, car la plupart des décisions de consommation s'y prennent.
 

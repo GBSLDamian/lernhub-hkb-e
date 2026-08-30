@@ -18,10 +18,10 @@ tags: [aida, werbewirkung, marketing, gestaltung]
 ---
 
 :::de
-Gute Werbung führt eine Person Schritt für Schritt durch vier Stufen. AIDA beschreibt diese Stufen und hilft dir zu beurteilen, warum ein Werbemittel wirkt — oder eben nicht.
+Gute Werbung führt eine Person Schritt für Schritt durch vier Stufen. {{glossar:aida|AIDA}} beschreibt diese Stufen und hilft dir zu beurteilen, warum ein Werbemittel wirkt — oder eben nicht.
 :::
 :::fr
-Une bonne publicité fait passer une personne par quatre étapes, l'une après l'autre. Le modèle AIDA décrit ces étapes et t'aide à juger pourquoi un support publicitaire fonctionne — ou pas.
+Une bonne publicité fait passer une personne par quatre étapes, l'une après l'autre. Le modèle {{glossar:aida|AIDA}} décrit ces étapes et t'aide à juger pourquoi un support publicitaire fonctionne — ou pas.
 :::
 
 :::h2 de="Das AIDA-Konzept" fr="Le concept AIDA":::

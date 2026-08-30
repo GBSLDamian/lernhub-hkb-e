@@ -600,5 +600,115 @@
     "bereiche": [
       "bild-bildbearbeitung"
     ]
+  },
+  {
+    "id": "aida",
+    "begriff_de": "AIDA-Modell",
+    "begriff_fr": "Modèle AIDA",
+    "kurz_de": "Ein Werbemodell mit vier Stufen — Attention, Interest, Desire, Action —, die eine Person nacheinander durchläuft, bevor sie handelt.",
+    "kurz_fr": "Un modèle publicitaire à quatre étapes — Attention, Interest, Desire, Action — qu'une personne traverse successivement avant d'agir.",
+    "metapher_de": "Wie ein Trichter, der bei jeder Stufe enger wird: Nicht jede Person, die Aufmerksamkeit schenkt, handelt am Ende auch.",
+    "metapher_fr": "Comme un entonnoir qui se resserre à chaque étape : toute personne qui prête attention n'agit pas forcément à la fin.",
+    "bereiche": [
+      "gestaltungsgrundlagen",
+      "marketing-werbung"
+    ]
+  },
+  {
+    "id": "corporate-identity",
+    "begriff_de": "Corporate Identity",
+    "begriff_fr": "Identité d'entreprise",
+    "kurz_de": "Die bewusst gestaltete «Persönlichkeit» einer Marke aus Design, Communication und Behaviour, die auf jedem Kanal konsistent wiedererkennbar bleibt.",
+    "kurz_fr": "La « personnalité » délibérément conçue d'une marque, composée de design, communication et comportement, reconnaissable de façon cohérente sur chaque canal.",
+    "metapher_de": "Wie bei einem Menschen: Aussehen, Sprechweise und Verhalten müssen zusammenpassen, sonst wirkt der Gesamteindruck unstimmig.",
+    "metapher_fr": "Comme chez une personne : apparence, façon de parler et comportement doivent concorder, sinon l'impression d'ensemble paraît incohérente.",
+    "bereiche": [
+      "corporate-identity"
+    ]
+  },
+  {
+    "id": "system1-system2",
+    "begriff_de": "System 1 / System 2",
+    "begriff_fr": "Système 1 / système 2",
+    "kurz_de": "Nach Daniel Kahneman: System 1 denkt schnell, automatisch und gefühlsgesteuert, System 2 langsam, bewusst und analytisch.",
+    "kurz_fr": "Selon Daniel Kahneman : le système 1 pense vite, automatiquement et par émotion, le système 2 lentement, consciemment et analytiquement.",
+    "metapher_de": "Wie ein erfahrener Autofahrer im Alltagsverkehr (System 1) gegenüber demselben Fahrer beim ersten Einparken in eine enge Lücke (System 2).",
+    "metapher_fr": "Comme un conducteur expérimenté dans le trafic quotidien (système 1) face au même conducteur se garant pour la première fois dans une place étroite (système 2).",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
+  },
+  {
+    "id": "ankereffekt",
+    "begriff_de": "Ankereffekt",
+    "begriff_fr": "Effet d'ancrage",
+    "kurz_de": "Die erste gesehene Zahl (z. B. ein durchgestrichener Preis) dient unbewusst als Vergleichswert für alle folgenden Einschätzungen.",
+    "kurz_fr": "Le premier chiffre vu (p. ex. un prix barré) sert inconsciemment de valeur de référence pour toutes les évaluations suivantes.",
+    "metapher_de": "Wie ein Schiff, das seinen Anker wirft: Die Einschätzung bleibt in der Nähe der ersten Zahl «verankert», auch wenn diese willkürlich war.",
+    "metapher_fr": "Comme un navire qui jette l'ancre : l'évaluation reste « ancrée » près du premier chiffre, même s'il était arbitraire.",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
+  },
+  {
+    "id": "framing",
+    "begriff_de": "Framing",
+    "begriff_fr": "Framing",
+    "kurz_de": "Dieselbe Information wirkt je nach Wortwahl, Bildauswahl und Kontext unterschiedlich — der Rahmen lenkt die Bewertung.",
+    "kurz_fr": "La même information a un effet différent selon le choix des mots, des images et le contexte — le cadre oriente le jugement.",
+    "metapher_de": "Wie ein Bilderrahmen: Dasselbe Foto wirkt im goldenen Barockrahmen feierlich, im schlichten Alu-Rahmen nüchtern.",
+    "metapher_fr": "Comme un cadre de tableau : la même photo paraît solennelle dans un cadre baroque doré, sobre dans un cadre en aluminium minimaliste.",
+    "bereiche": [
+      "wirtschaftspsychologie",
+      "recherche-digitale-arbeitswelt"
+    ]
+  },
+  {
+    "id": "decoy-effekt",
+    "begriff_de": "Decoy-Effekt (Köder-Effekt)",
+    "begriff_fr": "Effet leurre",
+    "kurz_de": "Eine bewusst unattraktive dritte Option lenkt die Wahl auf die vom Anbieter gewünschte teurere Option.",
+    "kurz_fr": "Une troisième option volontairement peu attrayante oriente le choix vers l'option plus chère souhaitée par le vendeur.",
+    "metapher_de": "Wie ein Köder beim Angeln: Er selbst wird nicht gewählt, lenkt aber die Aufmerksamkeit gezielt auf die gewünschte Option.",
+    "metapher_fr": "Comme un leurre à la pêche : il n'est pas choisi lui-même, mais oriente l'attention vers l'option souhaitée.",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
+  },
+  {
+    "id": "verlustaversion",
+    "begriff_de": "Verlustaversion",
+    "begriff_fr": "Aversion à la perte",
+    "kurz_de": "Ein möglicher Verlust wiegt psychologisch schwerer als ein gleich grosser Gewinn — die Angst, etwas zu verpassen, treibt zur Handlung.",
+    "kurz_fr": "Une perte possible pèse psychologiquement plus lourd qu'un gain équivalent — la peur de manquer quelque chose pousse à agir.",
+    "metapher_de": "Der Schmerz, CHF 50.– zu verlieren, fühlt sich stärker an, als sich die Freude anfühlt, CHF 50.– zu gewinnen.",
+    "metapher_fr": "La douleur de perdre CHF 50.– se ressent plus fortement que la joie d'en gagner 50.–.",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
+  },
+  {
+    "id": "social-proof",
+    "begriff_de": "Social Proof",
+    "begriff_fr": "Preuve sociale",
+    "kurz_de": "Menschen orientieren sich am Verhalten anderer — viele positive Bewertungen oder hohe Nutzerzahlen senken die eigene Kaufunsicherheit.",
+    "kurz_fr": "Les gens s'orientent selon le comportement d'autrui — de nombreux avis positifs ou un grand nombre d'utilisateurs réduisent l'incertitude d'achat.",
+    "metapher_de": "Wie eine lange Schlange vor einem Restaurant: Sie überzeugt mehr Leute vom Essen als jede Werbung.",
+    "metapher_fr": "Comme une longue file d'attente devant un restaurant : elle convainc plus de monde de la qualité des plats que n'importe quelle publicité.",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
+  },
+  {
+    "id": "dark-patterns",
+    "begriff_de": "Dark Patterns",
+    "begriff_fr": "Dark Patterns",
+    "kurz_de": "UX-Gestaltungstricks, die Nutzer:innen bewusst zu Handlungen verleiten, die nicht in ihrem Interesse liegen (z. B. erfundene Countdown-Timer, «Roach Motel»).",
+    "kurz_fr": "Des astuces de conception UX qui incitent délibérément les utilisateur·rices à des actions contraires à leur intérêt (p. ex. faux comptes à rebours, « Roach Motel »).",
+    "metapher_de": "Wie eine Kakerlakenfalle («Roach Motel»): leicht hineinzukommen (anmelden), absichtlich schwer wieder herauszukommen (kündigen).",
+    "metapher_fr": "Comme un piège à cafards (« Roach Motel ») : facile d'entrer (s'inscrire), volontairement difficile de sortir (se désabonner).",
+    "bereiche": [
+      "wirtschaftspsychologie"
+    ]
   }
 ]

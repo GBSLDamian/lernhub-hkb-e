@@ -18,10 +18,10 @@ tags: [corporate-identity, corporate-design, marke, konsistenz]
 ---
 
 :::de
-Du erkennst eine Migros-Filiale, einen Coop-Bon oder eine Apple-Verpackung oft schon aus den Augenwinkeln, ohne den Schriftzug bewusst zu lesen. Das ist kein Zufall, sondern das Ergebnis von **Corporate Identity** — der bewusst gestalteten „Persönlichkeit" einer Marke, die auf jedem Kanal konsistent wiedererkennbar bleibt.
+Du erkennst eine Migros-Filiale, einen Coop-Bon oder eine Apple-Verpackung oft schon aus den Augenwinkeln, ohne den Schriftzug bewusst zu lesen. Das ist kein Zufall, sondern das Ergebnis von **{{glossar:corporate-identity|Corporate Identity}}** — der bewusst gestalteten „Persönlichkeit" einer Marke, die auf jedem Kanal konsistent wiedererkennbar bleibt.
 :::
 :::fr
-Tu reconnais souvent une filiale Migros, un ticket de caisse Coop ou un emballage Apple du coin de l'œil, sans même lire consciemment le nom. Ce n'est pas un hasard, mais le résultat de l'**identité d'entreprise** (Corporate Identity) — la « personnalité » délibérément conçue d'une marque, reconnaissable de façon cohérente sur chaque canal.
+Tu reconnais souvent une filiale Migros, un ticket de caisse Coop ou un emballage Apple du coin de l'œil, sans même lire consciemment le nom. Ce n'est pas un hasard, mais le résultat de l'**{{glossar:corporate-identity|identité d'entreprise}}** (Corporate Identity) — la « personnalité » délibérément conçue d'une marque, reconnaissable de façon cohérente sur chaque canal.
 :::
 
 :::h2 de="Die Trias der Corporate Identity" fr="La triade de l'identité d'entreprise":::
