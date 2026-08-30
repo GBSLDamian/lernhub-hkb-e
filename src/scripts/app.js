@@ -431,18 +431,54 @@ function mountGlossaryTerms(root = document) {
 }
 
 // ---------- Video facade (click-to-load, no tracking until clicked) ----------
+// Requires internet (thumbnail + oEmbed check + embed itself all load from
+// YouTube) — the rest of the site works fully offline, so this is labelled
+// as an online-only element and degrades gracefully when offline or when
+// the video owner has disabled embedding (playableInEmbed check).
+function renderVideoOffline(wrap, videoId) {
+  wrap.innerHTML = `
+    <div class="video-facade__offline">
+      <p><span data-lang="de">Keine Internetverbindung — dieses Video kann offline nicht geladen werden.</span><span data-lang="fr">Pas de connexion internet — cette vidéo ne peut pas être chargée hors ligne.</span></p>
+      <a class="btn-secondary" href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">
+        <span data-lang="de">Später auf YouTube ansehen</span><span data-lang="fr">Regarder plus tard sur YouTube</span>
+      </a>
+    </div>
+  `;
+}
+function renderVideoFallback(wrap, videoId) {
+  wrap.innerHTML = `
+    <div class="video-facade__offline">
+      <p><span data-lang="de">Dieses Video kann hier nicht eingebettet werden (vom Kanal deaktiviert).</span><span data-lang="fr">Cette vidéo ne peut pas être intégrée ici (désactivé par la chaîne).</span></p>
+      <a class="btn-secondary" href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">
+        <span data-lang="de">Direkt auf YouTube ansehen</span><span data-lang="fr">Regarder directement sur YouTube</span>
+      </a>
+    </div>
+  `;
+}
+function renderVideoFacade(wrap, videoId) {
+  wrap.innerHTML = `
+    <span class="video-facade__badge"><span data-lang="de">Online-Inhalt</span><span data-lang="fr">Contenu en ligne</span></span>
+    <img class="video-facade__thumb" src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" alt="" loading="lazy">
+    <button type="button" class="video-facade__play" aria-label="Video laden und abspielen / charger et lire la vidéo"></button>
+  `;
+  wrap.querySelector('.video-facade__play').addEventListener('click', () => {
+    wrap.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="Video" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  });
+}
 function mountVideoFacades(root = document) {
   root.querySelectorAll('.video-facade[data-video-id]:not([data-initialized])').forEach((wrap) => {
     wrap.dataset.initialized = 'true';
     const videoId = wrap.dataset.videoId;
     if (!videoId) return;
-    wrap.innerHTML = `
-      <img class="video-facade__thumb" src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" alt="" loading="lazy">
-      <button type="button" class="video-facade__play" aria-label="Video laden und abspielen / charger et lire la vidéo"></button>
-    `;
-    wrap.querySelector('.video-facade__play').addEventListener('click', () => {
-      wrap.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1" title="Video" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    });
+    if (!navigator.onLine) {
+      renderVideoOffline(wrap, videoId);
+      return;
+    }
+    wrap.innerHTML = `<p class="text-muted video-facade__checking"><span data-lang="de">Prüfe Verfügbarkeit …</span><span data-lang="fr">Vérification de la disponibilité …</span></p>`;
+    fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`)
+      .then((res) => { if (!res.ok) throw new Error('not embeddable'); return res.json(); })
+      .then(() => renderVideoFacade(wrap, videoId))
+      .catch(() => renderVideoFallback(wrap, videoId));
   });
 }
 
@@ -458,6 +494,7 @@ function swapMainContent(doc, hash = '') {
   updateActiveNav();
   mountWidgets(oldMain);
   mountGlossaryTerms(oldMain);
+  mountVideoFacades(oldMain);
   recordVisit();
   initProgressTracking();
   paintProgressBars();
@@ -522,6 +559,7 @@ function boot() {
   initClientNav();
   mountWidgets();
   mountGlossaryTerms();
+  mountVideoFacades();
   initGlossaryPage();
   initServiceWorker();
 
