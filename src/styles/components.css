@@ -387,6 +387,12 @@ body.print-vorlage-only .prev-next { display: none !important; }
 .dnd-card__buttons { display: flex; flex-wrap: wrap; gap: var(--space-1); }
 .dnd-card__btn { font-size: 0.75rem; padding: 2px 8px; border: 1px solid var(--color-border); border-radius: 999px; }
 .dnd-card__btn:disabled { opacity: 0.4; }
+@media (max-width: 600px) {
+  .dnd-zones { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+  .dnd-zones { grid-template-columns: 1fr; }
+}
 
 /* ================= Widget: Checkliste ================= */
 .checkliste__list { display: grid; gap: var(--space-2); }
@@ -549,6 +555,12 @@ body.print-vorlage-only .prev-next { display: none !important; }
   .datenspur-demo__row { grid-template-columns: 1fr; gap: 2px; }
   .datenspur-demo__label { font-weight: 600; }
 }
+
+/* ================= Widget: Framing-Vergleich ================= */
+.framing-vergleich__frame { margin: var(--space-4) 0; border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface-raised); }
+.framing-vergleich__frame img { display: block; width: 100%; height: auto; }
+.framing-vergleich__aussage { font-size: 0.9375rem; margin-bottom: var(--space-2); }
+.framing-vergleich__credit { font-size: 0.75rem; margin-bottom: var(--space-4); }
 
 /* ================= Widget: Fakt oder Fake? ================= */
 .fakt-fake__statement { font-size: 1.0625rem; font-weight: 600; margin: var(--space-4) 0; }

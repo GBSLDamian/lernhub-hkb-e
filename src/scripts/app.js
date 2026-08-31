@@ -31,6 +31,7 @@ const WIDGET_MODULES = {
   'kompression-demo': '/assets/widgets/kompression-demo.js',
   'belichtung-framerate': '/assets/widgets/belichtung-framerate.js',
   'datenspur-demo': '/assets/widgets/datenspur-demo.js',
+  'framing-vergleich': '/assets/widgets/framing-vergleich.js',
   'schlagzeilen-quiz': '/assets/widgets/schlagzeilen-quiz.js',
   'farb-akkordeon': '/assets/widgets/farb-akkordeon.js',
   'schrift-explorer': '/assets/widgets/schrift-explorer.js',

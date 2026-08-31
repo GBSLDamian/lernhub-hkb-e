@@ -710,5 +710,41 @@
     "bereiche": [
       "wirtschaftspsychologie"
     ]
+  },
+  {
+    "id": "priming",
+    "begriff_de": "Priming",
+    "begriff_fr": "Amorçage (priming)",
+    "kurz_de": "Ein vorheriger Reiz (Wort, Bild, Überschrift) beeinflusst unbewusst, wie eine nachfolgende Information wahrgenommen wird.",
+    "kurz_fr": "Un stimulus antérieur (mot, image, titre) influence inconsciemment la façon dont une information suivante est perçue.",
+    "metapher_de": "Wie ein Filmtrailer mit dramatischer Musik: Der Ton entscheidet mit, ob eine neutrale Szene spannend oder gruselig wirkt.",
+    "metapher_fr": "Comme une bande-annonce avec une musique dramatique : le son influence déjà si une scène neutre paraît palpitante ou effrayante.",
+    "bereiche": [
+      "recherche-digitale-arbeitswelt"
+    ]
+  },
+  {
+    "id": "bestaetigungsfehler",
+    "begriff_de": "Bestätigungsfehler (Confirmation Bias)",
+    "begriff_fr": "Biais de confirmation",
+    "kurz_de": "Die Tendenz, Informationen zu bevorzugen und zu glauben, die die eigene bestehende Meinung bestätigen.",
+    "kurz_fr": "La tendance à privilégier et croire les informations qui confirment sa propre opinion existante.",
+    "metapher_de": "Wie jemand, der nur nach Parkplätzen direkt vor dem Ziel sucht und freie Plätze wenige Meter weiter nicht wahrnimmt.",
+    "metapher_fr": "Comme quelqu'un qui ne cherche une place de parc que juste devant sa destination et ne remarque pas les places libres à quelques mètres.",
+    "bereiche": [
+      "recherche-digitale-arbeitswelt"
+    ]
+  },
+  {
+    "id": "emotionale-trigger",
+    "begriff_de": "Emotionale Trigger",
+    "begriff_fr": "Déclencheurs émotionnels",
+    "kurz_de": "Starke Emotionen wie Angst, Wut oder Mitleid lassen Inhalte schneller teilen und kritisches Nachdenken in den Hintergrund treten.",
+    "kurz_fr": "Des émotions fortes comme la peur, la colère ou la pitié font partager les contenus plus vite et relèguent la réflexion critique au second plan.",
+    "metapher_de": "Wie ein Feueralarm, der auch bei Fehlalarm sofort zum Handeln zwingt statt zum Nachdenken.",
+    "metapher_fr": "Comme une alarme incendie qui pousse à agir immédiatement même en cas de fausse alerte, plutôt qu'à réfléchir.",
+    "bereiche": [
+      "recherche-digitale-arbeitswelt"
+    ]
   }
 ]
