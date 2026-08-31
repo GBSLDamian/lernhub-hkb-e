@@ -12,9 +12,9 @@ lernziele_de:
   - Ich wähle für eine Recherche eine passende Suchmaschine oder KI-Anwendung.
   - Ich beachte Datenschutz/Tracking bei der Recherche und belege wichtige Informationen mehrfach.
 lernziele_fr:
-  - Je choisis un moteur de recherche ou une application IA adapté à une recherche.
+  - Je choisis un moteur de recherche adapté à une recherche.
   - Je tiens compte de la protection des données/du suivi lors de mes recherches et je vérifie les informations importantes par plusieurs sources.
-tags: [suchmaschinen, datenschutz, chatgpt, recherche]
+tags: [suchmaschinen, datenschutz, recherche, tracking]
 ---
 
 :::de
@@ -24,13 +24,36 @@ Nicht jede Suchmaschine ist gleich — manche legen den Fokus auf Datenschutz, m
 Tous les moteurs de recherche ne se valent pas — certains misent sur la protection des données, d'autres sur des réponses aussi « intelligentes » que possible. Qui fait des recherches devrait connaître le bon outil et ne jamais s'appuyer sur une seule source pour des informations importantes.
 :::
 
-:::h2 de="Datenschutzorientierte Suchmaschinen" fr="Moteurs de recherche axés protection des données":::
+:::h2 de="Warum und wofür Datenschutz bei der Suche wichtig ist" fr="Pourquoi et pour quoi la protection des données compte dans la recherche":::
 
-:::konzept titel_de="Startpage & SwissCows" titel_fr="Startpage & SwissCows"
+:::de
+Jede Suchanfrage bei einer normalen Suchmaschine kann gespeichert und mit dir verknüpft werden — oft über Jahre. Das wird besonders heikel bei:
+
+- **Gesundheitsfragen:** Wer nach Symptomen sucht («Was bedeutet ständige Müdigkeit?»), will nicht, dass Versicherungen oder Werbetreibende daraus ein Gesundheitsprofil bilden.
+- **Bewerbungen:** Recherchen zu Kündigungsfristen oder neuen Stellen sollen nicht beim aktuellen Arbeitgeber landen, falls Geräte oder Netzwerke geteilt werden.
+- **Schulden/finanzielle Notlagen:** Suchanfragen zu Schuldenberatung oder Betreibungen sind hochsensibel und werden von manchen Plattformen gezielt für Kreditwerbung ausgewertet.
+- **Politische Themen:** Wer sich zu kontroversen politischen Fragen informiert, will nicht in eine **Filterblase** geraten, in der nur noch die eigene Meinung bestätigende Ergebnisse angezeigt werden.
+
+In all diesen Fällen hilft eine datenschutzorientierte Suchmaschine: Sie verhindert **Profilbildung** (ein aus vielen Suchanfragen zusammengesetztes Bild deiner Interessen, Sorgen und Absichten) und damit auch personalisierte Werbung, die genau auf diese sensiblen Themen zugeschnitten ist.
+:::
+:::fr
+Chaque requête sur un moteur de recherche classique peut être enregistrée et associée à toi — souvent pendant des années. C'est particulièrement délicat pour :
+
+- **Questions de santé :** qui cherche des symptômes (« Que signifie une fatigue constante ? ») ne veut pas que des assurances ou des annonceurs en tirent un profil de santé.
+- **Candidatures :** des recherches sur les délais de résiliation ou de nouveaux postes ne doivent pas parvenir à l'employeur actuel si des appareils ou réseaux sont partagés.
+- **Dettes/difficultés financières :** les recherches sur le conseil en désendettement ou les poursuites sont hautement sensibles et parfois exploitées pour cibler de la publicité de crédit.
+- **Sujets politiques :** qui s'informe sur des questions politiques controversées ne veut pas se retrouver dans une **bulle de filtre**, où seuls des résultats confirmant sa propre opinion s'affichent.
+
+Dans tous ces cas, un moteur de recherche axé protection des données aide : il empêche le **profilage** (une image de tes intérêts, soucis et intentions construite à partir de nombreuses requêtes) et donc la publicité personnalisée calquée précisément sur ces sujets sensibles.
+:::
+
+:::konzept titel_de="Startpage, SwissCows & Wolfram Alpha" titel_fr="Startpage, SwissCows & Wolfram Alpha"
 :::de
 **Startpage** gibt laut eigenen Angaben an, die sicherste und diskreteste Suchmaschine zu sein: Es sollen keine IP-Adressen oder Tracking-Cookies gespeichert werden, indem Informationen entfernt werden, die eine Person identifizieren könnten. Im Hintergrund werden die Suchanfragen an Google weitergeleitet. Der Suchdienst ist in Holland beheimatet, wodurch das EU-Datenschutzgesetz gilt.
 
 **SwissCows** kommt aus der Schweiz und untersteht damit dem Schweizer Datenschutzgesetz. Man kann anonym surfen: Weder Tracking-Cookies noch besuchte IP-Adressen werden gespeichert.
+
+**Wolfram Alpha** ist eine «intelligente» Antwortmaschine statt einer klassischen Trefferliste: Sie versucht, Fragen (auch mathematische oder wissenschaftliche) direkt zu «beantworten» statt bloss Links dazu anzuzeigen. Der Dienst ist nur auf Englisch verfügbar.
 
 **Metapher:** Eine normale Suchmaschine ist wie ein Verkäufer, der sich jeden Kundenwunsch merkt, um dir später «passende» Werbung zu zeigen. Startpage/SwissCows sind wie ein Verkäufer, der dir hilft, aber danach sofort vergisst, dass du überhaupt da warst.
 :::
@@ -39,26 +62,22 @@ Tous les moteurs de recherche ne se valent pas — certains misent sur la protec
 
 **SwissCows** vient de Suisse et relève donc du droit suisse de la protection des données. On peut y naviguer anonymement : ni cookies de suivi ni adresses IP visitées ne sont enregistrés.
 
+**Wolfram Alpha** est une machine à « réponses » intelligente plutôt qu'une liste de résultats classique : elle tente de « répondre » directement aux questions (aussi mathématiques ou scientifiques) plutôt que de simplement afficher des liens. Le service n'existe qu'en anglais.
+
 **Métaphore :** un moteur de recherche classique est comme un vendeur qui retient chaque souhait client pour t'afficher plus tard une publicité « adaptée ». Startpage/SwissCows sont comme un vendeur qui t'aide, mais oublie aussitôt après que tu es passé·e.
 :::
 :::
 
-:::h2 de="Wolfram Alpha & ChatGPT" fr="Wolfram Alpha & ChatGPT":::
+:::h2 de="Was eine Suche wirklich preisgibt" fr="Ce qu'une recherche révèle vraiment":::
 
 :::de
-**Wolfram Alpha** ist eine «intelligente» Suchmaschine: Sie zeigt Suchergebnisse nicht bloss an, sondern versucht sie in passender Weise zu «beantworten». Der Dienst ist nur auf Englisch verfügbar, seine Startseite listet zahlreiche Themenbereiche auf — auch mathematische.
-
-**ChatGPT** ist keine Suchmaschine im engeren Sinn, sondern ein Chatbot: eine Anwendung, die künstliche Intelligenz und ein textbasiertes Dialogsystem als Benutzerschnittstelle verwendet. ChatGPT funktioniert durch maschinelles Lernen mit «neuronalen Netzen» — die Server wurden mit sehr vielen Informationen «gefüttert» und generieren daraus mittels logischer Verbindungen neue Antworten. Anders als bei einer klassischen Internetsuche musst du nicht die ganze Frage neu tippen: Es genügt, die Frage laufend einzuschränken oder zu ergänzen.
-
-**Grenzen:** Was sich nicht als Information hinterlegen lässt — Gefühle, Zwischentöne, Ironie — führt zu seltsamen oder unpassenden Antworten. Zudem ist ChatGPT ein textbasiertes Modell und kann von sich aus keine Bilder darstellen oder «sehen».
+Probiere es aus: Gib einen beliebigen Suchbegriff ein und sieh, was dein Browser dabei ohnehin preisgibt — unabhängig davon, welche Suchmaschine du nutzt.
 :::
 :::fr
-**Wolfram Alpha** se veut un moteur de recherche « intelligent » : il n'affiche pas seulement des résultats, mais tente d'y « répondre » de manière adaptée. Le service n'existe qu'en anglais ; sa page d'accueil liste de nombreux domaines thématiques — y compris mathématiques.
-
-**ChatGPT** n'est pas un moteur de recherche au sens strict, mais un chatbot : une application utilisant l'intelligence artificielle et un dialogue textuel comme interface. ChatGPT fonctionne par apprentissage automatique avec des « réseaux neuronaux » — les serveurs ont été « nourris » avec énormément d'informations et génèrent de nouvelles réponses par liens logiques. Contrairement à une recherche classique, il n'est pas nécessaire de retaper toute la question : il suffit de la préciser ou de la compléter au fil de l'échange.
-
-**Limites :** ce qui ne peut pas être stocké comme information — sentiments, sous-entendus, ironie — donne des réponses étranges ou inadaptées. De plus, ChatGPT est un modèle textuel et ne peut de lui-même ni représenter ni « voir » des images.
+Essaie : saisis un terme de recherche quelconque et découvre ce que ton navigateur révèle de toute façon — indépendamment du moteur de recherche utilisé.
 :::
+
+:::widget datenspur-demo:::
 
 :::merksatz
 :::de

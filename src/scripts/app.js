@@ -30,6 +30,10 @@ const WIDGET_MODULES = {
   'drittel-schnitt-overlay': '/assets/widgets/drittel-schnitt-overlay.js',
   'kompression-demo': '/assets/widgets/kompression-demo.js',
   'belichtung-framerate': '/assets/widgets/belichtung-framerate.js',
+  'datenspur-demo': '/assets/widgets/datenspur-demo.js',
+  'schlagzeilen-quiz': '/assets/widgets/schlagzeilen-quiz.js',
+  'farb-akkordeon': '/assets/widgets/farb-akkordeon.js',
+  'schrift-explorer': '/assets/widgets/schrift-explorer.js',
 };
 
 function safeGet(key) {
