@@ -614,7 +614,12 @@ body.print-vorlage-only .prev-next { display: none !important; }
 .farb-akkordeon__panel { padding: 0 var(--space-2) var(--space-4); }
 .farb-akkordeon__img { display: block; max-width: 100%; height: auto; max-height: 22rem; margin: var(--space-3) 0; border-radius: var(--radius-md); }
 .farb-akkordeon__credit { font-size: 0.75rem; margin-bottom: var(--space-3); }
-.farb-akkordeon__marken { font-size: 0.875rem; margin: 0; }
+.farb-akkordeon__marken { font-size: 0.875rem; margin: 0 0 var(--space-3); }
+.farb-akkordeon__gallery-label { font-size: 0.8125rem; font-weight: 600; margin: 0 0 var(--space-2); }
+.farb-akkordeon__gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); gap: var(--space-3); margin-bottom: var(--space-2); }
+.farb-akkordeon__gallery-item { margin: 0; }
+.farb-akkordeon__gallery-item img { display: block; width: 100%; height: 8rem; object-fit: cover; border-radius: var(--radius-sm); background: var(--color-surface-raised); }
+.farb-akkordeon__gallery-item figcaption { font-size: 0.75rem; color: var(--color-text-muted); margin-top: var(--space-1); text-align: center; }
 
 /* ================= Widget: Bild-Callouts ================= */
 .bild-callouts__frame { position: relative; margin: var(--space-4) 0; border-radius: var(--radius-md); overflow: hidden; line-height: 0; }

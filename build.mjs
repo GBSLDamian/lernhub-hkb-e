@@ -18,12 +18,95 @@ const CONTENT_DIR = path.join(ROOT, 'content');
 const SRC_DIR = path.join(ROOT, 'src');
 const ASSETS_DIR = path.join(ROOT, 'assets');
 const DIST_DIR = path.join(ROOT, 'dist');
+const MEDIA_DIR = path.join(ROOT, 'media');
 
 async function readJson(p) {
   return JSON.parse(await readFile(p, 'utf8'));
 }
 
-async function loadLessons(areas) {
+// ---------- media/<folder>/ scanning: leading-colour-word convention ----------
+// Dateiname beginnt mit einem Farbbegriff, getrennt durch "-" oder "_"
+// (z. B. "rot-tabasco.jpg", "gruen_Polizei.jpg") — siehe README.
+const COLOR_ALIASES = {
+  rot: 'rot',
+  orange: 'orange',
+  gelb: 'gelb',
+  gruen: 'gruen',
+  blau: 'blau',
+  violett: 'violett',
+  lila: 'violett',
+  schwarz: 'schwarzweiss',
+  weiss: 'schwarzweiss',
+  grau: 'grau',
+  tuerkis: 'tuerkis',
+  pink: 'pink',
+  rosa: 'pink',
+  braun: 'braun',
+};
+
+function normalizeColorToken(s) {
+  return s
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss');
+}
+
+function titleCaseFromFilename(s) {
+  return s
+    .replace(/[-_]+/g, ' ')
+    .trim()
+    .split(' ')
+    .filter(Boolean)
+    .map((w) => w[0].toUpperCase() + w.slice(1))
+    .join(' ');
+}
+
+// Scans media/<folderName>/*.{jpg,jpeg,png,webp}, groups matched files by
+// the color word their filename starts with. Missing folder → empty result
+// (not an error) so the repo works fine without the client's media drop.
+async function scanMediaFolder(folderName) {
+  const dir = path.join(MEDIA_DIR, folderName);
+  const result = { byRow: {}, skipped: [] };
+  if (!existsSync(dir)) return result;
+  const files = (await readdir(dir)).filter((f) => /\.(jpe?g|png|webp)$/i.test(f));
+  for (const file of files) {
+    const base = file.replace(/\.[^.]+$/, '');
+    const m = base.match(/^([a-zA-ZÀ-ÿ]+)[-_](.+)$/);
+    if (!m) {
+      result.skipped.push(file);
+      continue;
+    }
+    const [, rawColor, rest] = m;
+    const rowId = COLOR_ALIASES[normalizeColorToken(rawColor)];
+    if (!rowId) {
+      result.skipped.push(file);
+      continue;
+    }
+    const destName = `${folderName}-${base.toLowerCase().replace(/[^a-z0-9]+/g, '-')}${path.extname(file).toLowerCase()}`;
+    if (!result.byRow[rowId]) result.byRow[rowId] = [];
+    result.byRow[rowId].push({
+      src: `/assets/img/ordner/${destName}`,
+      srcPath: path.join(dir, file),
+      destName,
+      caption: titleCaseFromFilename(rest),
+    });
+  }
+  return result;
+}
+
+async function copyMediaFolderImages(mediaFolders) {
+  const destDir = path.join(DIST_DIR, 'assets', 'img', 'ordner');
+  const allImages = Object.values(mediaFolders).flatMap((f) => Object.values(f.byRow).flat());
+  if (!allImages.length) return;
+  await mkdir(destDir, { recursive: true });
+  for (const img of allImages) {
+    await cp(img.srcPath, path.join(destDir, img.destName));
+  }
+}
+
+async function loadLessons(areas, mediaFolders = {}) {
   const lessons = [];
   for (const area of areas) {
     const dir = path.join(CONTENT_DIR, area.id);
@@ -33,7 +116,7 @@ async function loadLessons(areas) {
       const raw = await readFile(path.join(dir, file), 'utf8');
       const { data, body } = parseFrontmatter(raw);
       const ast = parseBody(body);
-      const renderCtx = { headings: [], lang: null, widgetIndex: 0 };
+      const renderCtx = { headings: [], lang: null, widgetIndex: 0, mediaFolders };
       const bodyHtml = renderBody(ast, renderCtx);
       const widgets = [...collectWidgets(ast)];
       lessons.push({
@@ -428,8 +511,27 @@ async function build() {
   const glossaryPath = path.join(CONTENT_DIR, 'glossar.json');
   const glossary = existsSync(glossaryPath) ? await readJson(glossaryPath) : [];
   setGlossary(glossary);
-  const lessons = await loadLessons(areas);
+
+  const mediaFolders = { farbwirkung: await scanMediaFolder('farbwirkung') };
+  await copyMediaFolderImages(mediaFolders);
+  for (const [folderName, scan] of Object.entries(mediaFolders)) {
+    if (scan.skipped.length) {
+      console.log(`⚠ media/${folderName}/: nicht zuordenbar (übersprungen): ${scan.skipped.join(', ')}`);
+    }
+  }
+
+  const lessons = await loadLessons(areas, mediaFolders);
   const ctx = { clusters, areas, lessons };
+
+  // Farben, die zwar erkannt wurden, aber zu keiner Akkordeon-Zeile im
+  // Content gehören (z. B. eine Kategorie, die es (noch) nicht gibt).
+  for (const [folderName, scan] of Object.entries(mediaFolders)) {
+    for (const [rowId, images] of Object.entries(scan.byRow)) {
+      if (!scan.consumedRows?.has(rowId)) {
+        console.log(`⚠ media/${folderName}/: Farbe "${rowId}" erkannt, aber keine passende Zeile im Widget gefunden (übersprungen): ${images.map((i) => path.basename(i.srcPath)).join(', ')}`);
+      }
+    }
+  }
 
   // Lesson pages
   const pageWrites = [];

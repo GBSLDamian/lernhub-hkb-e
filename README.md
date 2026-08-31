@@ -272,6 +272,40 @@ Perspektiven, Polardiagramme, Kompressor-Kennlinien …) sind eigene,
 schematische Illustrationen für dieses Projekt — keine externen Quellen,
 daher ohne Attribution.
 
+### Auftraggeber-Bilder aus `media/<ordner>/` einbinden
+
+Für Widgets, die reale, vom Auftraggeber bereitgestellte Bilder anzeigen
+sollen (z. B. das Farb-Akkordeon), gibt es einen Build-Zeit-Scan-Mechanismus
+in `build.mjs`, damit Bilder einfach in einen Ordner gelegt werden können,
+ohne Content-Dateien von Hand nachzuführen:
+
+1. Bilder in `media/<ordnername>/` ablegen (z. B. `media/farbwirkung/`).
+   **Namenskonvention:** Der Dateiname muss mit einem erkannten Farbbegriff
+   beginnen, getrennt durch `-` oder `_` (Gross-/Kleinschreibung egal):
+   `rot`, `orange`, `gelb`, `gruen`/`grün`, `blau`, `violett`/`lila`,
+   `schwarz`, `weiss`, `grau`, `tuerkis`/`türkis`, `pink`/`rosa`, `braun`.
+   Beispiel: `rot-tabasco.jpg`, `gruen_Polizei.jpg`. Unterstützte Formate:
+   `.jpg`/`.jpeg`/`.png`/`.webp`.
+2. Im Widget-Config-JSON `"ordnerbilder": "<ordnername>"` auf oberster Ebene
+   ergänzen (siehe `farb-akkordeon`-Beispiel in `02-farbwirkung-
+   farbpsychologie.md`). `build.mjs` scannt den Ordner, kopiert erkannte
+   Bilder nach `dist/assets/img/ordner/` und hängt sie — passend zur
+   erkannten Farbe — an das `items[]`-Element mit gleicher `id` im
+   Widget-Config an (`item.ordnerbilder: [{ src, caption }]`). Der
+   (bereinigte) Rest des Dateinamens wird zur Bildunterschrift.
+3. **Robustheit:** Dateien mit unbekanntem Farbbegriff oder ohne Trenner
+   werden übersprungen, nicht abgebrochen — der Build meldet sie in der
+   Konsole (`⚠ media/<ordner>/: nicht zuordenbar …`). Erkennt der Scan
+   einen Farbbegriff, für den es keine passende `id` im Widget gibt, wird
+   das ebenfalls gemeldet (`… aber keine passende Zeile im Widget
+   gefunden`), statt das Bild stillschweigend zu verwerfen. Fehlt zu einer
+   bestehenden Zeile ein Ordnerbild, bleibt einfach das im Content
+   hinterlegte Standardbeispiel stehen.
+4. Reale Marken-/Kampagnenbilder aus `media/` gelten als vom Auftraggeber
+   für die interne schulische Nutzung bestätigt (siehe Medien-Lizenzregel
+   aus Prompt 5) — der Auftraggeber prüft die schulische Lizenzlage
+   (ProLitteris) abschliessend selbst.
+
 ## Lokal starten
 
 Voraussetzung: Node.js ≥ 18 (keine weiteren Abhängigkeiten).

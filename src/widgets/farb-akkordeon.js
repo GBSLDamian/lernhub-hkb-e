@@ -1,8 +1,10 @@
 // Farb-Akkordeon: pro Farbe eine aufklappbare Zeile (button[aria-expanded]),
 // zeigt beim Öffnen ein reales, lokal eingebettetes Werbebeispiel in dieser
 // Farbe plus 1-2 moderne Markenbeispiele. Nur eine Zeile gleichzeitig offen.
-// config: { items: [{ id, swatch, farbeDe, farbeFr, wirkungDe, wirkungFr,
-//           bild, bildAltDe, bildCreditDe, bildCreditFr, markenDe, markenFr }] }
+// config: { ordnerbilder?: "<media-Unterordner>", items: [{ id, swatch,
+//           farbeDe, farbeFr, wirkungDe, wirkungFr, bild, bildAltDe,
+//           bildCreditDe, bildCreditFr, markenDe, markenFr,
+//           ordnerbilder?: [{ src, caption }] (vom Build injiziert) }] }
 export function mount(container, config) {
   const items = config?.items;
   if (!container || !items?.length) return;
@@ -24,6 +26,23 @@ export function mount(container, config) {
         <img class="farb-akkordeon__img" src="${item.bild}" alt="${item.bildAltDe || ''}" loading="lazy">
         <p class="text-muted farb-akkordeon__credit"><span data-lang="de">${item.bildCreditDe}</span><span data-lang="fr">${item.bildCreditFr || item.bildCreditDe}</span></p>
         <p class="farb-akkordeon__marken"><span data-lang="de"><strong>Heutige Markenbeispiele:</strong> ${item.markenDe}</span><span data-lang="fr"><strong>Exemples de marques actuelles :</strong> ${item.markenFr}</span></p>
+        ${item.ordnerbilder?.length
+          ? `<p class="farb-akkordeon__gallery-label"><span data-lang="de">Weitere Beispiele:</span><span data-lang="fr">Autres exemples :</span></p>
+             <div class="farb-akkordeon__gallery">
+               ${item.ordnerbilder
+                 .map(
+                   (img) => `<figure class="farb-akkordeon__gallery-item">
+                       <img src="${img.src}" alt="${img.caption}" loading="lazy">
+                       <figcaption>${img.caption}</figcaption>
+                     </figure>`
+                 )
+                 .join('')}
+             </div>
+             <p class="text-muted farb-akkordeon__credit">
+               <span data-lang="de">Beispiele zu Bildungszwecken — interne schulische Nutzung, keine Weiterverbreitung.</span>
+               <span data-lang="fr">Exemples à des fins éducatives — usage scolaire interne, pas de redistribution.</span>
+             </p>`
+          : ''}
       </div>
     </div>`
     )

@@ -255,6 +255,21 @@ export function renderBody(node, ctx = { headings: [], lang: null, widgetIndex: 
           }
         }
       }
+      if (config?.ordnerbilder && Array.isArray(config.items)) {
+        const folder = ctx.mediaFolders?.[config.ordnerbilder];
+        if (folder) {
+          config = {
+            ...config,
+            items: config.items.map((item) => {
+              const extra = folder.byRow[item.id];
+              if (!extra) return item;
+              folder.consumedRows = folder.consumedRows || new Set();
+              folder.consumedRows.add(item.id);
+              return { ...item, ordnerbilder: extra.map((img) => ({ src: img.src, caption: img.caption })) };
+            }),
+          };
+        }
+      }
       const idx = ctx.widgetIndex = (ctx.widgetIndex ?? 0) + 1;
       const configAttr = config ? ` data-widget-config="${escapeAttr(JSON.stringify(config))}"` : '';
       return `<div class="widget-shell" data-widget="${node.slug}">
