@@ -578,6 +578,21 @@ body.print-vorlage-only .prev-next { display: none !important; }
   .datenspur-demo__label { font-weight: 600; }
 }
 
+/* ================= Widget: Schrift-Explorer ================= */
+.schrift-explorer__select-label { display: flex; flex-direction: column; gap: var(--space-1); font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-4); max-width: 24rem; }
+.schrift-explorer__select {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.9375rem;
+}
+.schrift-explorer__preview { padding: var(--space-5); border-radius: var(--radius-md); background: var(--color-surface-raised); margin-bottom: var(--space-3); }
+.schrift-explorer__headline { font-size: 1.75rem; font-weight: 700; margin: 0 0 var(--space-3); line-height: 1.2; }
+.schrift-explorer__body { font-size: 1.0625rem; margin: 0; line-height: 1.6; }
+.schrift-explorer__explain { font-size: 0.875rem; color: var(--color-text-muted); margin: 0; }
+
 /* ================= Widget: Farb-Akkordeon ================= */
 .farb-akkordeon__row { border-bottom: 1px solid var(--color-border); }
 .farb-akkordeon__row:first-child { border-top: 1px solid var(--color-border); }

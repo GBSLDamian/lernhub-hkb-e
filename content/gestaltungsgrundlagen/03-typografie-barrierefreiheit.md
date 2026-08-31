@@ -22,32 +22,50 @@ tags: [typografie, barrierefreiheit, kontrast, wcag, gestaltung]
 | Typ | Wirkung |
 |---|---|
 | **Serif** | edel, klassisch — gut für längeren Print-Fliesstext |
-| **Sans-Serif** | modern, klar — Standard für Bildschirme |
+| **Humanist-Sans** | warm, zugänglich, leicht kalligrafisch — freundlicher als Grotesk |
+| **Grotesk** | neutral, geometrisch, nüchtern — Standard für Interfaces |
 | **Slab** | bodenständig, technisch-warm — kräftige Zwischentitel |
 | **Display** | laut, plakativ — Blickfang für kurze Überschriften |
 | **Script** | verspielt, persönlich — sparsam einsetzen, schwer lesbar in Fliesstext |
-| **Monospace** | technisch, präzise — Code, Zahlen, Tabellen |
+| **Mono** | technisch, präzise — Code, Zahlen, Tabellen |
 
 :::h2 de="Schriftwirkung live ausprobieren" fr="Essayer l'effet des polices en direct":::
 
 :::de
-Wähle eine Schrift und sieh, wie sich derselbe Satz anfühlt.
+Wähle eine Schrift aus dem Dropdown und sieh, wie sich Headline und Fliesstext dabei verändern.
 :::
 :::fr
-Choisis une police et observe comment la même phrase change d'impression.
+Choisis une police dans le menu déroulant et observe comment le titre et le texte courant changent.
 :::
 
-:::widget font-switcher
+:::widget schrift-explorer
 {
-  "sampleDe": "Guten Tag, wie geht es dir?",
-  "sampleFr": "Bonjour, comment vas-tu ?",
-  "fonts": [
-    { "family": "'Playfair Display Demo', Georgia, serif", "labelShort": "Serif", "explainDe": "Edel, klassisch, hochwertig — wirkt bei längeren Texten schnell schwer. Gut für Überschriften bei Premium-Marken.", "explainFr": "Élégant, classique, haut de gamme — devient vite lourd sur de longs textes. Bon pour les titres de marques premium." },
-    { "family": "'Work Sans Demo', Arial, sans-serif", "labelShort": "Sans-Serif", "explainDe": "Neutral, modern, gut lesbar auf Bildschirmen jeder Grösse — der sichere Standard für Fliesstext.", "explainFr": "Neutre, moderne, bien lisible sur tout écran — le standard sûr pour le texte courant." },
-    { "family": "'Roboto Slab Demo', Georgia, serif", "labelShort": "Slab", "explainDe": "Bodenständig, technisch-warm — kräftige Balken machen kurze Wörter/Zahlen besonders stabil und gut lesbar.", "explainFr": "Solide, technique et chaleureux — les barres épaisses rendent les mots/chiffres courts particulièrement stables et lisibles." },
-    { "family": "'Bebas Neue Demo', Impact, sans-serif", "labelShort": "Display", "explainDe": "Laut, plakativ, raumsparend — perfekt für kurze Blickfang-Überschriften, unlesbar in Fliesstext.", "explainFr": "Fort, affiché, compact — parfait pour de courts titres accrocheurs, illisible en texte courant." },
-    { "family": "'Dancing Script Demo', cursive", "labelShort": "Script", "explainDe": "Verspielt, persönlich, handschriftlich — wirkt einladend, aber nur sparsam und nie für längere Texte einsetzen.", "explainFr": "Ludique, personnel, manuscrit — paraît accueillant, mais à utiliser avec parcimonie et jamais pour de longs textes." },
-    { "family": "'Space Mono Demo', 'Courier New', monospace", "labelShort": "Mono", "explainDe": "Technisch, präzise — jedes Zeichen gleich breit, ideal für Code, Zahlenkolonnen und Tabellen.", "explainFr": "Technique, précis — chaque caractère a la même largeur, idéal pour le code, les colonnes de chiffres et les tableaux." }
+  "headlineDe": "Klarheit beginnt mit der richtigen Schrift.",
+  "headlineFr": "La clarté commence par la bonne police.",
+  "textDe": "Eine gute Schriftwahl unterstützt die Botschaft, statt von ihr abzulenken. Achte auf Lesbarkeit, Kontrast und eine Wirkung, die zum Inhalt passt.",
+  "textFr": "Un bon choix de police soutient le message au lieu d'en détourner l'attention. Veille à la lisibilité, au contraste et à un effet adapté au contenu.",
+  "categories": [
+    { "labelDe": "Serif", "labelFr": "Serif", "fonts": [
+      { "id": "serif", "family": "'Playfair Display Demo', Georgia, serif", "nameDe": "Playfair Display", "nameFr": "Playfair Display", "explainDe": "Edel, klassisch, hochwertig — wirkt bei längeren Texten schnell schwer. Gut für Überschriften bei Premium-Marken.", "explainFr": "Élégant, classique, haut de gamme — devient vite lourd sur de longs textes. Bon pour les titres de marques premium." }
+    ]},
+    { "labelDe": "Humanist-Sans", "labelFr": "Sans humaniste", "fonts": [
+      { "id": "humanist", "family": "'Fira Sans Demo', 'Segoe UI', sans-serif", "nameDe": "Fira Sans", "nameFr": "Fira Sans", "explainDe": "Warm und zugänglich durch leicht kalligrafisch inspirierte Formen — freundlicher als eine geometrische Grotesk, dabei weiterhin gut lesbar auf Bildschirmen.", "explainFr": "Chaleureuse et accessible grâce à des formes légèrement calligraphiques — plus conviviale qu'une grotesque géométrique, tout en restant bien lisible à l'écran." }
+    ]},
+    { "labelDe": "Grotesk", "labelFr": "Grotesque", "fonts": [
+      { "id": "grotesk", "family": "'Work Sans Demo', Arial, sans-serif", "nameDe": "Work Sans", "nameFr": "Work Sans", "explainDe": "Neutral, geometrisch, nüchtern aufgebaut — der sichere Standard für Interfaces und Fliesstext, ohne stilistische Extras.", "explainFr": "Neutre, géométrique, sobre — le standard sûr pour les interfaces et le texte courant, sans fioritures stylistiques." }
+    ]},
+    { "labelDe": "Slab", "labelFr": "Slab", "fonts": [
+      { "id": "slab", "family": "'Roboto Slab Demo', Georgia, serif", "nameDe": "Roboto Slab", "nameFr": "Roboto Slab", "explainDe": "Bodenständig, technisch-warm — kräftige Balken machen kurze Wörter/Zahlen besonders stabil und gut lesbar.", "explainFr": "Solide, technique et chaleureux — les barres épaisses rendent les mots/chiffres courts particulièrement stables et lisibles." }
+    ]},
+    { "labelDe": "Display", "labelFr": "Display", "fonts": [
+      { "id": "display", "family": "'Bebas Neue Demo', Impact, sans-serif", "nameDe": "Bebas Neue", "nameFr": "Bebas Neue", "explainDe": "Laut, plakativ, raumsparend — perfekt für kurze Blickfang-Überschriften, unlesbar in Fliesstext.", "explainFr": "Fort, affiché, compact — parfait pour de courts titres accrocheurs, illisible en texte courant." }
+    ]},
+    { "labelDe": "Script", "labelFr": "Script", "fonts": [
+      { "id": "script", "family": "'Dancing Script Demo', cursive", "nameDe": "Dancing Script", "nameFr": "Dancing Script", "explainDe": "Verspielt, persönlich, handschriftlich — wirkt einladend, aber nur sparsam und nie für längere Texte einsetzen.", "explainFr": "Ludique, personnel, manuscrit — paraît accueillant, mais à utiliser avec parcimonie et jamais pour de longs textes." }
+    ]},
+    { "labelDe": "Mono", "labelFr": "Mono", "fonts": [
+      { "id": "mono", "family": "'Space Mono Demo', 'Courier New', monospace", "nameDe": "Space Mono", "nameFr": "Space Mono", "explainDe": "Technisch, präzise — jedes Zeichen gleich breit, ideal für Code, Zahlenkolonnen und Tabellen.", "explainFr": "Technique, précis — chaque caractère a la même largeur, idéal pour le code, les colonnes de chiffres et les tableaux." }
+    ]}
   ]
 }
 :::
