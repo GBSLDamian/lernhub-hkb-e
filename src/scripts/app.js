@@ -32,6 +32,7 @@ const WIDGET_MODULES = {
   'belichtung-framerate': '/assets/widgets/belichtung-framerate.js',
   'datenspur-demo': '/assets/widgets/datenspur-demo.js',
   'framing-vergleich': '/assets/widgets/framing-vergleich.js',
+  'bild-callouts': '/assets/widgets/bild-callouts.js',
   'schlagzeilen-quiz': '/assets/widgets/schlagzeilen-quiz.js',
   'farb-akkordeon': '/assets/widgets/farb-akkordeon.js',
   'schrift-explorer': '/assets/widgets/schrift-explorer.js',

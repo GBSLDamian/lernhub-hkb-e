@@ -80,6 +80,41 @@ Lis l'exemple et attribue les quatre sections aux étapes AIDA :
 }
 :::
 
+:::h2 de="Ein echtes Werbeplakat zerlegen" fr="Décomposer une vraie affiche publicitaire":::
+
+:::de
+Klicke die vier nummerierten Marker im Bild an und lies, welcher AIDA-Stufe der jeweilige Bildbereich entspricht.
+:::
+:::fr
+Clique sur les quatre marqueurs numérotés dans l'image et lis à quelle étape AIDA correspond chaque zone.
+:::
+
+:::widget bild-callouts
+{
+  "image": "/assets/img/gestaltung/aida-plakat.jpg",
+  "altDe": "Historisches Werbeplakat für Spalding-Fahrräder (1901): ein Radfahrer in dynamischer Fahrt, darunter Produktname, Preise und eine Bestelladresse",
+  "creditDe": "Historisches Werbeplakat, «Spalding Bicycles», 1901, gemeinfrei (Public Domain), Wikimedia Commons. Beispiel zu Bildungszwecken — interne schulische Nutzung.",
+  "creditFr": "Affiche publicitaire historique, « Spalding Bicycles », 1901, domaine public, Wikimedia Commons. Exemple à des fins éducatives — usage scolaire interne.",
+  "marker": [
+    { "id": "attention", "xPercent": 42, "yPercent": 18, "labelDe": "Attention", "labelFr": "Attention", "textDe": "Die dynamische Illustration eines Radfahrers in voller Fahrt zieht den Blick sofort auf sich, noch bevor ein Wort gelesen wird.", "textFr": "L'illustration dynamique d'un cycliste en pleine course attire immédiatement le regard, avant même la lecture d'un seul mot." },
+    { "id": "interest", "xPercent": 35, "yPercent": 50, "labelDe": "Interest", "labelFr": "Interest", "textDe": "«The Flying Mile Stone suggests the speed of Spalding Bicycles» — die Überschrift baut mit dem Geschwindigkeits-Versprechen Interesse am Produkt auf.", "textFr": "« The Flying Mile Stone suggests the speed of Spalding Bicycles » — le titre suscite l'intérêt pour le produit avec sa promesse de vitesse." },
+    { "id": "desire", "xPercent": 35, "yPercent": 72, "labelDe": "Desire", "labelFr": "Desire", "textDe": "Konkrete Modelle und Preise («Bevel Gear Chainless $75», «Chain Wheels $50») lassen den Wunsch entstehen, genau dieses Produkt zu besitzen.", "textFr": "Des modèles et prix concrets (« Bevel Gear Chainless $75 », « Chain Wheels $50 ») font naître le désir de posséder précisément ce produit." },
+    { "id": "action", "xPercent": 35, "yPercent": 88, "labelDe": "Action", "labelFr": "Action", "textDe": "«Send for catalogue» mit Adresse — eine klare, konkrete Handlungsaufforderung mit direktem nächstem Schritt.", "textFr": "« Send for catalogue » avec adresse — un appel à l'action clair et concret, avec une prochaine étape directe." }
+  ]
+}
+:::
+
+:::h2 de="Eine echte Kampagne im Video ansehen" fr="Regarder une vraie campagne en vidéo":::
+
+:::de
+Ein aktueller TV-Spot von Galaxus (offizieller YouTube-Kanal) — schau ihn dir an und ordne selbst zu, wo Attention, Interest, Desire und Action liegen.
+:::
+:::fr
+Un spot TV actuel de Galaxus (chaîne YouTube officielle) — regarde-le et détermine toi-même où se situent Attention, Interest, Desire et Action.
+:::
+
+:::video youtube="KdUjMXABu0w":::
+
 :::h2 de="AIDA in echten Kampagnen erkennen" fr="Reconnaître AIDA dans de vraies campagnes":::
 
 :::de

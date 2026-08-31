@@ -578,6 +578,27 @@ body.print-vorlage-only .prev-next { display: none !important; }
   .datenspur-demo__label { font-weight: 600; }
 }
 
+/* ================= Widget: Bild-Callouts ================= */
+.bild-callouts__frame { position: relative; margin: var(--space-4) 0; border-radius: var(--radius-md); overflow: hidden; line-height: 0; }
+.bild-callouts__frame img { display: block; width: 100%; height: auto; }
+.bild-callouts__marker {
+  position: absolute;
+  width: 2rem; height: 2rem;
+  margin: -1rem 0 0 -1rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.bild-callouts__marker:hover, .bild-callouts__marker:focus-visible { transform: scale(1.15); }
+.bild-callouts__marker.is-active { background: var(--cluster-c2); }
+.bild-callouts__credit { margin: var(--space-2) 0 0; font-size: 0.75rem; }
+.bild-callouts__caption { margin-top: var(--space-3); padding: var(--space-4); border-radius: var(--radius-md); background: var(--color-surface-raised); min-height: 3rem; }
+.bild-callouts__caption p { margin: 0; }
+
 /* ================= Widget: Framing-Vergleich ================= */
 .framing-vergleich__frame { margin: var(--space-4) 0; border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface-raised); }
 .framing-vergleich__frame img { display: block; width: 100%; height: auto; }
