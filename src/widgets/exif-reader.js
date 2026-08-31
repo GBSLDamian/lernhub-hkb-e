@@ -238,7 +238,7 @@ export function mount(container) {
       <span data-lang="fr">🔒 L'image reste sur ton appareil — rien n'est envoyé ni enregistré.</span>
     </p>
     <label class="exif-reader__dropzone" tabindex="0">
-      <input type="file" accept="image/jpeg,image/jpg,image/*" class="exif-reader__input" hidden>
+      <input type="file" accept="image/jpeg,image/jpg,image/*" class="exif-reader__input">
       <span data-lang="de">📁 Bild hierher ziehen oder klicken zum Auswählen</span>
       <span data-lang="fr">📁 Glisser une image ici ou cliquer pour en choisir une</span>
     </label>

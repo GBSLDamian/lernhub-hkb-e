@@ -650,6 +650,7 @@ body.print-vorlage-only .prev-next { display: none !important; }
 
 /* ================= Widget: EXIF-Reader ================= */
 .exif-reader__dropzone {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -665,6 +666,21 @@ body.print-vorlage-only .prev-next { display: none !important; }
 }
 .exif-reader__dropzone:hover, .exif-reader__dropzone:focus-visible { border-color: var(--color-accent); color: var(--color-text); }
 .exif-reader__dropzone.is-dragover { border-color: var(--color-accent); background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
+/* Visually hidden (not display:none) — display:none inputs silently fail
+   to open the native file picker in Safari, both via label-click
+   forwarding and via input.click(). This keeps the element "rendered"
+   for all browsers while remaining invisible and out of the flow. */
+.exif-reader__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 .exif-reader__preview { margin-top: var(--space-4); border-radius: var(--radius-md); overflow: hidden; max-width: 16rem; }
 .exif-reader__preview img { display: block; width: 100%; height: auto; }
 .exif-reader__result { margin-top: var(--space-4); }
