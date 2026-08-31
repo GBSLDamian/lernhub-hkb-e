@@ -234,6 +234,24 @@
 .ressourcen-box { background: var(--color-surface); }
 .konzept-box p:last-child, .merksatz-box p:last-child, .ressourcen-box p:last-child { margin-bottom: 0; }
 
+/* ================= Für-Lehrpersonen-Block ================= */
+.lehrperson-box {
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-5) 0;
+  border: 1px dashed var(--color-border);
+  background: var(--color-surface-raised);
+}
+.lehrperson-box summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-text);
+}
+.lehrperson-box summary::-webkit-details-marker { color: var(--color-accent); }
+.lehrperson-box[open] summary { margin-bottom: var(--space-3); }
+.lehrperson-box__body p:last-child { margin-bottom: 0; }
+
 /* ================= Widgets ================= */
 .widget-shell {
   border: 1px dashed var(--color-border);

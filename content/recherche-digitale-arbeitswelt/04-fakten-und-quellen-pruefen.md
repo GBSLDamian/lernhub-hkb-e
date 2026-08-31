@@ -85,12 +85,103 @@ Astuce : si tu veux vraiment en avoir le cœur net, contacte la personne qui a p
 :::
 :::
 
+:::h2 de="Drei echte Prüf-Aufgaben" fr="Trois vraies tâches de vérification":::
+
+:::de
+Wende die obigen Fragen jetzt an drei echten, aktuell nachprüfbaren Behauptungen an — nicht nur in der Theorie.
+:::
+:::fr
+Applique maintenant les questions ci-dessus à trois affirmations réelles, actuellement vérifiables — pas seulement en théorie.
+:::
+
+:::konzept titel_de="Aufgabe 1: Zwei unabhängige Quellen finden" titel_fr="Tâche 1 : trouver deux sources indépendantes"
+:::de
+**Behauptung:** «In der Schweiz ist die Mammografie zur Brustkrebs-Früherkennung gesetzlich verboten.»
+
+Finde mindestens **zwei unabhängige, seriöse Quellen**, die diese Behauptung bestätigen oder widerlegen, und notiere sie (Name der Quelle + Link).
+:::
+:::fr
+**Affirmation :** « En Suisse, la mammographie pour le dépistage précoce du cancer du sein est interdite par la loi. »
+
+Trouve au moins **deux sources indépendantes et sérieuses** qui confirment ou réfutent cette affirmation, et note-les (nom de la source + lien).
+:::
+:::
+
+:::lehrperson
+:::de
+Die Behauptung ist **falsch** und wurde unabhängig von mehreren Faktencheck-Organisationen widerlegt — gute Schüler:innen-Antworten sollten mindestens zwei davon finden und nennen:
+
+- [Correctiv, 26.08.2026](https://correctiv.org/faktencheck/2026/08/26/kein-verbot-mammographie-zur-brustkrebs-erkennung-ist-in-der-schweiz-standard/) — 18 von 26 Kantonen bieten ein Screening-Programm an.
+- [Mimikama](https://www.mimikama.org/mammographie-verbot-schweiz/)
+- APA-Faktencheck, AFP Faktencheck, dpa-factchecking haben dieselbe Behauptung ebenfalls unabhängig widerlegt.
+
+Hintergrund: 2014 riet das Swiss Medical Board nur von **neuen, flächendeckenden** Programmen ab (aus methodischer Kritik, nicht wegen Gefahren) — das wurde online zu einem generellen «Verbot» verzerrt.
+:::
+:::fr
+L'affirmation est **fausse** et a été réfutée indépendamment par plusieurs organisations de vérification des faits — de bonnes réponses d'élèves devraient en trouver et citer au moins deux :
+
+- [Correctiv, 26.08.2026](https://correctiv.org/faktencheck/2026/08/26/kein-verbot-mammographie-zur-brustkrebs-erkennung-ist-in-der-schweiz-standard/) — 18 cantons sur 26 proposent un programme de dépistage.
+- [Mimikama](https://www.mimikama.org/mammographie-verbot-schweiz/)
+- APA-Faktencheck, AFP Faktencheck et dpa-factchecking ont aussi réfuté indépendamment la même affirmation.
+
+Contexte : en 2014, le Swiss Medical Board avait seulement déconseillé de **nouveaux programmes généralisés** (critique méthodologique, pas de danger) — ce qui a été déformé en ligne en une « interdiction » générale.
+:::
+:::
+
+:::konzept titel_de="Aufgabe 2: Erstveröffentlichung finden" titel_fr="Tâche 2 : trouver la première publication"
+:::de
+**Behauptung:** «Annalena Baerbock wurde aus der UNO geworfen» — diese Behauptung kursierte im Sommer 2026 in Videos.
+
+Recherchiere: **Wer hat diese Behauptung zuerst veröffentlicht, und wann?**
+:::
+:::fr
+**Affirmation :** « Annalena Baerbock a été expulsée de l'ONU » — cette affirmation a circulé dans des vidéos durant l'été 2026.
+
+Recherche : **qui a publié cette affirmation en premier, et quand ?**
+:::
+:::
+
+:::lehrperson
+:::de
+Laut [Correctiv-Faktencheck vom 3.7.2026](https://correctiv.org/faktencheck/2026/07/03/nein-annalena-baerbock-wurde-nicht-aus-der-un-geworfen/) tauchte die Behauptung erstmals im **Juni 2026** auf: über den YouTube-Kanal «AdenauerDE» (mit KI-generiertem Videomaterial) sowie über mehrere TikTok-Profile, die Ausschnitte teilten — zusammen über 316'000 Aufrufe. Tatsächlich war Baerbocks Amtszeit als UNO-Generalversammlungspräsidentin von vornherein auf ein Jahr befristet; sie leitete noch am 24. Juni 2026 aktiv Sitzungen.
+:::
+:::fr
+Selon le [factcheck de Correctiv du 3.7.2026](https://correctiv.org/faktencheck/2026/07/03/nein-annalena-baerbock-wurde-nicht-aus-der-un-geworfen/), l'affirmation est apparue pour la première fois en **juin 2026** : via la chaîne YouTube « AdenauerDE » (avec des contenus vidéo générés par IA) ainsi que plusieurs profils TikTok qui en ont partagé des extraits — plus de 316 000 vues au total. En réalité, le mandat de Baerbock comme présidente de l'Assemblée générale de l'ONU était limité à un an dès le départ ; elle présidait encore activement des séances le 24 juin 2026.
+:::
+:::
+
+:::konzept titel_de="Aufgabe 3: Zitat wörtlich prüfen" titel_fr="Tâche 3 : vérifier une citation mot pour mot"
+:::de
+Alt Bundesrat Ueli Maurer zitierte an einer WEF-Eröffnungsrede angeblich Albert Einstein mit einem motivierenden Ausspruch übers Unmögliche.
+
+Recherchiere: **Stimmt das Zitat wörtlich, und stammt es wirklich von Einstein?**
+:::
+:::fr
+Lors d'un discours d'ouverture au WEF, l'ancien conseiller fédéral Ueli Maurer aurait cité Albert Einstein avec une phrase motivante sur l'impossible.
+
+Recherche : **la citation est-elle exacte mot pour mot, et vient-elle vraiment d'Einstein ?**
+:::
+:::
+
+:::lehrperson
+:::de
+**Nein.** Laut [SRF-Faktencheck](https://www.srf.ch/news/schweiz/eroeffnungsrede-am-wef-ueli-maurer-verbreitet-falsches-einstein-zitat) fand das SRF-Archiv «keinerlei Verbindung zwischen dem Zitat und Albert Einstein». Hans Rudolf Ott, Präsident der Albert-Einstein-Gesellschaft Bern, bestätigte dies nach Durchsicht hunderter echter Einstein-Zitate. Die wahre Herkunft des Zitats ist unbekannt — es kursiert online auch unter den Namen Voltaire und Mark Twain. Lehrreicher Nebenaspekt: Einstein selbst äusserte sich kritisch dazu, dass spontan gesagte Worte oft unkontrolliert festgehalten und verbreitet werden.
+:::
+:::fr
+**Non.** Selon le [factcheck de la SRF](https://www.srf.ch/news/schweiz/eroeffnungsrede-am-wef-ueli-maurer-verbreitet-falsches-einstein-zitat), les archives de la SRF n'ont trouvé « aucun lien entre la citation et Albert Einstein ». Hans Rudolf Ott, président de la Société Albert Einstein de Berne, l'a confirmé après avoir examiné des centaines de vraies citations d'Einstein. L'origine réelle de la citation est inconnue — elle circule aussi en ligne sous les noms de Voltaire et Mark Twain. Point pédagogique complémentaire : Einstein lui-même s'est montré critique envers le fait que des mots dits spontanément soient souvent fixés et diffusés sans contrôle.
+:::
+:::
+
 :::h2 de="Ressourcen" fr="Ressources":::
 :::ressourcen
 :::de
 - [hoaxsearch.com – Schlagzeilen-Suche für bereits geprüfte Falschmeldungen](https://www.hoaxsearch.com)
+- [Correctiv.Faktencheck](https://correctiv.org/faktencheck/)
+- [Mimikama](https://www.mimikama.org)
 :::
 :::fr
 - [hoaxsearch.com – recherche de titres pour fausses informations déjà vérifiées](https://www.hoaxsearch.com)
+- [Correctiv.Faktencheck](https://correctiv.org/faktencheck/)
+- [Mimikama](https://www.mimikama.org)
 :::
 :::

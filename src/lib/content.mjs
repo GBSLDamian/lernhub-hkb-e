@@ -236,6 +236,11 @@ export function renderBody(node, ctx = { headings: [], lang: null, widgetIndex: 
   <p class="ressourcen-box__label" data-lang="fr">Ressources</p>
   <div class="ressourcen-box__body">${node.children.map((c) => renderBody(c, ctx)).join('\n')}</div>
 </section>`;
+    case 'lehrperson':
+      return `<details class="lehrperson-box">
+  <summary><span data-lang="de">Für Lehrpersonen: Lösungshinweise</span><span data-lang="fr">Pour les enseignant·es : pistes de solution</span></summary>
+  <div class="lehrperson-box__body">${node.children.map((c) => renderBody(c, ctx)).join('\n')}</div>
+</details>`;
     case 'widget': {
       let config = node.config;
       if (config === undefined || config === null) {
@@ -287,6 +292,7 @@ export function extractText(node, lang) {
     case 'konzept':
     case 'merksatz':
     case 'ressourcen':
+    case 'lehrperson':
       return node.children.map((c) => extractText(c, lang)).join(' ');
     default:
       return '';
