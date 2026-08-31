@@ -71,6 +71,27 @@ Les fausses informations se propagent souvent plus vite en ligne que leurs recti
 }
 :::
 
+:::h2 de="Schlagzeilen-Check mit echten Faktenchecks" fr="Vérification de titres avec de vrais faits vérifiés":::
+
+:::de
+Fünf echte Schlagzeilen, alle unabhängig faktengeprüft. Schätze ein: seriös oder falsch/irreführend? Die Auflösung zeigt dir jeweils die Faktencheck-Quelle.
+:::
+:::fr
+Cinq vrais titres, tous vérifiés de façon indépendante. Évalue : sérieux ou faux/trompeur ? La solution t'indique à chaque fois la source de vérification.
+:::
+
+:::widget schlagzeilen-quiz
+{
+  "items": [
+    { "id": "moringa", "schlagzeileDe": "Ein bekannter Sportmediziner empfiehlt in einem Video ein Moringa-Wundermittel gegen praktisch alle Beschwerden.", "schlagzeileFr": "Un médecin du sport connu recommande dans une vidéo un remède miracle à base de moringa contre pratiquement tous les maux.", "istSerioes": false, "begruendungDe": "Das Video ist ein Deepfake: Bekannte Ärzt:innen haben solche Produkte nie empfohlen — Gesicht und Stimme wurden per KI auf fremdes Videomaterial montiert.", "begruendungFr": "La vidéo est un deepfake : des médecins connus n'ont jamais recommandé ces produits — visage et voix ont été montés par IA sur des images étrangères.", "quelleName": "Mimikama", "quelleUrl": "https://www.mimikama.org/deepfake-aerzte-werbung-fuer-wundermittel/" },
+    { "id": "mammografie", "schlagzeileDe": "In der Schweiz ist die Mammografie zur Brustkrebs-Früherkennung gesetzlich verboten.", "schlagzeileFr": "En Suisse, la mammographie pour le dépistage précoce du cancer du sein est interdite par la loi.", "istSerioes": false, "begruendungDe": "Die Mammografie ist in der Schweiz Standardpraxis: 18 von 26 Kantonen bieten ein Screening-Programm an, Frauen ab 50 erhalten eine Einladung. Ein Fachgremium riet 2014 nur von neuen flächendeckenden Programmen ab — das wurde später als «Verbot» fehlinterpretiert.", "begruendungFr": "La mammographie est une pratique standard en Suisse : 18 cantons sur 26 proposent un programme de dépistage, les femmes dès 50 ans reçoivent une invitation. Une commission d'experts avait seulement déconseillé en 2014 l'introduction de nouveaux programmes généralisés — mal interprété ensuite comme une « interdiction ».", "quelleName": "Correctiv", "quelleUrl": "https://correctiv.org/faktencheck/2026/08/26/kein-verbot-mammographie-zur-brustkrebs-erkennung-ist-in-der-schweiz-standard/" },
+    { "id": "kopftuch", "schlagzeileDe": "Das Innenministerium verkündet ein Kopftuchverbot, das ab Januar 2026 gilt.", "schlagzeileFr": "Le ministère de l'Intérieur annonce une interdiction du voile qui entrera en vigueur en janvier 2026.", "istSerioes": false, "begruendungDe": "Es gibt keine solche Ankündigung des Innenministeriums — die Behauptung ist frei erfunden und wurde ohne jede offizielle Quelle in Umlauf gebracht.", "begruendungFr": "Aucune annonce de ce type n'existe de la part du ministère de l'Intérieur — l'affirmation est entièrement inventée et a circulé sans aucune source officielle.", "quelleName": "Mimikama", "quelleUrl": "https://www.mimikama.org/kopftuchverbot-januar-2026-luege/" },
+    { "id": "bahnschienen", "schlagzeileDe": "Bei grosser Sommerhitze können sich Bahnschienen ausdehnen und verformen — das kann zu Verspätungen führen.", "schlagzeileFr": "En cas de forte chaleur estivale, les rails de chemin de fer peuvent se dilater et se déformer — ce qui peut provoquer des retards.", "istSerioes": true, "begruendungDe": "Stahl dehnt sich bei Hitze aus, wodurch sich Schienen tatsächlich verformen können — sie werden dabei nicht «weich», wie oft ungenau behauptet, sondern verändern durch Wärmeausdehnung ihre Form. Bahnen wie die SBB ergreifen deshalb gezielt Massnahmen dagegen.", "begruendungFr": "L'acier se dilate sous l'effet de la chaleur, ce qui peut réellement déformer les rails — ils ne deviennent pas « mous », comme on l'affirme parfois, mais changent de forme sous l'effet de la dilatation thermique. Des compagnies comme les CFF prennent donc des mesures ciblées contre cela.", "quelleName": "dpa-factchecking", "quelleUrl": "https://dpa-factchecking.com/austria/240801-99-945480/" },
+    { "id": "impfungen", "schlagzeileDe": "Weltweite Impfprogramme haben die Kindersterblichkeit in den letzten Jahrzehnten deutlich gesenkt.", "schlagzeileFr": "Les programmes de vaccination mondiaux ont nettement réduit la mortalité infantile au cours des dernières décennies.", "istSerioes": true, "begruendungDe": "Das ist durch zahlreiche wissenschaftliche Studien und Gesundheitsstatistiken belegt — Impfprogramme gegen Masern, Polio und andere Krankheiten gehören zu den wirksamsten Massnahmen der globalen Gesundheitsgeschichte.", "begruendungFr": "Cela est confirmé par de nombreuses études scientifiques et statistiques sanitaires — les programmes de vaccination contre la rougeole, la polio et d'autres maladies comptent parmi les mesures les plus efficaces de l'histoire sanitaire mondiale.", "quelleName": "Deutsches Ärzteblatt", "quelleUrl": "https://www.aerzteblatt.de/news/impfstoffe-haben-sterblichkeit-im-20-jahrhundert-gesenkt-02756002-784d-4dc2-9805-c43c1c2f8386" }
+  ]
+}
+:::
+
 :::h2 de="Übung" fr="Exercice":::
 
 :::de
@@ -84,9 +105,15 @@ Cherche en ligne un titre d'actualité récent qui te semble douteux. Applique l
 
 :::ressourcen
 :::de
-- [Faktencheck-Portale im Vergleich (Suche, extern)](https://www.google.com/search?q=faktencheck+portale+schweiz)
+- [Mimikama – Faktenchecks Österreich/DACH](https://www.mimikama.org)
+- [Correctiv.Faktencheck](https://correctiv.org/faktencheck/)
+- [SRF Faktencheck](https://www.srf.ch/news/srf-faktenchecks)
+- [dpa-factchecking](https://dpa-factchecking.com)
 :::
 :::fr
-- [Comparatif de portails de vérification des faits (recherche, externe)](https://www.google.com/search?q=v%C3%A9rification+des+faits+suisse)
+- [Mimikama – vérification des faits Autriche/DACH](https://www.mimikama.org)
+- [Correctiv.Faktencheck](https://correctiv.org/faktencheck/)
+- [SRF Faktencheck](https://www.srf.ch/news/srf-faktenchecks)
+- [dpa-factchecking](https://dpa-factchecking.com)
 :::
 :::

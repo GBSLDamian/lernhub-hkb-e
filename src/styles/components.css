@@ -524,6 +524,10 @@ body.print-vorlage-only .prev-next { display: none !important; }
 }
 .video-facade__offline p { margin: 0; color: var(--color-text-muted); font-size: 0.875rem; }
 
+/* ================= Widget: Schlagzeilen-Quiz ================= */
+.schlagzeilen-quiz__headline { font-size: 1.0625rem; font-weight: 600; font-style: italic; margin: var(--space-4) 0; }
+.schlagzeilen-quiz__quelle { margin: var(--space-3) 0 0; font-size: 0.8125rem; }
+
 /* ================= Widget: Datenspur-Demo ================= */
 .datenspur-demo__privacy-note {
   padding: var(--space-3) var(--space-4);
