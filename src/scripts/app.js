@@ -33,6 +33,7 @@ const WIDGET_MODULES = {
   'datenspur-demo': '/assets/widgets/datenspur-demo.js',
   'framing-vergleich': '/assets/widgets/framing-vergleich.js',
   'bild-callouts': '/assets/widgets/bild-callouts.js',
+  'exif-reader': '/assets/widgets/exif-reader.js',
   'schlagzeilen-quiz': '/assets/widgets/schlagzeilen-quiz.js',
   'farb-akkordeon': '/assets/widgets/farb-akkordeon.js',
   'schrift-explorer': '/assets/widgets/schrift-explorer.js',

@@ -152,12 +152,23 @@ Les appareils photo enregistrent de nombreuses informations — les {{glossar:ex
 :::
 :::
 
-:::merksatz
+:::h2 de="Probier's an einem eigenen Foto aus" fr="Essaie avec ta propre photo":::
+
 :::de
-EXIF-Metadaten können auch deinen eigenen Standort verraten, wenn du ein selbst geschossenes Foto veröffentlichst. Prüfe vor dem Teilen, ob Geodaten enthalten sind (siehe auch Recht, Ethik & Sicherheit → Datenschutz & Lizenzen).
+Wähle ein eigenes Foto (z. B. direkt von der Handykamera) und sieh, welche Metadaten darin stecken. Vergleiche das Ergebnis mit einem Screenshot oder einem aus WhatsApp/Instagram heruntergeladenen Bild — meist fehlen dort die Metadaten komplett.
 :::
 :::fr
-Les métadonnées EXIF peuvent aussi révéler ta propre localisation lorsque tu publies une photo prise par toi-même. Vérifie avant de la partager si des données de géolocalisation y sont incluses (voir aussi Droit, éthique & sécurité → Protection des données & licences).
+Choisis une de tes propres photos (p. ex. directement depuis l'appareil photo du téléphone) et découvre quelles métadonnées elle contient. Compare le résultat avec une capture d'écran ou une image téléchargée depuis WhatsApp/Instagram — dans ce cas, les métadonnées manquent généralement complètement.
+:::
+
+:::widget exif-reader:::
+
+:::merksatz
+:::de
+EXIF-Metadaten können auch deinen eigenen Standort verraten, wenn du ein selbst geschossenes Foto veröffentlichst. Prüfe vor dem Teilen, ob Geodaten enthalten sind (siehe auch Recht, Ethik & Sicherheit → Datenschutz & Lizenzen; zum Thema Datenspuren siehe auch Suchmaschinen & Recherche → Datenspur-Demo).
+:::
+:::fr
+Les métadonnées EXIF peuvent aussi révéler ta propre localisation lorsque tu publies une photo prise par toi-même. Vérifie avant de la partager si des données de géolocalisation y sont incluses (voir aussi Droit, éthique & sécurité → Protection des données & licences ; sur les traces numériques, voir aussi Moteurs de recherche & recherche documentaire → Démo Datenspur).
 :::
 :::
 
